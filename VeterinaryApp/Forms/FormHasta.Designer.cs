@@ -1,6 +1,6 @@
 ﻿namespace VeterinaryApp.Forms
 {
-    partial class Form4
+    partial class FormHasta
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // Form4
+            // FormHasta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Form4";
-            this.Text = "Form4";
+            this.Name = "FormHasta";
+            this.Text = "Hasta";
             this.ResumeLayout(false);
 
         }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ComponentFactory.Krypton.Toolkit;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,9 +11,9 @@ using System.Windows.Forms;
 
 namespace VeterinaryApp.Forms
 {
-    public partial class Form5 : Form
+    public partial class FormMuayene : KryptonForm
     {
-        public Form5()
+        public FormMuayene()
         {
             InitializeComponent();
         }

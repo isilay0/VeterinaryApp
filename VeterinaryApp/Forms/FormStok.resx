@@ -117,26 +117,55 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="shopping_cart" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\shopping_cart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EAAACxABrSO9dQAAAdZJREFUSEvdlE1PwkAQhjnpf/HjD3jRn+TNeBIPGj1A1JaiV6Ql8YOTISS2atrQ
+        qlw0FA8aDSZ+RGMUlIMHdZ2pU7LgttqIF97kTQrdeWZ3dqax3tX2nj2sW/aibtquYdlNtPds2gu7pdIQ
+        LYuuQqHQD2AFQO+G5bAAv8F7ec11+yjsd0I4BO4IgELDRoxISQzTSfOA8rHLLq9v2P1j3XPt+paVj9y2
+        JBAjUXi4sOZ8WU7OLthDvSF09fScT/JmWAeDhAkWXqgfhDsXgXnjGn+9bjlJwgQLuqTqB2BZRFDeWK5W
+        AtOpECZYsIsXP+D+8UkI5Y1ruATPhAkWLoqS4I5LAHfXIEyw+BLh8UVQ3rWriCWCXSz4AdiKIijvw+NK
+        KwFsLkGYYOH4w2Joua8gbEURGN3Rpu+6uT9AmHDh+HOBXitiufBO0FiW9p07LLORZ3OKMk6IcOHYQzfp
+        PCDMm1tFNp1IsvnllddULjdCmHBhEhx/ALTK1Wn4qn5k1vMefEaSmKxqLKVqzZSqjhLmZ+H444Rih+CM
+        eIZnvFCs+eySXJxT0kzOqgj33ZRWc2OE+LsUVZ3g4P+TBMoS/5Ykq03S6+6IP4mc1abo7+7q6yRqnH72
+        jGKxTwDfRQ5K4wpbAAAAAElFTkSuQmCC
+</value>
   </data>
-  <data name="shopping_cart1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\shopping_cart1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="financial" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\financial.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cross" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="appointment" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\appointment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="appointment2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\appointment2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="appointment3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\appointment3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DwAACw8BkvkDpQAAA2NJREFUaEPtmFvIjVkYx7ezGXMxSEJRc6HRDIoL5DQ1Dgk5FAY5lSTK6YIULjQz
+        SuFGcmPKiJSUM0XOM6GJmaaRxikyKDFkHEZOv9+796q3r+/de/v2J+/W+69fe633e/fX/1nrWWs9a+cy
+        ZcqUKdPHpKawElpEvSqT5vfCb9DSB9Ukze+G89DaB9WkqjT/WeFT83sg1WnjgtwAraJeLtcD7sJ3UBXm
+        T8C/YIoMgvuwBf6HS5B688fgc9gFb+AHUKPgCYyNeilTMP87fOoDZL4bxF/QFiaAAQyHVMkFqnlT5j8Y
+        A0EhiOvg31Jr3rRx5DXYFeIKQZj/qdo2g3nz/BsfFFEI4gKkIoj4yC+Fv6ExJKkRuBM5C+188CEVzEtY
+        sGHPr02pNO/BdBU6QjGl0rxpY3s1fA1JSqX5Z9DeByWU2pE/AOfAkzZJSeabgVts86iXl3//It98Pwrm
+        3f5csJowkKQgksxr2lPaeuhPCGfGc3gBC6De1KTwGTfvKWotY2X5ADRYM4hiadMH7oGB3IaBsA28Tlql
+        /gH1Ig1dgSFwEsIJOxKmg+YXwxTwAAtBlMp5DzrLCeU7Q2EnLCq0fVZvmgOvQXNhn+8Jwfw4cEasKveD
+        722FmubnwUXwbtAJTJe14EZg3v8I1k+HwFP6K/gVTsGXUJEMQpOOXG3mR4AywDtQ03wbeAnO1D8wDJzF
+        zTAalBWspfZ68LteM38CZ3IHVKwQRDA/vtAP5ouljSPoSKvjMC3fjAJbA470EZgJDUD9ApPAd/1OxXLB
+        PgaNfA/lmleeFa9gAFwDR933boA/pUyGueBp/jMYxEHwcFwHzkZFCruNI++0umBXgCplPkgzT2EfuKOd
+        Br8Xlxedm+Bi7ge3Cv3e8M6yzO0AcfMhbTYWPr+FcszH5ToJpXTYFOLqBf7vWVGvAi0Ht9CknHdNmBaX
+        oVzzn4D57pZcrGLtD17+l0S9OqohbAJ/UXBK4+aDDOIR9I16pbUMzkC8fEhSN/DO3Dnq1VEhCHPeHaI2
+        zYbB+WZJOfpT882y5HqZn2/WXSGIo1GvMp2FGflmWfJQW5hvViaDKDfPi8l1ZRDeiUupO5i2XaJeSmT1
+        ahpZibquPMlrMhFWwUNw80idrG5NC+8ShxPYDm7RmTJlypTpfSqXewuzO97ISPd6mgAAAABJRU5ErkJg
+        gg==
+</value>
   </data>
 </root>

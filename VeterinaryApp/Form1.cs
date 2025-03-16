@@ -8,6 +8,8 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ComponentFactory.Krypton.Toolkit;
+
 
 namespace VeterinaryApp
 {
@@ -97,34 +99,34 @@ namespace VeterinaryApp
             lblTitle.Text=childForm.Text;
         }
 
-        private void btnProducts_Click(object sender, EventArgs e)
+        private void btnMusteri_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormProduct(), sender);
+            OpenChildForm(new Forms.FormMusteri(), sender);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnHasta_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Form1(), sender);
+            OpenChildForm(new Forms.FormHasta(), sender);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnStok_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Form2(), sender);
+            OpenChildForm(new Forms.FormStok(), sender);
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnMuayene_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Form3(), sender);
+            OpenChildForm(new Forms.FormMuayene(), sender);
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btnRandevu_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Form4(), sender);
+            OpenChildForm(new Forms.FormRandevu(), sender);
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btnFinansal_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Form5(), sender);
+            OpenChildForm(new Forms.FormFinansal(), sender);
         }
 
         private void btnCloseChildForm_Click(object sender, EventArgs e)
@@ -167,6 +169,8 @@ namespace VeterinaryApp
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+      
     }
 }
 
