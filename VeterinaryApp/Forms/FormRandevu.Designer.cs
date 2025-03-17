@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.kryptonPalette2 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonPanel5 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonDataGridView2 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
@@ -55,6 +54,7 @@
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonPanel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel5)).BeginInit();
             this.kryptonPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView2)).BeginInit();
@@ -71,7 +71,7 @@
             // 
             // kryptonButton1
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(12, 58);
+            this.kryptonButton1.Location = new System.Drawing.Point(23, 60);
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.Size = new System.Drawing.Size(288, 44);
             this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -89,14 +89,14 @@
             // 
             // kryptonPanel5
             // 
-            this.kryptonPanel5.Controls.Add(this.kryptonDataGridView2);
             this.kryptonPanel5.Controls.Add(this.kryptonButton1);
+            this.kryptonPanel5.Controls.Add(this.kryptonDataGridView1);
             this.kryptonPanel5.Controls.Add(this.kryptonHeader2);
             this.kryptonPanel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonPanel5.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel5.Name = "kryptonPanel5";
             this.kryptonPanel5.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonPanel5.Size = new System.Drawing.Size(974, 355);
+            this.kryptonPanel5.Size = new System.Drawing.Size(1053, 437);
             this.kryptonPanel5.TabIndex = 0;
             // 
             // kryptonDataGridView2
@@ -111,13 +111,13 @@
             this.Column7,
             this.Column8,
             this.Column9});
-            this.kryptonDataGridView2.Location = new System.Drawing.Point(0, 119);
+            this.kryptonDataGridView2.Location = new System.Drawing.Point(23, 122);
             this.kryptonDataGridView2.Name = "kryptonDataGridView2";
             this.kryptonDataGridView2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.kryptonDataGridView2.ReadOnly = true;
             this.kryptonDataGridView2.RowHeadersWidth = 51;
             this.kryptonDataGridView2.RowTemplate.Height = 24;
-            this.kryptonDataGridView2.Size = new System.Drawing.Size(1445, 324);
+            this.kryptonDataGridView2.Size = new System.Drawing.Size(1445, 346);
             this.kryptonDataGridView2.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
             this.kryptonDataGridView2.StateCommon.HeaderColumn.Back.Color1 = System.Drawing.Color.Silver;
             this.kryptonDataGridView2.StateCommon.HeaderColumn.Back.Color2 = System.Drawing.Color.Silver;
@@ -153,6 +153,7 @@
             // 
             // kryptonDataGridViewDateTimePickerColumn1
             // 
+            this.kryptonDataGridViewDateTimePickerColumn1.CalendarTodayDate = new System.DateTime(2025, 3, 16, 0, 0, 0, 0);
             this.kryptonDataGridViewDateTimePickerColumn1.Checked = false;
             this.kryptonDataGridViewDateTimePickerColumn1.HeaderText = "Date";
             this.kryptonDataGridViewDateTimePickerColumn1.MinimumWidth = 6;
@@ -198,7 +199,7 @@
             this.kryptonHeader2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.kryptonHeader2.Location = new System.Drawing.Point(0, 0);
             this.kryptonHeader2.Name = "kryptonHeader2";
-            this.kryptonHeader2.Size = new System.Drawing.Size(974, 37);
+            this.kryptonHeader2.Size = new System.Drawing.Size(1053, 37);
             this.kryptonHeader2.StateCommon.Back.Color1 = System.Drawing.SystemColors.ScrollBar;
             this.kryptonHeader2.StateCommon.Back.Color2 = System.Drawing.SystemColors.ScrollBar;
             this.kryptonHeader2.StateCommon.Border.Color1 = System.Drawing.SystemColors.ControlDarkDark;
@@ -218,18 +219,19 @@
             this.kryptonPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel4.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel4.Name = "kryptonPanel4";
-            this.kryptonPanel4.Size = new System.Drawing.Size(974, 569);
+            this.kryptonPanel4.Size = new System.Drawing.Size(1053, 700);
             this.kryptonPanel4.TabIndex = 3;
             // 
             // kryptonPanel3
             // 
+            this.kryptonPanel3.Controls.Add(this.kryptonDataGridView2);
+            this.kryptonPanel3.Controls.Add(this.kryptonButton2);
             this.kryptonPanel3.Controls.Add(this.kryptonHeader1);
-            this.kryptonPanel3.Controls.Add(this.kryptonDataGridView1);
             this.kryptonPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel3.Location = new System.Drawing.Point(0, 355);
+            this.kryptonPanel3.Location = new System.Drawing.Point(0, 437);
             this.kryptonPanel3.Name = "kryptonPanel3";
             this.kryptonPanel3.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonPanel3.Size = new System.Drawing.Size(974, 214);
+            this.kryptonPanel3.Size = new System.Drawing.Size(1053, 263);
             this.kryptonPanel3.TabIndex = 1;
             // 
             // kryptonHeader1
@@ -237,7 +239,7 @@
             this.kryptonHeader1.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonHeader1.Location = new System.Drawing.Point(0, 0);
             this.kryptonHeader1.Name = "kryptonHeader1";
-            this.kryptonHeader1.Size = new System.Drawing.Size(974, 37);
+            this.kryptonHeader1.Size = new System.Drawing.Size(1053, 37);
             this.kryptonHeader1.StateCommon.Back.Color1 = System.Drawing.SystemColors.ScrollBar;
             this.kryptonHeader1.StateCommon.Back.Color2 = System.Drawing.SystemColors.ScrollBar;
             this.kryptonHeader1.StateCommon.Border.Color1 = System.Drawing.SystemColors.ControlDarkDark;
@@ -260,7 +262,7 @@
             this.Column4,
             this.Column6,
             this.Column5});
-            this.kryptonDataGridView1.Location = new System.Drawing.Point(0, 43);
+            this.kryptonDataGridView1.Location = new System.Drawing.Point(23, 120);
             this.kryptonDataGridView1.Name = "kryptonDataGridView1";
             this.kryptonDataGridView1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.kryptonDataGridView1.ReadOnly = true;
@@ -302,6 +304,7 @@
             // 
             // Column4
             // 
+            this.Column4.CalendarTodayDate = new System.DateTime(2025, 3, 16, 0, 0, 0, 0);
             this.Column4.Checked = false;
             this.Column4.HeaderText = "Date";
             this.Column4.MinimumWidth = 6;
@@ -319,6 +322,7 @@
             // 
             // Column5
             // 
+            this.Column5.CalendarTodayDate = new System.DateTime(2025, 3, 16, 0, 0, 0, 0);
             this.Column5.Checked = false;
             this.Column5.HeaderText = "CreatedTime";
             this.Column5.MinimumWidth = 6;
@@ -332,7 +336,7 @@
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(974, 569);
+            this.kryptonPanel1.Size = new System.Drawing.Size(1053, 700);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.SystemColors.Control;
             this.kryptonPanel1.StateCommon.Color2 = System.Drawing.SystemColors.Control;
             this.kryptonPanel1.TabIndex = 2;
@@ -345,14 +349,32 @@
             this.kryptonPanel2.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel2.Name = "kryptonPanel2";
             this.kryptonPanel2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonPanel2.Size = new System.Drawing.Size(974, 569);
+            this.kryptonPanel2.Size = new System.Drawing.Size(1053, 700);
             this.kryptonPanel2.TabIndex = 0;
+            // 
+            // kryptonButton2
+            // 
+            this.kryptonButton2.Location = new System.Drawing.Point(23, 60);
+            this.kryptonButton2.Name = "kryptonButton2";
+            this.kryptonButton2.Size = new System.Drawing.Size(288, 44);
+            this.kryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.kryptonButton2.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.kryptonButton2.StateCommon.Border.Color1 = System.Drawing.Color.Black;
+            this.kryptonButton2.StateCommon.Border.Color2 = System.Drawing.Color.Black;
+            this.kryptonButton2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton2.StateCommon.Border.Rounding = 15;
+            this.kryptonButton2.StateCommon.Border.Width = 1;
+            this.kryptonButton2.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
+            this.kryptonButton2.TabIndex = 18;
+            this.kryptonButton2.Values.Text = "Randevu Detaylarını Görüntüle";
             // 
             // FormRandevu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(974, 569);
+            this.ClientSize = new System.Drawing.Size(1053, 700);
             this.Controls.Add(this.kryptonPanel1);
             this.Name = "FormRandevu";
             this.Text = "Randevu";
@@ -376,8 +398,6 @@
         }
 
         #endregion
-
-        private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette2;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel5;
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridView kryptonDataGridView2;
@@ -403,5 +423,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel2;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
     }
 }

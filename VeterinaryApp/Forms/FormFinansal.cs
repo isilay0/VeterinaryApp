@@ -11,11 +11,13 @@ using System.Windows.Forms;
 
 namespace VeterinaryApp.Forms
 {
-    public partial class FormFinansal : KryptonForm
+    public partial class FormFinansal : Form
     {
         public FormFinansal()
         {
             InitializeComponent();
         }
+
+       
     }
 }

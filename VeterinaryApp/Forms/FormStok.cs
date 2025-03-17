@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace VeterinaryApp.Forms
 {
-    public partial class FormStok : KryptonForm
+    public partial class FormStok : Form
     {
         public FormStok()
         {

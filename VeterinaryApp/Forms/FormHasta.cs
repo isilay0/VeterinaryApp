@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace VeterinaryApp.Forms
 {
-    public partial class FormHasta : KryptonForm
+    public partial class FormHasta : Form
     {
         public FormHasta()
         {

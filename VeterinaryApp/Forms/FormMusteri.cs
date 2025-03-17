@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace VeterinaryApp.Forms
 {
-    public partial class FormMusteri : KryptonForm
+    public partial class FormMusteri : Form
     {
         public FormMusteri()
         {
