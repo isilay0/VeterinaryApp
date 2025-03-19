@@ -30,15 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.kryptonPanel5 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonHeader2 = new ComponentFactory.Krypton.Toolkit.KryptonHeader();
-            this.kryptonPanel4 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonPanel3 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonHeader1 = new ComponentFactory.Krypton.Toolkit.KryptonHeader();
-            this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
-            this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonPanel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonButton4 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonButton3 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonDataGridView3 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,6 +39,9 @@
             this.Column17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column19 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column18 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.kryptonHeader2 = new ComponentFactory.Krypton.Toolkit.KryptonHeader();
+            this.kryptonPanel4 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.kryptonPanel3 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonDataGridView1 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,24 +51,30 @@
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.kryptonHeader1 = new ComponentFactory.Krypton.Toolkit.KryptonHeader();
+            this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
+            this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.kryptonPanel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.btnRandevuIstekGoster = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btnRandevuDetayGoster = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel5)).BeginInit();
             this.kryptonPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
             this.kryptonPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).BeginInit();
             this.kryptonPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
             this.kryptonPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPanel5
             // 
+            this.kryptonPanel5.Controls.Add(this.btnRandevuIstekGoster);
             this.kryptonPanel5.Controls.Add(this.kryptonDataGridView3);
-            this.kryptonPanel5.Controls.Add(this.kryptonButton4);
             this.kryptonPanel5.Controls.Add(this.kryptonHeader2);
             this.kryptonPanel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonPanel5.Location = new System.Drawing.Point(0, 0);
@@ -82,129 +82,6 @@
             this.kryptonPanel5.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.kryptonPanel5.Size = new System.Drawing.Size(1670, 437);
             this.kryptonPanel5.TabIndex = 0;
-            // 
-            // kryptonHeader2
-            // 
-            this.kryptonHeader2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.kryptonHeader2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.kryptonHeader2.Location = new System.Drawing.Point(0, 0);
-            this.kryptonHeader2.Name = "kryptonHeader2";
-            this.kryptonHeader2.Size = new System.Drawing.Size(1670, 37);
-            this.kryptonHeader2.StateCommon.Back.Color1 = System.Drawing.SystemColors.ScrollBar;
-            this.kryptonHeader2.StateCommon.Back.Color2 = System.Drawing.SystemColors.ScrollBar;
-            this.kryptonHeader2.StateCommon.Border.Color1 = System.Drawing.SystemColors.ControlDarkDark;
-            this.kryptonHeader2.StateCommon.Border.Color2 = System.Drawing.SystemColors.ControlDarkDark;
-            this.kryptonHeader2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonHeader2.TabIndex = 15;
-            this.kryptonHeader2.Values.Description = "";
-            this.kryptonHeader2.Values.Heading = "Randevu İstekleri";
-            this.kryptonHeader2.Values.Image = global::VeterinaryApp.Properties.Resources.appointment2;
-            // 
-            // kryptonPanel4
-            // 
-            this.kryptonPanel4.Controls.Add(this.kryptonPanel3);
-            this.kryptonPanel4.Controls.Add(this.kryptonPanel5);
-            this.kryptonPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel4.Location = new System.Drawing.Point(0, 0);
-            this.kryptonPanel4.Name = "kryptonPanel4";
-            this.kryptonPanel4.Size = new System.Drawing.Size(1670, 747);
-            this.kryptonPanel4.TabIndex = 3;
-            // 
-            // kryptonPanel3
-            // 
-            this.kryptonPanel3.Controls.Add(this.kryptonDataGridView1);
-            this.kryptonPanel3.Controls.Add(this.kryptonButton3);
-            this.kryptonPanel3.Controls.Add(this.kryptonHeader1);
-            this.kryptonPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel3.Location = new System.Drawing.Point(0, 437);
-            this.kryptonPanel3.Name = "kryptonPanel3";
-            this.kryptonPanel3.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonPanel3.Size = new System.Drawing.Size(1670, 310);
-            this.kryptonPanel3.TabIndex = 1;
-            // 
-            // kryptonHeader1
-            // 
-            this.kryptonHeader1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.kryptonHeader1.Location = new System.Drawing.Point(0, 0);
-            this.kryptonHeader1.Name = "kryptonHeader1";
-            this.kryptonHeader1.Size = new System.Drawing.Size(1670, 37);
-            this.kryptonHeader1.StateCommon.Back.Color1 = System.Drawing.SystemColors.ScrollBar;
-            this.kryptonHeader1.StateCommon.Back.Color2 = System.Drawing.SystemColors.ScrollBar;
-            this.kryptonHeader1.StateCommon.Border.Color1 = System.Drawing.SystemColors.ControlDarkDark;
-            this.kryptonHeader1.StateCommon.Border.Color2 = System.Drawing.SystemColors.ControlDarkDark;
-            this.kryptonHeader1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonHeader1.TabIndex = 1;
-            this.kryptonHeader1.Values.Description = "";
-            this.kryptonHeader1.Values.Heading = "Randevu Detayları";
-            this.kryptonHeader1.Values.Image = global::VeterinaryApp.Properties.Resources.appointment3;
-            // 
-            // kryptonPanel1
-            // 
-            this.kryptonPanel1.Controls.Add(this.kryptonPanel2);
-            this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
-            this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(1670, 747);
-            this.kryptonPanel1.StateCommon.Color1 = System.Drawing.SystemColors.Control;
-            this.kryptonPanel1.StateCommon.Color2 = System.Drawing.SystemColors.Control;
-            this.kryptonPanel1.TabIndex = 2;
-            // 
-            // kryptonPanel2
-            // 
-            this.kryptonPanel2.AutoSize = true;
-            this.kryptonPanel2.Controls.Add(this.kryptonPanel4);
-            this.kryptonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel2.Location = new System.Drawing.Point(0, 0);
-            this.kryptonPanel2.Name = "kryptonPanel2";
-            this.kryptonPanel2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonPanel2.Size = new System.Drawing.Size(1670, 747);
-            this.kryptonPanel2.TabIndex = 0;
-            // 
-            // kryptonButton4
-            // 
-            this.kryptonButton4.Location = new System.Drawing.Point(23, 59);
-            this.kryptonButton4.Name = "kryptonButton4";
-            this.kryptonButton4.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton4.Size = new System.Drawing.Size(288, 44);
-            this.kryptonButton4.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonButton4.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonButton4.StateCommon.Border.Color1 = System.Drawing.Color.Black;
-            this.kryptonButton4.StateCommon.Border.Color2 = System.Drawing.Color.Black;
-            this.kryptonButton4.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton4.StateCommon.Border.Rounding = 15;
-            this.kryptonButton4.StateCommon.Border.Width = 1;
-            this.kryptonButton4.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
-            this.kryptonButton4.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.kryptonButton4.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton4.TabIndex = 28;
-            this.kryptonButton4.Values.Text = "Randevu İsteklerini Göster";
-            // 
-            // kryptonButton3
-            // 
-            this.kryptonButton3.Location = new System.Drawing.Point(23, 61);
-            this.kryptonButton3.Name = "kryptonButton3";
-            this.kryptonButton3.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton3.Size = new System.Drawing.Size(298, 44);
-            this.kryptonButton3.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonButton3.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonButton3.StateCommon.Border.Color1 = System.Drawing.Color.Black;
-            this.kryptonButton3.StateCommon.Border.Color2 = System.Drawing.Color.Black;
-            this.kryptonButton3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton3.StateCommon.Border.Rounding = 15;
-            this.kryptonButton3.StateCommon.Border.Width = 1;
-            this.kryptonButton3.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
-            this.kryptonButton3.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.kryptonButton3.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton3.TabIndex = 29;
-            this.kryptonButton3.Values.Text = "Randevu Detaylarını Görüntüle";
             // 
             // kryptonDataGridView3
             // 
@@ -309,6 +186,47 @@
             this.Column18.ReadOnly = true;
             this.Column18.Width = 125;
             // 
+            // kryptonHeader2
+            // 
+            this.kryptonHeader2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.kryptonHeader2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.kryptonHeader2.Location = new System.Drawing.Point(0, 0);
+            this.kryptonHeader2.Name = "kryptonHeader2";
+            this.kryptonHeader2.Size = new System.Drawing.Size(1670, 37);
+            this.kryptonHeader2.StateCommon.Back.Color1 = System.Drawing.SystemColors.ScrollBar;
+            this.kryptonHeader2.StateCommon.Back.Color2 = System.Drawing.SystemColors.ScrollBar;
+            this.kryptonHeader2.StateCommon.Border.Color1 = System.Drawing.SystemColors.ControlDarkDark;
+            this.kryptonHeader2.StateCommon.Border.Color2 = System.Drawing.SystemColors.ControlDarkDark;
+            this.kryptonHeader2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonHeader2.TabIndex = 15;
+            this.kryptonHeader2.Values.Description = "";
+            this.kryptonHeader2.Values.Heading = "Randevu İstekleri";
+            this.kryptonHeader2.Values.Image = global::VeterinaryApp.Properties.Resources.appointment2;
+            // 
+            // kryptonPanel4
+            // 
+            this.kryptonPanel4.Controls.Add(this.kryptonPanel3);
+            this.kryptonPanel4.Controls.Add(this.kryptonPanel5);
+            this.kryptonPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonPanel4.Location = new System.Drawing.Point(0, 0);
+            this.kryptonPanel4.Name = "kryptonPanel4";
+            this.kryptonPanel4.Size = new System.Drawing.Size(1670, 747);
+            this.kryptonPanel4.TabIndex = 3;
+            // 
+            // kryptonPanel3
+            // 
+            this.kryptonPanel3.Controls.Add(this.btnRandevuDetayGoster);
+            this.kryptonPanel3.Controls.Add(this.kryptonDataGridView1);
+            this.kryptonPanel3.Controls.Add(this.kryptonHeader1);
+            this.kryptonPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonPanel3.Location = new System.Drawing.Point(0, 437);
+            this.kryptonPanel3.Name = "kryptonPanel3";
+            this.kryptonPanel3.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.kryptonPanel3.Size = new System.Drawing.Size(1670, 310);
+            this.kryptonPanel3.TabIndex = 1;
+            // 
             // kryptonDataGridView1
             // 
             this.kryptonDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -412,6 +330,164 @@
             this.dataGridViewImageColumn2.ReadOnly = true;
             this.dataGridViewImageColumn2.Width = 125;
             // 
+            // kryptonHeader1
+            // 
+            this.kryptonHeader1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.kryptonHeader1.Location = new System.Drawing.Point(0, 0);
+            this.kryptonHeader1.Name = "kryptonHeader1";
+            this.kryptonHeader1.Size = new System.Drawing.Size(1670, 37);
+            this.kryptonHeader1.StateCommon.Back.Color1 = System.Drawing.SystemColors.ScrollBar;
+            this.kryptonHeader1.StateCommon.Back.Color2 = System.Drawing.SystemColors.ScrollBar;
+            this.kryptonHeader1.StateCommon.Border.Color1 = System.Drawing.SystemColors.ControlDarkDark;
+            this.kryptonHeader1.StateCommon.Border.Color2 = System.Drawing.SystemColors.ControlDarkDark;
+            this.kryptonHeader1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonHeader1.TabIndex = 1;
+            this.kryptonHeader1.Values.Description = "";
+            this.kryptonHeader1.Values.Heading = "Randevu Detayları";
+            this.kryptonHeader1.Values.Image = global::VeterinaryApp.Properties.Resources.appointment3;
+            // 
+            // kryptonPanel1
+            // 
+            this.kryptonPanel1.Controls.Add(this.kryptonPanel2);
+            this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
+            this.kryptonPanel1.Name = "kryptonPanel1";
+            this.kryptonPanel1.Size = new System.Drawing.Size(1670, 747);
+            this.kryptonPanel1.StateCommon.Color1 = System.Drawing.SystemColors.Control;
+            this.kryptonPanel1.StateCommon.Color2 = System.Drawing.SystemColors.Control;
+            this.kryptonPanel1.TabIndex = 2;
+            // 
+            // kryptonPanel2
+            // 
+            this.kryptonPanel2.AutoSize = true;
+            this.kryptonPanel2.Controls.Add(this.kryptonPanel4);
+            this.kryptonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonPanel2.Location = new System.Drawing.Point(0, 0);
+            this.kryptonPanel2.Name = "kryptonPanel2";
+            this.kryptonPanel2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.kryptonPanel2.Size = new System.Drawing.Size(1670, 747);
+            this.kryptonPanel2.TabIndex = 0;
+            // 
+            // btnRandevuIstekGoster
+            // 
+            this.btnRandevuIstekGoster.Location = new System.Drawing.Point(23, 56);
+            this.btnRandevuIstekGoster.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRandevuIstekGoster.Name = "btnRandevuIstekGoster";
+            this.btnRandevuIstekGoster.OverrideDefault.Back.Color1 = System.Drawing.Color.Gray;
+            this.btnRandevuIstekGoster.OverrideDefault.Back.Color2 = System.Drawing.Color.DimGray;
+            this.btnRandevuIstekGoster.OverrideDefault.Back.ColorAngle = 45F;
+            this.btnRandevuIstekGoster.OverrideDefault.Border.Color1 = System.Drawing.Color.Gray;
+            this.btnRandevuIstekGoster.OverrideDefault.Border.Color2 = System.Drawing.Color.DimGray;
+            this.btnRandevuIstekGoster.OverrideDefault.Border.ColorAngle = 45F;
+            this.btnRandevuIstekGoster.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnRandevuIstekGoster.OverrideDefault.Border.Rounding = 18;
+            this.btnRandevuIstekGoster.OverrideDefault.Border.Width = 1;
+            this.btnRandevuIstekGoster.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.btnRandevuIstekGoster.Size = new System.Drawing.Size(339, 50);
+            this.btnRandevuIstekGoster.StateCommon.Back.Color1 = System.Drawing.Color.Gray;
+            this.btnRandevuIstekGoster.StateCommon.Back.Color2 = System.Drawing.Color.Gray;
+            this.btnRandevuIstekGoster.StateCommon.Back.ColorAngle = 45F;
+            this.btnRandevuIstekGoster.StateCommon.Border.Color1 = System.Drawing.Color.Black;
+            this.btnRandevuIstekGoster.StateCommon.Border.Color2 = System.Drawing.Color.Black;
+            this.btnRandevuIstekGoster.StateCommon.Border.ColorAngle = 45F;
+            this.btnRandevuIstekGoster.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnRandevuIstekGoster.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnRandevuIstekGoster.StateCommon.Border.Rounding = 18;
+            this.btnRandevuIstekGoster.StateCommon.Border.Width = 1;
+            this.btnRandevuIstekGoster.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnRandevuIstekGoster.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnRandevuIstekGoster.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Arial", 12.25F, System.Drawing.FontStyle.Bold);
+            this.btnRandevuIstekGoster.StatePressed.Back.Color1 = System.Drawing.Color.DarkGray;
+            this.btnRandevuIstekGoster.StatePressed.Back.Color2 = System.Drawing.Color.DimGray;
+            this.btnRandevuIstekGoster.StatePressed.Back.ColorAngle = 130F;
+            this.btnRandevuIstekGoster.StatePressed.Border.Color1 = System.Drawing.Color.DarkGray;
+            this.btnRandevuIstekGoster.StatePressed.Border.Color2 = System.Drawing.Color.DimGray;
+            this.btnRandevuIstekGoster.StatePressed.Border.ColorAngle = 130F;
+            this.btnRandevuIstekGoster.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnRandevuIstekGoster.StatePressed.Border.Rounding = 18;
+            this.btnRandevuIstekGoster.StatePressed.Border.Width = 1;
+            this.btnRandevuIstekGoster.StateTracking.Back.Color1 = System.Drawing.Color.Gray;
+            this.btnRandevuIstekGoster.StateTracking.Back.Color2 = System.Drawing.Color.Gray;
+            this.btnRandevuIstekGoster.StateTracking.Back.ColorAngle = 45F;
+            this.btnRandevuIstekGoster.StateTracking.Border.Color1 = System.Drawing.Color.DarkGray;
+            this.btnRandevuIstekGoster.StateTracking.Border.Color2 = System.Drawing.Color.DimGray;
+            this.btnRandevuIstekGoster.StateTracking.Border.ColorAngle = 45F;
+            this.btnRandevuIstekGoster.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnRandevuIstekGoster.StateTracking.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnRandevuIstekGoster.StateTracking.Border.Rounding = 18;
+            this.btnRandevuIstekGoster.StateTracking.Border.Width = 1;
+            this.btnRandevuIstekGoster.TabIndex = 30;
+            this.btnRandevuIstekGoster.Values.Text = "Randevu İsteklerini Göster";
+            // 
+            // btnRandevuDetayGoster
+            // 
+            this.btnRandevuDetayGoster.Location = new System.Drawing.Point(23, 62);
+            this.btnRandevuDetayGoster.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRandevuDetayGoster.Name = "btnRandevuDetayGoster";
+            this.btnRandevuDetayGoster.OverrideDefault.Back.Color1 = System.Drawing.Color.Gray;
+            this.btnRandevuDetayGoster.OverrideDefault.Back.Color2 = System.Drawing.Color.DimGray;
+            this.btnRandevuDetayGoster.OverrideDefault.Back.ColorAngle = 45F;
+            this.btnRandevuDetayGoster.OverrideDefault.Border.Color1 = System.Drawing.Color.Gray;
+            this.btnRandevuDetayGoster.OverrideDefault.Border.Color2 = System.Drawing.Color.DimGray;
+            this.btnRandevuDetayGoster.OverrideDefault.Border.ColorAngle = 45F;
+            this.btnRandevuDetayGoster.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnRandevuDetayGoster.OverrideDefault.Border.Rounding = 18;
+            this.btnRandevuDetayGoster.OverrideDefault.Border.Width = 1;
+            this.btnRandevuDetayGoster.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.btnRandevuDetayGoster.Size = new System.Drawing.Size(339, 50);
+            this.btnRandevuDetayGoster.StateCommon.Back.Color1 = System.Drawing.Color.Gray;
+            this.btnRandevuDetayGoster.StateCommon.Back.Color2 = System.Drawing.Color.Gray;
+            this.btnRandevuDetayGoster.StateCommon.Back.ColorAngle = 45F;
+            this.btnRandevuDetayGoster.StateCommon.Border.Color1 = System.Drawing.Color.Black;
+            this.btnRandevuDetayGoster.StateCommon.Border.Color2 = System.Drawing.Color.Black;
+            this.btnRandevuDetayGoster.StateCommon.Border.ColorAngle = 45F;
+            this.btnRandevuDetayGoster.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnRandevuDetayGoster.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnRandevuDetayGoster.StateCommon.Border.Rounding = 18;
+            this.btnRandevuDetayGoster.StateCommon.Border.Width = 1;
+            this.btnRandevuDetayGoster.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnRandevuDetayGoster.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnRandevuDetayGoster.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Arial", 12.25F, System.Drawing.FontStyle.Bold);
+            this.btnRandevuDetayGoster.StatePressed.Back.Color1 = System.Drawing.Color.DarkGray;
+            this.btnRandevuDetayGoster.StatePressed.Back.Color2 = System.Drawing.Color.DimGray;
+            this.btnRandevuDetayGoster.StatePressed.Back.ColorAngle = 130F;
+            this.btnRandevuDetayGoster.StatePressed.Border.Color1 = System.Drawing.Color.DarkGray;
+            this.btnRandevuDetayGoster.StatePressed.Border.Color2 = System.Drawing.Color.DimGray;
+            this.btnRandevuDetayGoster.StatePressed.Border.ColorAngle = 130F;
+            this.btnRandevuDetayGoster.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnRandevuDetayGoster.StatePressed.Border.Rounding = 18;
+            this.btnRandevuDetayGoster.StatePressed.Border.Width = 1;
+            this.btnRandevuDetayGoster.StateTracking.Back.Color1 = System.Drawing.Color.Gray;
+            this.btnRandevuDetayGoster.StateTracking.Back.Color2 = System.Drawing.Color.Gray;
+            this.btnRandevuDetayGoster.StateTracking.Back.ColorAngle = 45F;
+            this.btnRandevuDetayGoster.StateTracking.Border.Color1 = System.Drawing.Color.DarkGray;
+            this.btnRandevuDetayGoster.StateTracking.Border.Color2 = System.Drawing.Color.DimGray;
+            this.btnRandevuDetayGoster.StateTracking.Border.ColorAngle = 45F;
+            this.btnRandevuDetayGoster.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnRandevuDetayGoster.StateTracking.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnRandevuDetayGoster.StateTracking.Border.Rounding = 18;
+            this.btnRandevuDetayGoster.StateTracking.Border.Width = 1;
+            this.btnRandevuDetayGoster.TabIndex = 31;
+            this.btnRandevuDetayGoster.Values.Text = "Randevu Detaylarını Göster";
+            // 
             // FormRandevu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -423,18 +499,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel5)).EndInit();
             this.kryptonPanel5.ResumeLayout(false);
             this.kryptonPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
             this.kryptonPanel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).EndInit();
             this.kryptonPanel3.ResumeLayout(false);
             this.kryptonPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).EndInit();
             this.kryptonPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -448,8 +524,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel2;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton4;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton3;
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridView kryptonDataGridView3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
@@ -468,5 +542,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnRandevuIstekGoster;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnRandevuDetayGoster;
     }
 }
