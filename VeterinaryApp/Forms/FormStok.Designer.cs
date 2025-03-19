@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormStok));
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.numericStokMiktari = new ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown();
             this.comboUrunTuru = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.btnSil = new ComponentFactory.Krypton.Toolkit.KryptonButton();
@@ -39,31 +38,24 @@
             this.txtSatis = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.btnFiltreyiTemizle = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.txtArama = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonDataGridView1 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kryptonDataGridView2 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblUrunAdi = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.lblUrunTuru = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.lblStokMiktari = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.lblAlisFiyati = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.lblSatisFiyati = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.comboUrunTuru)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(640, 577);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 41;
-            this.pictureBox2.TabStop = false;
             // 
             // numericStokMiktari
             // 
@@ -109,7 +101,7 @@
             // 
             // btnSil
             // 
-            this.btnSil.Location = new System.Drawing.Point(1226, 48);
+            this.btnSil.Location = new System.Drawing.Point(1248, 37);
             this.btnSil.Margin = new System.Windows.Forms.Padding(4);
             this.btnSil.Name = "btnSil";
             this.btnSil.OverrideDefault.Back.Color1 = System.Drawing.Color.Gray;
@@ -168,7 +160,7 @@
             // 
             // btnEkle
             // 
-            this.btnEkle.Location = new System.Drawing.Point(1022, 48);
+            this.btnEkle.Location = new System.Drawing.Point(1044, 37);
             this.btnEkle.Margin = new System.Windows.Forms.Padding(4);
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.OverrideDefault.Back.Color1 = System.Drawing.Color.Gray;
@@ -246,7 +238,7 @@
             // 
             // txtAlis
             // 
-            this.txtAlis.Location = new System.Drawing.Point(646, 48);
+            this.txtAlis.Location = new System.Drawing.Point(646, 50);
             this.txtAlis.Margin = new System.Windows.Forms.Padding(4);
             this.txtAlis.Name = "txtAlis";
             this.txtAlis.Size = new System.Drawing.Size(164, 36);
@@ -265,7 +257,7 @@
             // 
             // txtSatis
             // 
-            this.txtSatis.Location = new System.Drawing.Point(831, 48);
+            this.txtSatis.Location = new System.Drawing.Point(831, 50);
             this.txtSatis.Margin = new System.Windows.Forms.Padding(4);
             this.txtSatis.Name = "txtSatis";
             this.txtSatis.Size = new System.Drawing.Size(167, 36);
@@ -285,7 +277,7 @@
             // btnFiltreyiTemizle
             // 
             this.btnFiltreyiTemizle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnFiltreyiTemizle.Location = new System.Drawing.Point(686, 577);
+            this.btnFiltreyiTemizle.Location = new System.Drawing.Point(695, 681);
             this.btnFiltreyiTemizle.Margin = new System.Windows.Forms.Padding(4);
             this.btnFiltreyiTemizle.Name = "btnFiltreyiTemizle";
             this.btnFiltreyiTemizle.OverrideDefault.Back.Color1 = System.Drawing.Color.Gray;
@@ -345,7 +337,7 @@
             // txtArama
             // 
             this.txtArama.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtArama.Location = new System.Drawing.Point(23, 577);
+            this.txtArama.Location = new System.Drawing.Point(23, 681);
             this.txtArama.Margin = new System.Windows.Forms.Padding(4);
             this.txtArama.Name = "txtArama";
             this.txtArama.Size = new System.Drawing.Size(609, 36);
@@ -362,105 +354,164 @@
             this.txtArama.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.txtArama.TabIndex = 31;
             // 
-            // kryptonDataGridView1
+            // kryptonDataGridView2
             // 
-            this.kryptonDataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.kryptonDataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.kryptonDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.kryptonDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5});
-            this.kryptonDataGridView1.Location = new System.Drawing.Point(13, 124);
-            this.kryptonDataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.kryptonDataGridView1.Name = "kryptonDataGridView1";
-            this.kryptonDataGridView1.RowHeadersWidth = 51;
-            this.kryptonDataGridView1.Size = new System.Drawing.Size(1235, 419);
-            this.kryptonDataGridView1.StateCommon.Background.Color1 = System.Drawing.Color.DimGray;
-            this.kryptonDataGridView1.StateCommon.Background.Color2 = System.Drawing.Color.DimGray;
-            this.kryptonDataGridView1.StateCommon.Background.ColorAngle = 45F;
-            this.kryptonDataGridView1.StateCommon.Background.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonDataGridView1.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
-            this.kryptonDataGridView1.StateCommon.DataCell.Back.Color1 = System.Drawing.Color.DimGray;
-            this.kryptonDataGridView1.StateCommon.DataCell.Back.Color2 = System.Drawing.Color.DimGray;
-            this.kryptonDataGridView1.StateCommon.DataCell.Back.ColorAngle = 45F;
-            this.kryptonDataGridView1.StateCommon.DataCell.Border.Color1 = System.Drawing.Color.Black;
-            this.kryptonDataGridView1.StateCommon.DataCell.Border.Color2 = System.Drawing.Color.Black;
-            this.kryptonDataGridView1.StateCommon.DataCell.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonDataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.kryptonDataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column6,
+            this.Column7,
+            this.Column8,
+            this.Column9,
+            this.Column10});
+            this.kryptonDataGridView2.Location = new System.Drawing.Point(23, 114);
+            this.kryptonDataGridView2.Name = "kryptonDataGridView2";
+            this.kryptonDataGridView2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.kryptonDataGridView2.ReadOnly = true;
+            this.kryptonDataGridView2.RowHeadersWidth = 51;
+            this.kryptonDataGridView2.RowTemplate.Height = 24;
+            this.kryptonDataGridView2.Size = new System.Drawing.Size(904, 570);
+            this.kryptonDataGridView2.StateCommon.Background.Color1 = System.Drawing.Color.LightGray;
+            this.kryptonDataGridView2.StateCommon.Background.Color2 = System.Drawing.Color.LightGray;
+            this.kryptonDataGridView2.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
+            this.kryptonDataGridView2.StateNormal.DataCell.Back.Color1 = System.Drawing.Color.LightGray;
+            this.kryptonDataGridView2.StateNormal.DataCell.Border.Color1 = System.Drawing.Color.Black;
+            this.kryptonDataGridView2.StateNormal.DataCell.Border.Color2 = System.Drawing.Color.Black;
+            this.kryptonDataGridView2.StateNormal.DataCell.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonDataGridView1.StateCommon.DataCell.Content.Color1 = System.Drawing.Color.WhiteSmoke;
-            this.kryptonDataGridView1.StateCommon.DataCell.Content.Color2 = System.Drawing.Color.WhiteSmoke;
-            this.kryptonDataGridView1.StateCommon.DataCell.Content.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.kryptonDataGridView1.StateCommon.HeaderColumn.Back.Color1 = System.Drawing.Color.DarkGray;
-            this.kryptonDataGridView1.StateCommon.HeaderColumn.Back.Color2 = System.Drawing.Color.DarkGray;
-            this.kryptonDataGridView1.StateCommon.HeaderColumn.Back.ColorAngle = 45F;
-            this.kryptonDataGridView1.StateCommon.HeaderColumn.Border.Color1 = System.Drawing.Color.Black;
-            this.kryptonDataGridView1.StateCommon.HeaderColumn.Border.Color2 = System.Drawing.Color.Black;
-            this.kryptonDataGridView1.StateCommon.HeaderColumn.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonDataGridView2.StateNormal.HeaderColumn.Back.Color1 = System.Drawing.Color.WhiteSmoke;
+            this.kryptonDataGridView2.StateNormal.HeaderColumn.Border.Color1 = System.Drawing.Color.Black;
+            this.kryptonDataGridView2.StateNormal.HeaderColumn.Border.Color2 = System.Drawing.Color.Black;
+            this.kryptonDataGridView2.StateNormal.HeaderColumn.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonDataGridView1.StateCommon.HeaderColumn.Border.Rounding = 4;
-            this.kryptonDataGridView1.StateCommon.HeaderColumn.Content.Color1 = System.Drawing.Color.WhiteSmoke;
-            this.kryptonDataGridView1.StateCommon.HeaderColumn.Content.Color2 = System.Drawing.Color.WhiteSmoke;
-            this.kryptonDataGridView1.StateCommon.HeaderColumn.Content.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
-            this.kryptonDataGridView1.StateCommon.HeaderRow.Back.Color1 = System.Drawing.Color.Gray;
-            this.kryptonDataGridView1.StateCommon.HeaderRow.Back.Color2 = System.Drawing.Color.Gray;
-            this.kryptonDataGridView1.StateCommon.HeaderRow.Back.ColorAngle = 45F;
-            this.kryptonDataGridView1.StateCommon.HeaderRow.Back.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonDataGridView1.StateCommon.HeaderRow.Border.Color1 = System.Drawing.Color.Black;
-            this.kryptonDataGridView1.StateCommon.HeaderRow.Border.Color2 = System.Drawing.Color.Black;
-            this.kryptonDataGridView1.StateCommon.HeaderRow.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.kryptonDataGridView2.StateNormal.HeaderRow.Back.Color1 = System.Drawing.Color.LightGray;
+            this.kryptonDataGridView2.StateNormal.HeaderRow.Border.Color1 = System.Drawing.Color.Black;
+            this.kryptonDataGridView2.StateNormal.HeaderRow.Border.Color2 = System.Drawing.Color.Black;
+            this.kryptonDataGridView2.StateNormal.HeaderRow.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonDataGridView1.TabIndex = 30;
+            this.kryptonDataGridView2.TabIndex = 43;
             // 
-            // Column1
+            // Column6
             // 
-            this.Column1.HeaderText = "Ürün Adı";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
+            this.Column6.HeaderText = "Ürün Adı";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Width = 125;
             // 
-            // Column2
+            // Column7
             // 
-            this.Column2.HeaderText = "Ürün Türü";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
+            this.Column7.HeaderText = "Ürün Türü";
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            this.Column7.Width = 125;
             // 
-            // Column3
+            // Column8
             // 
-            this.Column3.HeaderText = "Stok Miktarı";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
+            this.Column8.HeaderText = "Stok Miktarı";
+            this.Column8.MinimumWidth = 6;
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            this.Column8.Width = 125;
             // 
-            // Column4
+            // Column9
             // 
-            this.Column4.HeaderText = "Alış Fiyatı";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
+            this.Column9.HeaderText = "Alış Fiyatı";
+            this.Column9.MinimumWidth = 6;
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            this.Column9.Width = 125;
             // 
-            // Column5
+            // Column10
             // 
-            this.Column5.HeaderText = "Satış Fiyatı";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
+            this.Column10.HeaderText = "Satış Fiyatı";
+            this.Column10.MinimumWidth = 6;
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            this.Column10.Width = 125;
+            // 
+            // lblUrunAdi
+            // 
+            this.lblUrunAdi.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.BoldControl;
+            this.lblUrunAdi.Location = new System.Drawing.Point(23, 15);
+            this.lblUrunAdi.Name = "lblUrunAdi";
+            this.lblUrunAdi.Size = new System.Drawing.Size(93, 28);
+            this.lblUrunAdi.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
+            this.lblUrunAdi.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblUrunAdi.TabIndex = 44;
+            this.lblUrunAdi.Values.Text = "Ürün Adı";
+            // 
+            // lblUrunTuru
+            // 
+            this.lblUrunTuru.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.BoldControl;
+            this.lblUrunTuru.Location = new System.Drawing.Point(207, 12);
+            this.lblUrunTuru.Name = "lblUrunTuru";
+            this.lblUrunTuru.Size = new System.Drawing.Size(106, 28);
+            this.lblUrunTuru.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
+            this.lblUrunTuru.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblUrunTuru.TabIndex = 45;
+            this.lblUrunTuru.Values.Text = "Ürün Türü";
+            // 
+            // lblStokMiktari
+            // 
+            this.lblStokMiktari.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.BoldControl;
+            this.lblStokMiktari.Location = new System.Drawing.Point(422, 12);
+            this.lblStokMiktari.Name = "lblStokMiktari";
+            this.lblStokMiktari.Size = new System.Drawing.Size(121, 28);
+            this.lblStokMiktari.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
+            this.lblStokMiktari.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblStokMiktari.TabIndex = 46;
+            this.lblStokMiktari.Values.Text = "Stok Miktarı";
+            // 
+            // lblAlisFiyati
+            // 
+            this.lblAlisFiyati.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.BoldControl;
+            this.lblAlisFiyati.Location = new System.Drawing.Point(646, 12);
+            this.lblAlisFiyati.Name = "lblAlisFiyati";
+            this.lblAlisFiyati.Size = new System.Drawing.Size(102, 28);
+            this.lblAlisFiyati.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
+            this.lblAlisFiyati.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblAlisFiyati.TabIndex = 47;
+            this.lblAlisFiyati.Values.Text = "Alış Fiyatı";
+            // 
+            // lblSatisFiyati
+            // 
+            this.lblSatisFiyati.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.BoldControl;
+            this.lblSatisFiyati.Location = new System.Drawing.Point(831, 15);
+            this.lblSatisFiyati.Name = "lblSatisFiyati";
+            this.lblSatisFiyati.Size = new System.Drawing.Size(114, 28);
+            this.lblSatisFiyati.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
+            this.lblSatisFiyati.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblSatisFiyati.TabIndex = 48;
+            this.lblSatisFiyati.Values.Text = "Satış Fiyatı";
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(13, 124);
+            this.pictureBox3.Location = new System.Drawing.Point(23, 114);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(57, 63);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox3.TabIndex = 42;
             this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(646, 681);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 41;
+            this.pictureBox2.TabStop = false;
             // 
             // FormStok
             // 
@@ -468,9 +519,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1582, 753);
+            this.Controls.Add(this.lblSatisFiyati);
+            this.Controls.Add(this.lblAlisFiyati);
+            this.Controls.Add(this.lblStokMiktari);
+            this.Controls.Add(this.lblUrunTuru);
+            this.Controls.Add(this.lblUrunAdi);
             this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.kryptonDataGridView2);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.kryptonDataGridView1);
             this.Controls.Add(this.btnFiltreyiTemizle);
             this.Controls.Add(this.txtArama);
             this.Controls.Add(this.numericStokMiktari);
@@ -484,10 +540,10 @@
             this.Name = "FormStok";
             this.ShowIcon = false;
             this.Text = "Stok";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboUrunTuru)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -505,12 +561,17 @@
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtSatis;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnFiltreyiTemizle;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtArama;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridView kryptonDataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private ComponentFactory.Krypton.Toolkit.KryptonDataGridView kryptonDataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel lblUrunAdi;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel lblUrunTuru;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel lblStokMiktari;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel lblAlisFiyati;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel lblSatisFiyati;
     }
 }

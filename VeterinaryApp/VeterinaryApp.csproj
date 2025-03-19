@@ -194,5 +194,83 @@
   <ItemGroup>
     <None Include="Resources\financial3.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign_in_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock_icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treatment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pet_phonendoscope_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pet_vet_veterinarian_icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VetClinic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animal_hospital_pet_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pets_vet_animal health_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pet_vet_veterinarian_icon21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animal_care_pet_vet_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pet_vet_veterinarian_icon22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\care_pet_vet_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animal_dog_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animal_dog_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat_icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person_icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animal_turtle_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animal_bird_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animal_bunny_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animal_cute_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animal_cat_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animal_dog_icon2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
