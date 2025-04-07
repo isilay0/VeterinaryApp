@@ -52,8 +52,8 @@
             this.txtArama = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.comboDoktor = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.txtIslem = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
+            this.ComboIslem = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
             this.kryptonPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView2)).BeginInit();
@@ -61,6 +61,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.comboDoktor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ComboIslem)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
@@ -540,7 +541,7 @@
             this.comboDoktor.DropBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ButtonFormClose;
             this.comboDoktor.DropButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Alternate;
             this.comboDoktor.DropDownWidth = 134;
-            this.comboDoktor.Location = new System.Drawing.Point(23, 50);
+            this.comboDoktor.Location = new System.Drawing.Point(22, 54);
             this.comboDoktor.Margin = new System.Windows.Forms.Padding(4);
             this.comboDoktor.MaxDropDownItems = 10;
             this.comboDoktor.Name = "comboDoktor";
@@ -562,6 +563,7 @@
             // 
             // kryptonPanel1
             // 
+            this.kryptonPanel1.Controls.Add(this.ComboIslem);
             this.kryptonPanel1.Controls.Add(this.label4);
             this.kryptonPanel1.Controls.Add(this.label1);
             this.kryptonPanel1.Controls.Add(this.btnSil);
@@ -573,7 +575,6 @@
             this.kryptonPanel1.Controls.Add(this.numericMuayeneUcreti);
             this.kryptonPanel1.Controls.Add(this.txtDoktorNotu);
             this.kryptonPanel1.Controls.Add(this.comboDoktor);
-            this.kryptonPanel1.Controls.Add(this.txtIslem);
             this.kryptonPanel1.Location = new System.Drawing.Point(3, -3);
             this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPanel1.Name = "kryptonPanel1";
@@ -584,25 +585,6 @@
             this.kryptonPanel1.StateCommon.ColorAngle = 45F;
             this.kryptonPanel1.StateCommon.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.kryptonPanel1.TabIndex = 6;
-            // 
-            // txtIslem
-            // 
-            this.txtIslem.Location = new System.Drawing.Point(237, 50);
-            this.txtIslem.Margin = new System.Windows.Forms.Padding(4);
-            this.txtIslem.Name = "txtIslem";
-            this.txtIslem.Size = new System.Drawing.Size(332, 36);
-            this.txtIslem.StateCommon.Back.Color1 = System.Drawing.Color.Silver;
-            this.txtIslem.StateCommon.Border.Color1 = System.Drawing.Color.Black;
-            this.txtIslem.StateCommon.Border.Color2 = System.Drawing.Color.Black;
-            this.txtIslem.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtIslem.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.txtIslem.StateCommon.Border.Rounding = 18;
-            this.txtIslem.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.txtIslem.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtIslem.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.txtIslem.TabIndex = 1;
             // 
             // kryptonPalette1
             // 
@@ -632,6 +614,31 @@
             this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.ButtonEdgeInset = 12;
             this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, -1, -1);
             // 
+            // ComboIslem
+            // 
+            this.ComboIslem.DropBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ButtonFormClose;
+            this.ComboIslem.DropButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Alternate;
+            this.ComboIslem.DropDownWidth = 134;
+            this.ComboIslem.Location = new System.Drawing.Point(252, 54);
+            this.ComboIslem.Margin = new System.Windows.Forms.Padding(4);
+            this.ComboIslem.MaxDropDownItems = 10;
+            this.ComboIslem.Name = "ComboIslem";
+            this.ComboIslem.Size = new System.Drawing.Size(317, 37);
+            this.ComboIslem.StateCommon.ComboBox.Back.Color1 = System.Drawing.SystemColors.ScrollBar;
+            this.ComboIslem.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Black;
+            this.ComboIslem.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.Black;
+            this.ComboIslem.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.ComboIslem.StateCommon.ComboBox.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.ComboIslem.StateCommon.ComboBox.Border.Rounding = 18;
+            this.ComboIslem.StateCommon.ComboBox.Border.Width = 1;
+            this.ComboIslem.StateCommon.ComboBox.Content.Color1 = System.Drawing.Color.Silver;
+            this.ComboIslem.StateCommon.DropBack.Color1 = System.Drawing.Color.DarkGray;
+            this.ComboIslem.StateCommon.DropBack.Color2 = System.Drawing.Color.Silver;
+            this.ComboIslem.StateCommon.Item.Back.Color1 = System.Drawing.Color.White;
+            this.ComboIslem.TabIndex = 12;
+            // 
             // FormMuayene
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -652,6 +659,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ComboIslem)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -673,7 +681,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtArama;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox comboDoktor;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtIslem;
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridView kryptonDataGridView2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
@@ -681,5 +688,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox ComboIslem;
     }
 }

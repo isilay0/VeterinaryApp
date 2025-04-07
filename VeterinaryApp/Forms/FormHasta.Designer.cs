@@ -56,9 +56,9 @@
             this.kryptonPanel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonPanel4 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonPanel3 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.ComboBoxHayvanArat = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.kryptonPanel5 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.ComBoxMusteriArat = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.txtMusteriArat = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.txtHayvanArat = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewHayvanBilgi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewMusteriBilgi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
@@ -69,10 +69,8 @@
             this.kryptonPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).BeginInit();
             this.kryptonPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ComboBoxHayvanArat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel5)).BeginInit();
             this.kryptonPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ComBoxMusteriArat)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonLabel14
@@ -293,7 +291,7 @@
             this.Column6,
             this.Column7,
             this.Column8});
-            this.DataGridViewMusteriBilgi.Location = new System.Drawing.Point(21, 103);
+            this.DataGridViewMusteriBilgi.Location = new System.Drawing.Point(12, 114);
             this.DataGridViewMusteriBilgi.Name = "DataGridViewMusteriBilgi";
             this.DataGridViewMusteriBilgi.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.DataGridViewMusteriBilgi.ReadOnly = true;
@@ -372,7 +370,7 @@
             // 
             // kryptonPanel3
             // 
-            this.kryptonPanel3.Controls.Add(this.ComboBoxHayvanArat);
+            this.kryptonPanel3.Controls.Add(this.txtHayvanArat);
             this.kryptonPanel3.Controls.Add(this.DataGridViewHayvanBilgi);
             this.kryptonPanel3.Controls.Add(this.kryptonLabel1);
             this.kryptonPanel3.Controls.Add(this.kryptonHeader1);
@@ -383,25 +381,9 @@
             this.kryptonPanel3.Size = new System.Drawing.Size(1146, 210);
             this.kryptonPanel3.TabIndex = 1;
             // 
-            // ComboBoxHayvanArat
-            // 
-            this.ComboBoxHayvanArat.DropButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Alternate;
-            this.ComboBoxHayvanArat.DropDownWidth = 190;
-            this.ComboBoxHayvanArat.Location = new System.Drawing.Point(137, 54);
-            this.ComboBoxHayvanArat.Name = "ComboBoxHayvanArat";
-            this.ComboBoxHayvanArat.Size = new System.Drawing.Size(232, 35);
-            this.ComboBoxHayvanArat.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ComboBoxHayvanArat.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Black;
-            this.ComboBoxHayvanArat.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.ComboBoxHayvanArat.StateCommon.ComboBox.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.None;
-            this.ComboBoxHayvanArat.StateCommon.ComboBox.Border.Rounding = 15;
-            this.ComboBoxHayvanArat.TabIndex = 34;
-            // 
             // kryptonPanel5
             // 
-            this.kryptonPanel5.Controls.Add(this.ComBoxMusteriArat);
+            this.kryptonPanel5.Controls.Add(this.txtMusteriArat);
             this.kryptonPanel5.Controls.Add(this.DataGridViewMusteriBilgi);
             this.kryptonPanel5.Controls.Add(this.kryptonLabel14);
             this.kryptonPanel5.Controls.Add(this.kryptonHeader2);
@@ -412,21 +394,31 @@
             this.kryptonPanel5.Size = new System.Drawing.Size(1146, 437);
             this.kryptonPanel5.TabIndex = 0;
             // 
-            // ComBoxMusteriArat
+            // txtMusteriArat
             // 
-            this.ComBoxMusteriArat.DropButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Alternate;
-            this.ComBoxMusteriArat.DropDownWidth = 190;
-            this.ComBoxMusteriArat.Location = new System.Drawing.Point(153, 57);
-            this.ComBoxMusteriArat.Name = "ComBoxMusteriArat";
-            this.ComBoxMusteriArat.Size = new System.Drawing.Size(232, 35);
-            this.ComBoxMusteriArat.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ComBoxMusteriArat.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Black;
-            this.ComBoxMusteriArat.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtMusteriArat.Location = new System.Drawing.Point(138, 57);
+            this.txtMusteriArat.Name = "txtMusteriArat";
+            this.txtMusteriArat.Size = new System.Drawing.Size(232, 37);
+            this.txtMusteriArat.StateCommon.Back.Color1 = System.Drawing.Color.LightGray;
+            this.txtMusteriArat.StateCommon.Border.Color1 = System.Drawing.Color.Black;
+            this.txtMusteriArat.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.ComBoxMusteriArat.StateCommon.ComboBox.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.None;
-            this.ComBoxMusteriArat.StateCommon.ComboBox.Border.Rounding = 15;
-            this.ComBoxMusteriArat.TabIndex = 33;
+            this.txtMusteriArat.StateCommon.Border.Rounding = 15;
+            this.txtMusteriArat.TabIndex = 34;
+            // 
+            // txtHayvanArat
+            // 
+            this.txtHayvanArat.Location = new System.Drawing.Point(138, 54);
+            this.txtHayvanArat.Name = "txtHayvanArat";
+            this.txtHayvanArat.Size = new System.Drawing.Size(232, 37);
+            this.txtHayvanArat.StateCommon.Back.Color1 = System.Drawing.Color.LightGray;
+            this.txtHayvanArat.StateCommon.Border.Color1 = System.Drawing.Color.Black;
+            this.txtHayvanArat.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtHayvanArat.StateCommon.Border.Rounding = 15;
+            this.txtHayvanArat.TabIndex = 35;
             // 
             // FormHasta
             // 
@@ -448,11 +440,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).EndInit();
             this.kryptonPanel3.ResumeLayout(false);
             this.kryptonPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ComboBoxHayvanArat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel5)).EndInit();
             this.kryptonPanel5.ResumeLayout(false);
             this.kryptonPanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ComBoxMusteriArat)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -487,7 +477,7 @@
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel4;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel3;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel5;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox ComboBoxHayvanArat;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox ComBoxMusteriArat;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtHayvanArat;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtMusteriArat;
     }
 }
