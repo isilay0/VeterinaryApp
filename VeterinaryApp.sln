@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VeterinaryApp", "VeterinaryApp\VeterinaryApp.csproj", "{9935D055-3F57-4764-9CDE-D866920CE612}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VeterinaryApp.WebApi", "VeterinaryApp.WebApi\VeterinaryApp.WebApi.csproj", "{23B0B501-32E8-4188-BEB2-58F088EBFAEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{9935D055-3F57-4764-9CDE-D866920CE612}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9935D055-3F57-4764-9CDE-D866920CE612}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9935D055-3F57-4764-9CDE-D866920CE612}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23B0B501-32E8-4188-BEB2-58F088EBFAEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23B0B501-32E8-4188-BEB2-58F088EBFAEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23B0B501-32E8-4188-BEB2-58F088EBFAEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23B0B501-32E8-4188-BEB2-58F088EBFAEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
