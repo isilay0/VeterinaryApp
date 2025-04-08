@@ -12,6 +12,11 @@ namespace VeterinaryApp.WebApi.Model
         [Column("DOCTOR_ID")]
         [JsonProperty("doctorId")]
         public int DoctorId { get; set; }
+
+        [Column("ANIMAL_ID")]
+        [JsonProperty("animalId")]
+        public int AnimalId { get; set; }
+
         [Column("OPERATION")]
         [JsonProperty("operation")]
         public string? Operation { get; set; }
