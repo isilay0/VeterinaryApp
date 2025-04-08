@@ -32,12 +32,13 @@ namespace VeterinaryApp.WebApi.Repository
         public async Task<IEnumerable<Animal>> GetAll()
         {
             return await context.Animals.ToListAsync();
-            
+
         }
 
         public async Task<Animal> GetById(int id)
         {
-            return await context.Animals.FindAsync(id) ?? throw new EntityNotFoundException("Aranan Hayvan Bulunamadı.");
+            Animal an = await context.Animals.FindAsync(id) ?? throw new EntityNotFoundException("Aranan Hayvan Bulunamadı.");
+            return an;
         }
 
         public async Task Update(Animal animal)

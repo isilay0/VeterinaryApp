@@ -6,12 +6,12 @@ using VeterinaryApp.WebApi.Model;
 
 namespace VeterinaryApp.WebApi.Controllers
 {
-    public class DoctorController : Controller
+    public class ClinicController : Controller
     {
-        private readonly IDoctorService service;
-        private readonly ILogger<DoctorController> logger;
+        private readonly IClinicService service;
+        private readonly ILogger<ClinicController> logger;
 
-        public DoctorController(IDoctorService service, ILogger<DoctorController> logger)
+        public ClinicController(IClinicService service, ILogger<ClinicController> logger)
         {
             this.service = service;
             this.logger = logger;
@@ -51,12 +51,12 @@ namespace VeterinaryApp.WebApi.Controllers
 
         [HttpPost]
         [ActionName("Add")]
-        public async Task<IActionResult> Add([FromBody] Doctor doctor)
+        public async Task<IActionResult> Add([FromBody] Clinic clinic)
         {
             try
             {
-                await service.Add(doctor);
-                return Ok(new ResponseModel(true, message: "Doktor Eklendi"));
+                await service.Add(clinic);
+                return Ok(new ResponseModel(true, message: "Klinik Eklendi"));
             }
             catch (EntityAlreadyExistsException ex)
             {
@@ -64,18 +64,18 @@ namespace VeterinaryApp.WebApi.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(new ResponseModel(false, ex.Message, "Doktor Eklenemedi."));
+                return BadRequest(new ResponseModel(false, ex.Message, "Klinik Eklenemedi."));
             }
         }
 
         [HttpPut]
         [ActionName("Update")]
-        public async Task<IActionResult> Update([FromBody] Doctor doctor)
+        public async Task<IActionResult> Update([FromBody] Clinic clinic)
         {
             try
             {
-                await service.Update(doctor);
-                return Ok(new ResponseModel(true, message: "Doktor Güncellendi."));
+                await service.Update(clinic);
+                return Ok(new ResponseModel(true, message: "Klinik Güncellendi."));
             }
             catch (EntityNotFoundException ex)
             {
@@ -83,7 +83,7 @@ namespace VeterinaryApp.WebApi.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(new ResponseModel(false, ex.Message, "Doktor Güncellenemedi."));
+                return BadRequest(new ResponseModel(false, ex.Message, "Klinik Güncellenemedi."));
             }
 
         }
@@ -95,7 +95,7 @@ namespace VeterinaryApp.WebApi.Controllers
             try
             {
                 await service.Delete(id);
-                return Ok(new ResponseModel(true, message: "Doktor Silindi."));
+                return Ok(new ResponseModel(true, message: "Klinik Silindi."));
             }
             catch (EntityNotFoundException ex)
             {
@@ -103,7 +103,7 @@ namespace VeterinaryApp.WebApi.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(new ResponseModel(false, ex.Message, "Doktor Silinemedi."));
+                return BadRequest(new ResponseModel(false, ex.Message, "Klinik Silinemedi."));
             }
         }
 
