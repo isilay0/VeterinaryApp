@@ -117,37 +117,40 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Column6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Column7.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Column8.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Column9.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Column10.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAAdZJREFUSEvdlE1PwkAQhjnpf/HjD3jRn+TNeBIPGj1A1JaiV6Ql8YOTISS2atrQ
-        qlw0FA8aDSZ+RGMUlIMHdZ2pU7LgttqIF97kTQrdeWZ3dqax3tX2nj2sW/aibtquYdlNtPds2gu7pdIQ
-        LYuuQqHQD2AFQO+G5bAAv8F7ec11+yjsd0I4BO4IgELDRoxISQzTSfOA8rHLLq9v2P1j3XPt+paVj9y2
-        JBAjUXi4sOZ8WU7OLthDvSF09fScT/JmWAeDhAkWXqgfhDsXgXnjGn+9bjlJwgQLuqTqB2BZRFDeWK5W
-        AtOpECZYsIsXP+D+8UkI5Y1ruATPhAkWLoqS4I5LAHfXIEyw+BLh8UVQ3rWriCWCXSz4AdiKIijvw+NK
-        KwFsLkGYYOH4w2Joua8gbEURGN3Rpu+6uT9AmHDh+HOBXitiufBO0FiW9p07LLORZ3OKMk6IcOHYQzfp
-        PCDMm1tFNp1IsvnllddULjdCmHBhEhx/ALTK1Wn4qn5k1vMefEaSmKxqLKVqzZSqjhLmZ+H444Rih+CM
-        eIZnvFCs+eySXJxT0kzOqgj33ZRWc2OE+LsUVZ3g4P+TBMoS/5Ykq03S6+6IP4mc1abo7+7q6yRqnH72
-        jGKxTwDfRQ5K4wpbAAAAAElFTkSuQmCC
+        DAAACwwBP0AiyAAAAcpJREFUSEvdk0svQ0EUx634Lh5fwIaPZCdWakFqQXAf2FbnNvFaSSMxg8zEjMdG
+        01sLQkg8ohHPLiwwcm5zmZ65FfVY8E/+SXM753fu/O85TU3/VivrsoMKOU65DJmQFXD0m8uxtY2Ndnz+
+        08rn8y1USJ9x+cyE0nX8xLh0Z8OwGdd/KIAzLlcTgImmQrKGmjCuJk3ATiHUJ2fnunx9G/n47ELv7Ia1
+        jbhyMCdRkLkZy97Bkb66vUt0af/QbPLExFYb5lmCD2q+OYZiw5n3qNQo5lliQpbiAogFA7EhrrcGXBUx
+        zxIV6iEuKF/fWEBsOGM0uMc8S3CokQaXRgPG5R3mWTIjgutjIPbxaYMRwYbGBTCKGIi9XSi+30DIEcyz
+        BOtfHblqEYwihsZGY/pM+WYr5iUK1t8ojEYR4oJvAoZYat9c6cz8ok77fg9mJQrWngpFTcBHXlha1gMj
+        o3p4avrRy+U6MS9R0ATW34wLm3L5kplbjOCDjqNdEmiPBBWPkC7MqytYf9hQmBDYkchcFeGDQuZDE+5y
+        2p/UbpYAPHbFmcl1Y9aX5RPSa8B/p4lHSMpqkg368LlvybyJmw368f8/oupNSAo///t6BQDfRQ759t9I
+        AAAAAElFTkSuQmCC
 </value>
   </data>
   <metadata name="kryptonPalette1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
   </metadata>
 </root>
