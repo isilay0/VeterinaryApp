@@ -42,7 +42,7 @@
             this.btnEkle = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.txtDoktorNotu = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonPanel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonDataGridView2 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
+            this.muayeneDataGrid = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,16 +52,18 @@
             this.txtArama = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.comboDoktor = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.txtYapilanİslem = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cmbHastaHayvan = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
-            this.ComboIslem = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
             this.kryptonPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.muayeneDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboDoktor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ComboIslem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbHastaHayvan)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
@@ -70,10 +72,9 @@
             this.label4.BackColor = System.Drawing.Color.LightGray;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(247, 17);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(185, 14);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(158, 29);
+            this.label4.Size = new System.Drawing.Size(121, 24);
             this.label4.TabIndex = 11;
             this.label4.Text = "Yapılan İşlem";
             // 
@@ -83,17 +84,15 @@
             this.label1.BackColor = System.Drawing.Color.LightGray;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(17, 17);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(13, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(191, 29);
+            this.label1.Size = new System.Drawing.Size(149, 24);
             this.label1.TabIndex = 10;
             this.label1.Text = "Veteriner Seçimi";
             // 
             // btnSil
             // 
-            this.btnSil.Location = new System.Drawing.Point(389, 431);
-            this.btnSil.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSil.Location = new System.Drawing.Point(292, 350);
             this.btnSil.Name = "btnSil";
             this.btnSil.OverrideDefault.Back.Color1 = System.Drawing.Color.Gray;
             this.btnSil.OverrideDefault.Back.Color2 = System.Drawing.Color.DimGray;
@@ -107,7 +106,7 @@
             this.btnSil.OverrideDefault.Border.Rounding = 18;
             this.btnSil.OverrideDefault.Border.Width = 1;
             this.btnSil.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnSil.Size = new System.Drawing.Size(143, 50);
+            this.btnSil.Size = new System.Drawing.Size(107, 41);
             this.btnSil.StateCommon.Back.Color1 = System.Drawing.Color.Gray;
             this.btnSil.StateCommon.Back.Color2 = System.Drawing.Color.Gray;
             this.btnSil.StateCommon.Back.ColorAngle = 45F;
@@ -151,8 +150,7 @@
             // 
             // btnGuncelle
             // 
-            this.btnGuncelle.Location = new System.Drawing.Point(389, 373);
-            this.btnGuncelle.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGuncelle.Location = new System.Drawing.Point(292, 303);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.OverrideDefault.Back.Color1 = System.Drawing.Color.Gray;
             this.btnGuncelle.OverrideDefault.Back.Color2 = System.Drawing.Color.DimGray;
@@ -166,7 +164,7 @@
             this.btnGuncelle.OverrideDefault.Border.Rounding = 18;
             this.btnGuncelle.OverrideDefault.Border.Width = 1;
             this.btnGuncelle.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnGuncelle.Size = new System.Drawing.Size(143, 50);
+            this.btnGuncelle.Size = new System.Drawing.Size(107, 41);
             this.btnGuncelle.StateCommon.Back.Color1 = System.Drawing.Color.Gray;
             this.btnGuncelle.StateCommon.Back.Color2 = System.Drawing.Color.Gray;
             this.btnGuncelle.StateCommon.Back.ColorAngle = 45F;
@@ -214,10 +212,9 @@
             this.label3.BackColor = System.Drawing.Color.LightGray;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(363, 218);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(272, 177);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(179, 29);
+            this.label3.Size = new System.Drawing.Size(141, 24);
             this.label3.TabIndex = 7;
             this.label3.Text = "Muayene Tarihi";
             // 
@@ -227,20 +224,18 @@
             this.label2.BackColor = System.Drawing.Color.LightGray;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(361, 117);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(271, 95);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(180, 29);
+            this.label2.Size = new System.Drawing.Size(142, 24);
             this.label2.TabIndex = 6;
             this.label2.Text = "Muayene Ücreti";
             // 
             // dtpTarih
             // 
             this.dtpTarih.DropButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Gallery;
-            this.dtpTarih.Location = new System.Drawing.Point(348, 251);
-            this.dtpTarih.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpTarih.Location = new System.Drawing.Point(261, 204);
             this.dtpTarih.Name = "dtpTarih";
-            this.dtpTarih.Size = new System.Drawing.Size(221, 40);
+            this.dtpTarih.Size = new System.Drawing.Size(166, 35);
             this.dtpTarih.StateCommon.Back.Color1 = System.Drawing.Color.Silver;
             this.dtpTarih.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.dtpTarih.StateCommon.Border.Color2 = System.Drawing.Color.Black;
@@ -249,17 +244,16 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.dtpTarih.StateCommon.Border.Rounding = 18;
             this.dtpTarih.StateCommon.Border.Width = 1;
-            this.dtpTarih.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dtpTarih.StateNormal.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dtpTarih.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dtpTarih.StateNormal.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.dtpTarih.TabIndex = 5;
             this.dtpTarih.UpDownButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Gallery;
             // 
             // numericMuayeneUcreti
             // 
-            this.numericMuayeneUcreti.Location = new System.Drawing.Point(348, 150);
-            this.numericMuayeneUcreti.Margin = new System.Windows.Forms.Padding(4);
+            this.numericMuayeneUcreti.Location = new System.Drawing.Point(261, 122);
             this.numericMuayeneUcreti.Name = "numericMuayeneUcreti";
-            this.numericMuayeneUcreti.Size = new System.Drawing.Size(221, 38);
+            this.numericMuayeneUcreti.Size = new System.Drawing.Size(166, 34);
             this.numericMuayeneUcreti.StateCommon.Back.Color1 = System.Drawing.Color.Silver;
             this.numericMuayeneUcreti.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.numericMuayeneUcreti.StateCommon.Border.Color2 = System.Drawing.Color.Black;
@@ -273,8 +267,7 @@
             // 
             // btnFiltreyiTemizle
             // 
-            this.btnFiltreyiTemizle.Location = new System.Drawing.Point(436, 42);
-            this.btnFiltreyiTemizle.Margin = new System.Windows.Forms.Padding(4);
+            this.btnFiltreyiTemizle.Location = new System.Drawing.Point(327, 34);
             this.btnFiltreyiTemizle.Name = "btnFiltreyiTemizle";
             this.btnFiltreyiTemizle.OverrideDefault.Back.Color1 = System.Drawing.Color.Gray;
             this.btnFiltreyiTemizle.OverrideDefault.Back.Color2 = System.Drawing.Color.DimGray;
@@ -288,7 +281,7 @@
             this.btnFiltreyiTemizle.OverrideDefault.Border.Rounding = 18;
             this.btnFiltreyiTemizle.OverrideDefault.Border.Width = 1;
             this.btnFiltreyiTemizle.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnFiltreyiTemizle.Size = new System.Drawing.Size(347, 49);
+            this.btnFiltreyiTemizle.Size = new System.Drawing.Size(260, 40);
             this.btnFiltreyiTemizle.StateCommon.Back.Color1 = System.Drawing.Color.Gray;
             this.btnFiltreyiTemizle.StateCommon.Back.Color2 = System.Drawing.Color.Gray;
             this.btnFiltreyiTemizle.StateCommon.Back.ColorAngle = 45F;
@@ -332,8 +325,7 @@
             // 
             // btnEkle
             // 
-            this.btnEkle.Location = new System.Drawing.Point(389, 315);
-            this.btnEkle.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEkle.Location = new System.Drawing.Point(292, 256);
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.OverrideDefault.Back.Color1 = System.Drawing.Color.Gray;
             this.btnEkle.OverrideDefault.Back.Color2 = System.Drawing.Color.DimGray;
@@ -347,7 +339,7 @@
             this.btnEkle.OverrideDefault.Border.Rounding = 18;
             this.btnEkle.OverrideDefault.Border.Width = 1;
             this.btnEkle.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnEkle.Size = new System.Drawing.Size(143, 50);
+            this.btnEkle.Size = new System.Drawing.Size(107, 41);
             this.btnEkle.StateCommon.Back.Color1 = System.Drawing.Color.Gray;
             this.btnEkle.StateCommon.Back.Color2 = System.Drawing.Color.Gray;
             this.btnEkle.StateCommon.Back.ColorAngle = 45F;
@@ -388,14 +380,14 @@
             this.btnEkle.StateTracking.Border.Width = 1;
             this.btnEkle.TabIndex = 7;
             this.btnEkle.Values.Text = "Ekle";
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // txtDoktorNotu
             // 
-            this.txtDoktorNotu.Location = new System.Drawing.Point(9, 116);
-            this.txtDoktorNotu.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDoktorNotu.Location = new System.Drawing.Point(3, 163);
             this.txtDoktorNotu.Multiline = true;
             this.txtDoktorNotu.Name = "txtDoktorNotu";
-            this.txtDoktorNotu.Size = new System.Drawing.Size(331, 366);
+            this.txtDoktorNotu.Size = new System.Drawing.Size(248, 297);
             this.txtDoktorNotu.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txtDoktorNotu.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.txtDoktorNotu.StateCommon.Border.Color2 = System.Drawing.Color.Black;
@@ -405,7 +397,7 @@
             this.txtDoktorNotu.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.txtDoktorNotu.StateCommon.Border.Rounding = 18;
             this.txtDoktorNotu.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.txtDoktorNotu.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtDoktorNotu.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtDoktorNotu.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.txtDoktorNotu.TabIndex = 3;
             // 
@@ -414,56 +406,56 @@
             this.kryptonPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonPanel2.Controls.Add(this.kryptonDataGridView2);
+            this.kryptonPanel2.Controls.Add(this.muayeneDataGrid);
             this.kryptonPanel2.Controls.Add(this.pictureBox3);
             this.kryptonPanel2.Controls.Add(this.btnFiltreyiTemizle);
             this.kryptonPanel2.Controls.Add(this.txtArama);
-            this.kryptonPanel2.Location = new System.Drawing.Point(599, -3);
-            this.kryptonPanel2.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonPanel2.Location = new System.Drawing.Point(449, -2);
             this.kryptonPanel2.Name = "kryptonPanel2";
-            this.kryptonPanel2.Size = new System.Drawing.Size(840, 711);
+            this.kryptonPanel2.Size = new System.Drawing.Size(630, 578);
             this.kryptonPanel2.StateCommon.Color1 = System.Drawing.Color.LightGray;
             this.kryptonPanel2.StateCommon.Color2 = System.Drawing.Color.Gray;
             this.kryptonPanel2.TabIndex = 7;
             // 
-            // kryptonDataGridView2
+            // muayeneDataGrid
             // 
-            this.kryptonDataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.kryptonDataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.muayeneDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.muayeneDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column6,
             this.Column7,
             this.Column8,
             this.Column9,
             this.Column10});
-            this.kryptonDataGridView2.Location = new System.Drawing.Point(0, 117);
-            this.kryptonDataGridView2.Name = "kryptonDataGridView2";
-            this.kryptonDataGridView2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonDataGridView2.ReadOnly = true;
-            this.kryptonDataGridView2.RowHeadersWidth = 51;
-            this.kryptonDataGridView2.RowTemplate.Height = 24;
-            this.kryptonDataGridView2.Size = new System.Drawing.Size(904, 570);
-            this.kryptonDataGridView2.StateCommon.Background.Color1 = System.Drawing.Color.LightGray;
-            this.kryptonDataGridView2.StateCommon.Background.Color2 = System.Drawing.Color.LightGray;
-            this.kryptonDataGridView2.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
-            this.kryptonDataGridView2.StateNormal.DataCell.Back.Color1 = System.Drawing.Color.LightGray;
-            this.kryptonDataGridView2.StateNormal.DataCell.Border.Color1 = System.Drawing.Color.Black;
-            this.kryptonDataGridView2.StateNormal.DataCell.Border.Color2 = System.Drawing.Color.Black;
-            this.kryptonDataGridView2.StateNormal.DataCell.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.muayeneDataGrid.Location = new System.Drawing.Point(0, 95);
+            this.muayeneDataGrid.Margin = new System.Windows.Forms.Padding(2);
+            this.muayeneDataGrid.Name = "muayeneDataGrid";
+            this.muayeneDataGrid.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.muayeneDataGrid.ReadOnly = true;
+            this.muayeneDataGrid.RowHeadersWidth = 51;
+            this.muayeneDataGrid.RowTemplate.Height = 24;
+            this.muayeneDataGrid.Size = new System.Drawing.Size(678, 463);
+            this.muayeneDataGrid.StateCommon.Background.Color1 = System.Drawing.Color.LightGray;
+            this.muayeneDataGrid.StateCommon.Background.Color2 = System.Drawing.Color.LightGray;
+            this.muayeneDataGrid.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
+            this.muayeneDataGrid.StateNormal.DataCell.Back.Color1 = System.Drawing.Color.LightGray;
+            this.muayeneDataGrid.StateNormal.DataCell.Border.Color1 = System.Drawing.Color.Black;
+            this.muayeneDataGrid.StateNormal.DataCell.Border.Color2 = System.Drawing.Color.Black;
+            this.muayeneDataGrid.StateNormal.DataCell.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonDataGridView2.StateNormal.HeaderColumn.Back.Color1 = System.Drawing.Color.WhiteSmoke;
-            this.kryptonDataGridView2.StateNormal.HeaderColumn.Border.Color1 = System.Drawing.Color.Black;
-            this.kryptonDataGridView2.StateNormal.HeaderColumn.Border.Color2 = System.Drawing.Color.Black;
-            this.kryptonDataGridView2.StateNormal.HeaderColumn.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.muayeneDataGrid.StateNormal.HeaderColumn.Back.Color1 = System.Drawing.Color.WhiteSmoke;
+            this.muayeneDataGrid.StateNormal.HeaderColumn.Border.Color1 = System.Drawing.Color.Black;
+            this.muayeneDataGrid.StateNormal.HeaderColumn.Border.Color2 = System.Drawing.Color.Black;
+            this.muayeneDataGrid.StateNormal.HeaderColumn.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonDataGridView2.StateNormal.HeaderRow.Back.Color1 = System.Drawing.Color.LightGray;
-            this.kryptonDataGridView2.StateNormal.HeaderRow.Border.Color1 = System.Drawing.Color.Black;
-            this.kryptonDataGridView2.StateNormal.HeaderRow.Border.Color2 = System.Drawing.Color.Black;
-            this.kryptonDataGridView2.StateNormal.HeaderRow.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.muayeneDataGrid.StateNormal.HeaderRow.Back.Color1 = System.Drawing.Color.LightGray;
+            this.muayeneDataGrid.StateNormal.HeaderRow.Border.Color1 = System.Drawing.Color.Black;
+            this.muayeneDataGrid.StateNormal.HeaderRow.Border.Color2 = System.Drawing.Color.Black;
+            this.muayeneDataGrid.StateNormal.HeaderRow.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonDataGridView2.TabIndex = 44;
+            this.muayeneDataGrid.TabIndex = 44;
             // 
             // Column6
             // 
@@ -509,8 +501,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(396, 50);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox3.Location = new System.Drawing.Point(297, 41);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(24, 24);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -519,10 +510,9 @@
             // 
             // txtArama
             // 
-            this.txtArama.Location = new System.Drawing.Point(32, 50);
-            this.txtArama.Margin = new System.Windows.Forms.Padding(4);
+            this.txtArama.Location = new System.Drawing.Point(24, 41);
             this.txtArama.Name = "txtArama";
-            this.txtArama.Size = new System.Drawing.Size(357, 36);
+            this.txtArama.Size = new System.Drawing.Size(268, 31);
             this.txtArama.StateCommon.Back.Color1 = System.Drawing.Color.Silver;
             this.txtArama.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.txtArama.StateCommon.Border.Color2 = System.Drawing.Color.Black;
@@ -532,20 +522,20 @@
             this.txtArama.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.txtArama.StateCommon.Border.Rounding = 18;
             this.txtArama.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.txtArama.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtArama.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtArama.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.txtArama.TabIndex = 2;
+            this.txtArama.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtArama_KeyPress);
             // 
             // comboDoktor
             // 
             this.comboDoktor.DropBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ButtonFormClose;
             this.comboDoktor.DropButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Alternate;
             this.comboDoktor.DropDownWidth = 134;
-            this.comboDoktor.Location = new System.Drawing.Point(22, 54);
-            this.comboDoktor.Margin = new System.Windows.Forms.Padding(4);
+            this.comboDoktor.Location = new System.Drawing.Point(16, 44);
             this.comboDoktor.MaxDropDownItems = 10;
             this.comboDoktor.Name = "comboDoktor";
-            this.comboDoktor.Size = new System.Drawing.Size(207, 37);
+            this.comboDoktor.Size = new System.Drawing.Size(155, 33);
             this.comboDoktor.StateCommon.ComboBox.Back.Color1 = System.Drawing.SystemColors.ScrollBar;
             this.comboDoktor.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Black;
             this.comboDoktor.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.Black;
@@ -563,7 +553,9 @@
             // 
             // kryptonPanel1
             // 
-            this.kryptonPanel1.Controls.Add(this.ComboIslem);
+            this.kryptonPanel1.Controls.Add(this.txtYapilanİslem);
+            this.kryptonPanel1.Controls.Add(this.label5);
+            this.kryptonPanel1.Controls.Add(this.cmbHastaHayvan);
             this.kryptonPanel1.Controls.Add(this.label4);
             this.kryptonPanel1.Controls.Add(this.label1);
             this.kryptonPanel1.Controls.Add(this.btnSil);
@@ -575,16 +567,65 @@
             this.kryptonPanel1.Controls.Add(this.numericMuayeneUcreti);
             this.kryptonPanel1.Controls.Add(this.txtDoktorNotu);
             this.kryptonPanel1.Controls.Add(this.comboDoktor);
-            this.kryptonPanel1.Location = new System.Drawing.Point(3, -3);
-            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonPanel1.Location = new System.Drawing.Point(2, -2);
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonPanel1.Size = new System.Drawing.Size(573, 485);
+            this.kryptonPanel1.Size = new System.Drawing.Size(430, 460);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.LightGray;
             this.kryptonPanel1.StateCommon.Color2 = System.Drawing.Color.LightGray;
             this.kryptonPanel1.StateCommon.ColorAngle = 45F;
             this.kryptonPanel1.StateCommon.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.kryptonPanel1.TabIndex = 6;
+            // 
+            // txtYapilanİslem
+            // 
+            this.txtYapilanİslem.Location = new System.Drawing.Point(189, 44);
+            this.txtYapilanİslem.Margin = new System.Windows.Forms.Padding(2);
+            this.txtYapilanİslem.Name = "txtYapilanİslem";
+            this.txtYapilanİslem.Size = new System.Drawing.Size(210, 33);
+            this.txtYapilanİslem.StateCommon.Back.Color1 = System.Drawing.Color.LightGray;
+            this.txtYapilanİslem.StateCommon.Border.Color1 = System.Drawing.Color.Black;
+            this.txtYapilanİslem.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtYapilanİslem.StateCommon.Border.Rounding = 15;
+            this.txtYapilanİslem.TabIndex = 35;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.LightGray;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label5.Location = new System.Drawing.Point(13, 95);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(125, 24);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Hasta Hayvan";
+            // 
+            // cmbHastaHayvan
+            // 
+            this.cmbHastaHayvan.DropBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ButtonFormClose;
+            this.cmbHastaHayvan.DropButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Alternate;
+            this.cmbHastaHayvan.DropDownWidth = 134;
+            this.cmbHastaHayvan.Location = new System.Drawing.Point(16, 122);
+            this.cmbHastaHayvan.MaxDropDownItems = 10;
+            this.cmbHastaHayvan.Name = "cmbHastaHayvan";
+            this.cmbHastaHayvan.Size = new System.Drawing.Size(155, 33);
+            this.cmbHastaHayvan.StateCommon.ComboBox.Back.Color1 = System.Drawing.SystemColors.ScrollBar;
+            this.cmbHastaHayvan.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Black;
+            this.cmbHastaHayvan.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.Black;
+            this.cmbHastaHayvan.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.cmbHastaHayvan.StateCommon.ComboBox.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.cmbHastaHayvan.StateCommon.ComboBox.Border.Rounding = 18;
+            this.cmbHastaHayvan.StateCommon.ComboBox.Border.Width = 1;
+            this.cmbHastaHayvan.StateCommon.ComboBox.Content.Color1 = System.Drawing.Color.Silver;
+            this.cmbHastaHayvan.StateCommon.DropBack.Color1 = System.Drawing.Color.DarkGray;
+            this.cmbHastaHayvan.StateCommon.DropBack.Color2 = System.Drawing.Color.Silver;
+            this.cmbHastaHayvan.StateCommon.Item.Back.Color1 = System.Drawing.Color.White;
+            this.cmbHastaHayvan.TabIndex = 13;
             // 
             // kryptonPalette1
             // 
@@ -614,52 +655,29 @@
             this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.ButtonEdgeInset = 12;
             this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, -1, -1);
             // 
-            // ComboIslem
-            // 
-            this.ComboIslem.DropBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ButtonFormClose;
-            this.ComboIslem.DropButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Alternate;
-            this.ComboIslem.DropDownWidth = 134;
-            this.ComboIslem.Location = new System.Drawing.Point(252, 54);
-            this.ComboIslem.Margin = new System.Windows.Forms.Padding(4);
-            this.ComboIslem.MaxDropDownItems = 10;
-            this.ComboIslem.Name = "ComboIslem";
-            this.ComboIslem.Size = new System.Drawing.Size(317, 37);
-            this.ComboIslem.StateCommon.ComboBox.Back.Color1 = System.Drawing.SystemColors.ScrollBar;
-            this.ComboIslem.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Black;
-            this.ComboIslem.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.Black;
-            this.ComboIslem.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.ComboIslem.StateCommon.ComboBox.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.ComboIslem.StateCommon.ComboBox.Border.Rounding = 18;
-            this.ComboIslem.StateCommon.ComboBox.Border.Width = 1;
-            this.ComboIslem.StateCommon.ComboBox.Content.Color1 = System.Drawing.Color.Silver;
-            this.ComboIslem.StateCommon.DropBack.Color1 = System.Drawing.Color.DarkGray;
-            this.ComboIslem.StateCommon.DropBack.Color2 = System.Drawing.Color.Silver;
-            this.ComboIslem.StateCommon.Item.Back.Color1 = System.Drawing.Color.White;
-            this.ComboIslem.TabIndex = 12;
-            // 
             // FormMuayene
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1443, 705);
+            this.ClientSize = new System.Drawing.Size(1084, 579);
             this.Controls.Add(this.kryptonPanel2);
             this.Controls.Add(this.kryptonPanel1);
-            this.MinimumSize = new System.Drawing.Size(1461, 752);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MinimumSize = new System.Drawing.Size(1100, 618);
             this.Name = "FormMuayene";
             this.ShowIcon = false;
             this.Text = "Muayene";
+            this.Load += new System.EventHandler(this.FormMuayene_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).EndInit();
             this.kryptonPanel2.ResumeLayout(false);
             this.kryptonPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.muayeneDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboDoktor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ComboIslem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbHastaHayvan)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -682,12 +700,14 @@
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox comboDoktor;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridView kryptonDataGridView2;
+        private ComponentFactory.Krypton.Toolkit.KryptonDataGridView muayeneDataGrid;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox ComboIslem;
+        private System.Windows.Forms.Label label5;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox cmbHastaHayvan;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtYapilanİslem;
     }
 }
