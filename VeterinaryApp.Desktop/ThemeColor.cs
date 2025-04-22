@@ -39,22 +39,25 @@ namespace VeterinaryApp
                                                                     //"#B71C46"
                                                                     "#777777",
                                                                     "#808080",
-                                                                    "#4B251C",  //kahve
+                                                                    "#7a5152",
                                                                     "#728E96",
-                                                                    "#1c6071",  //koyu mavi
+                                                                    "#396d7a",  
                                                                     "#696969",
                                                                     "#828282",
-                                                                    "#908f8f",
-                                                                    "#AAAAAA",
-                                                                    "#2C2966",  //lacivert
+                                                                    "#908f8f", 
+                                                                    "#848282",
+                                                                    "#2C2966",  
                                                                     "#666666",
                                                                     "#9e918f",
-                                                                    "#bebebe",
+                                                                    "#7e7f7f",
+                                                                    "#918989",
+                                                                    "#575050",
                                                                     "#5f5f5f",  
-                                                                    "#9c9c9c",
-                                                                    "#2F4F4F",  //koyu yeşil
-                                                                    "#cfcfcf"
-                                                                    
+                                                                    "#9c9c9c", 
+                                                                    "#685758", 
+                                                                    "#5b5151"
+
+
         };
 
         public static Color ChangeColorBrightness(Color color, double correctionsFactor)

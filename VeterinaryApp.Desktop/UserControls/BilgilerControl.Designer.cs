@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PageAsiGecmisi = new Krypton.Navigator.KryptonPage();
             this.dataGridAsiGecmisi = new System.Windows.Forms.DataGridView();
             this.DGVTxtAsiPaketi = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,7 +40,6 @@
             this.DGVTxtDurum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtMusteriTC = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.btnTemizle = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.ComBoxHastaSec = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.kryptonLabel8 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.txtMusteriAdres = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -76,6 +75,8 @@
             this.txtMusteriAdi = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.btnMusteriBilgiAra = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btnTemizle = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.PageAsiGecmisi)).BeginInit();
             this.PageAsiGecmisi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridAsiGecmisi)).BeginInit();
@@ -122,28 +123,28 @@
             this.dataGridAsiGecmisi.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridAsiGecmisi.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridAsiGecmisi.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridAsiGecmisi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridAsiGecmisi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridAsiGecmisi.ColumnHeadersHeight = 60;
             this.dataGridAsiGecmisi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridAsiGecmisi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.DGVTxtAsiPaketi,
             this.DGVTxtTarih,
             this.DGVTxtDurum});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(234)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridAsiGecmisi.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(234)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridAsiGecmisi.DefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridAsiGecmisi.EnableHeadersVisualStyles = false;
             this.dataGridAsiGecmisi.GridColor = System.Drawing.Color.White;
             this.dataGridAsiGecmisi.Location = new System.Drawing.Point(9, 11);
@@ -214,59 +215,6 @@
             this.kryptonLabel2.StateNormal.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.kryptonLabel2.TabIndex = 24;
             this.kryptonLabel2.Values.Text = "Müşteri TC :";
-            // 
-            // btnTemizle
-            // 
-            this.btnTemizle.Location = new System.Drawing.Point(35, 694);
-            this.btnTemizle.Margin = new System.Windows.Forms.Padding(4);
-            this.btnTemizle.Name = "btnTemizle";
-            this.btnTemizle.OverrideDefault.Back.Color1 = System.Drawing.Color.MediumBlue;
-            this.btnTemizle.OverrideDefault.Back.Color2 = System.Drawing.Color.MediumBlue;
-            this.btnTemizle.OverrideDefault.Back.ColorAngle = 45F;
-            this.btnTemizle.OverrideDefault.Border.Color1 = System.Drawing.Color.Navy;
-            this.btnTemizle.OverrideDefault.Border.Color2 = System.Drawing.Color.Navy;
-            this.btnTemizle.OverrideDefault.Border.ColorAngle = 45F;
-            this.btnTemizle.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnTemizle.OverrideDefault.Border.Rounding = 18;
-            this.btnTemizle.OverrideDefault.Border.Width = 1;
-            this.btnTemizle.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnTemizle.Size = new System.Drawing.Size(306, 50);
-            this.btnTemizle.StateCommon.Back.Color1 = System.Drawing.Color.MediumBlue;
-            this.btnTemizle.StateCommon.Back.Color2 = System.Drawing.Color.MediumBlue;
-            this.btnTemizle.StateCommon.Back.ColorAngle = 45F;
-            this.btnTemizle.StateCommon.Border.Color1 = System.Drawing.Color.Navy;
-            this.btnTemizle.StateCommon.Border.Color2 = System.Drawing.Color.Navy;
-            this.btnTemizle.StateCommon.Border.ColorAngle = 45F;
-            this.btnTemizle.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnTemizle.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnTemizle.StateCommon.Border.Rounding = 18;
-            this.btnTemizle.StateCommon.Border.Width = 1;
-            this.btnTemizle.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnTemizle.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnTemizle.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 12.25F, System.Drawing.FontStyle.Bold);
-            this.btnTemizle.StatePressed.Back.ColorAngle = 130F;
-            this.btnTemizle.StatePressed.Border.ColorAngle = 130F;
-            this.btnTemizle.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnTemizle.StatePressed.Border.Rounding = 18;
-            this.btnTemizle.StatePressed.Border.Width = 1;
-            this.btnTemizle.StateTracking.Back.ColorAngle = 45F;
-            this.btnTemizle.StateTracking.Border.Color1 = System.Drawing.Color.DarkGray;
-            this.btnTemizle.StateTracking.Border.Color2 = System.Drawing.Color.DimGray;
-            this.btnTemizle.StateTracking.Border.ColorAngle = 45F;
-            this.btnTemizle.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnTemizle.StateTracking.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnTemizle.StateTracking.Border.Rounding = 18;
-            this.btnTemizle.StateTracking.Border.Width = 1;
-            this.btnTemizle.TabIndex = 64;
-            this.btnTemizle.Values.Text = "Temizle";
             // 
             // ComBoxHastaSec
             // 
@@ -456,6 +404,7 @@
             // 
             // kryptonPanel5
             // 
+            this.kryptonPanel5.Controls.Add(this.btnMusteriBilgiAra);
             this.kryptonPanel5.Controls.Add(this.GroupBoxHastaBilgi);
             this.kryptonPanel5.Controls.Add(this.GroupBoxMusteriBilgi);
             this.kryptonPanel5.Controls.Add(this.txtMusteriTC);
@@ -556,14 +505,14 @@
             this.dataGridHastaGecmisi.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridHastaGecmisi.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridHastaGecmisi.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridHastaGecmisi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridHastaGecmisi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridHastaGecmisi.ColumnHeadersHeight = 60;
             this.dataGridHastaGecmisi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridHastaGecmisi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -578,14 +527,14 @@
             this.DGVTxtKilo,
             this.DGVTxtKisir,
             this.DGVTxtGelmeNedeni});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(234)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridHastaGecmisi.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(234)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridHastaGecmisi.DefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridHastaGecmisi.EnableHeadersVisualStyles = false;
             this.dataGridHastaGecmisi.GridColor = System.Drawing.Color.White;
             this.dataGridHastaGecmisi.Location = new System.Drawing.Point(9, 11);
@@ -594,21 +543,21 @@
             this.dataGridHastaGecmisi.Name = "dataGridHastaGecmisi";
             this.dataGridHastaGecmisi.ReadOnly = true;
             this.dataGridHastaGecmisi.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Schoolbook", 7.8F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridHastaGecmisi.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Schoolbook", 7.8F);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridHastaGecmisi.RowHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridHastaGecmisi.RowHeadersVisible = false;
             this.dataGridHastaGecmisi.RowHeadersWidth = 50;
             this.dataGridHastaGecmisi.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridHastaGecmisi.RowTemplate.DividerHeight = 3;
             this.dataGridHastaGecmisi.RowTemplate.Height = 40;
             this.dataGridHastaGecmisi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridHastaGecmisi.Size = new System.Drawing.Size(1429, 608);
+            this.dataGridHastaGecmisi.Size = new System.Drawing.Size(1384, 608);
             this.dataGridHastaGecmisi.TabIndex = 57;
             // 
             // DGVTxtAdi
@@ -701,12 +650,11 @@
             // 
             // DGVTxtGelmeNedeni
             // 
-            this.DGVTxtGelmeNedeni.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.DGVTxtGelmeNedeni.FillWeight = 150F;
             this.DGVTxtGelmeNedeni.HeaderText = "Gelme Nedeni";
-            this.DGVTxtGelmeNedeni.MinimumWidth = 100;
+            this.DGVTxtGelmeNedeni.MinimumWidth = 6;
             this.DGVTxtGelmeNedeni.Name = "DGVTxtGelmeNedeni";
             this.DGVTxtGelmeNedeni.ReadOnly = true;
+            this.DGVTxtGelmeNedeni.Width = 125;
             // 
             // GroupBoxMusteriBilgi
             // 
@@ -794,6 +742,84 @@
             this.kryptonLabel1.TabIndex = 2;
             this.kryptonLabel1.Values.Text = "AD : ";
             // 
+            // btnMusteriBilgiAra
+            // 
+            this.btnMusteriBilgiAra.Location = new System.Drawing.Point(414, 17);
+            this.btnMusteriBilgiAra.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMusteriBilgiAra.Name = "btnMusteriBilgiAra";
+            this.btnMusteriBilgiAra.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriBilgiAra.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriBilgiAra.Size = new System.Drawing.Size(131, 42);
+            this.btnMusteriBilgiAra.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriBilgiAra.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriBilgiAra.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnMusteriBilgiAra.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnMusteriBilgiAra.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnMusteriBilgiAra.StateCommon.Border.Rounding = 10;
+            this.btnMusteriBilgiAra.StateCommon.Border.Width = 1;
+            this.btnMusteriBilgiAra.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnMusteriBilgiAra.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnMusteriBilgiAra.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 10F, System.Drawing.FontStyle.Bold);
+            this.btnMusteriBilgiAra.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriBilgiAra.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriBilgiAra.StateDisabled.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnMusteriBilgiAra.StateDisabled.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnMusteriBilgiAra.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriBilgiAra.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriBilgiAra.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnMusteriBilgiAra.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnMusteriBilgiAra.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
+            this.btnMusteriBilgiAra.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
+            this.btnMusteriBilgiAra.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnMusteriBilgiAra.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnMusteriBilgiAra.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
+            this.btnMusteriBilgiAra.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
+            this.btnMusteriBilgiAra.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnMusteriBilgiAra.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnMusteriBilgiAra.TabIndex = 91;
+            this.btnMusteriBilgiAra.Values.Text = "Ara";
+            // 
+            // btnTemizle
+            // 
+            this.btnTemizle.Location = new System.Drawing.Point(31, 677);
+            this.btnTemizle.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTemizle.Name = "btnTemizle";
+            this.btnTemizle.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnTemizle.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnTemizle.Size = new System.Drawing.Size(306, 42);
+            this.btnTemizle.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnTemizle.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnTemizle.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnTemizle.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnTemizle.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnTemizle.StateCommon.Border.Rounding = 10;
+            this.btnTemizle.StateCommon.Border.Width = 1;
+            this.btnTemizle.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnTemizle.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnTemizle.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 10F, System.Drawing.FontStyle.Bold);
+            this.btnTemizle.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnTemizle.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnTemizle.StateDisabled.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnTemizle.StateDisabled.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnTemizle.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnTemizle.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnTemizle.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnTemizle.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnTemizle.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
+            this.btnTemizle.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
+            this.btnTemizle.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnTemizle.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnTemizle.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
+            this.btnTemizle.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
+            this.btnTemizle.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnTemizle.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnTemizle.TabIndex = 92;
+            this.btnTemizle.Values.Text = "Temizle";
+            // 
             // BilgilerControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -830,7 +856,6 @@
         private Krypton.Navigator.KryptonPage PageAsiGecmisi;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtMusteriTC;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel2;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnTemizle;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox ComBoxHastaSec;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel8;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtMusteriAdres;
@@ -870,5 +895,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn DGVTxtKilo;
         private System.Windows.Forms.DataGridViewTextBoxColumn DGVTxtKisir;
         private System.Windows.Forms.DataGridViewTextBoxColumn DGVTxtGelmeNedeni;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnMusteriBilgiAra;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnTemizle;
     }
 }

@@ -26,11 +26,6 @@ namespace VeterinaryApp
         private UserControl activeControl;
 
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            LoadUserControl("ana sayfa", () => new AnasayfaControl(), null);
-        }
-
         private void LoadUserControl(string key, Func<UserControl> createFunc, object btnSender)
         {
             if (!userControls.ContainsKey(key))
@@ -53,7 +48,10 @@ namespace VeterinaryApp
 
             btnCloseChildForm.Visible = true;
         }
-        
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            LoadUserControl("ana sayfa", () => new AnasayfaControl(), null);
+        }
 
 
 

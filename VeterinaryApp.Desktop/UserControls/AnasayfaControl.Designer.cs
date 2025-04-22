@@ -31,9 +31,9 @@
             this.btnMusteriEkle = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonLabel3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonPanel3 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.TreeViewKayıtlıMusteriler = new Krypton.Toolkit.KryptonTreeView();
             this.kryptonPanel4 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.btnAramaTemizle = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.btnDetaylıArama = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.txtHastaAdı = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonPanel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.txtMusteriAdSoyad = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -43,9 +43,9 @@
             this.kryptonPanel5 = new Krypton.Toolkit.KryptonPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.btnAra = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.panelDesktopPane = new System.Windows.Forms.Panel();
-            this.TreeViewKayıtlıMusteriler = new Krypton.Toolkit.KryptonTreeView();
+            this.btnAra = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btnDetaylıArama = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).BeginInit();
             this.kryptonPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
@@ -125,12 +125,21 @@
             this.kryptonPanel3.Controls.Add(this.btnMusteriEkle);
             this.kryptonPanel3.Controls.Add(this.kryptonPanel4);
             this.kryptonPanel3.Controls.Add(this.kryptonLabel3);
-            this.kryptonPanel3.Location = new System.Drawing.Point(26, 388);
+            this.kryptonPanel3.Location = new System.Drawing.Point(26, 387);
             this.kryptonPanel3.Name = "kryptonPanel3";
-            this.kryptonPanel3.Size = new System.Drawing.Size(398, 422);
+            this.kryptonPanel3.Size = new System.Drawing.Size(398, 423);
             this.kryptonPanel3.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel3.StateCommon.Color2 = System.Drawing.Color.LightCyan;
             this.kryptonPanel3.TabIndex = 5;
+            // 
+            // TreeViewKayıtlıMusteriler
+            // 
+            this.TreeViewKayıtlıMusteriler.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.TreeViewKayıtlıMusteriler.Location = new System.Drawing.Point(18, 79);
+            this.TreeViewKayıtlıMusteriler.Name = "TreeViewKayıtlıMusteriler";
+            this.TreeViewKayıtlıMusteriler.Size = new System.Drawing.Size(366, 330);
+            this.TreeViewKayıtlıMusteriler.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.TreeViewKayıtlıMusteriler.TabIndex = 62;
             // 
             // kryptonPanel4
             // 
@@ -187,61 +196,6 @@
             this.btnAramaTemizle.StateTracking.Border.Width = 1;
             this.btnAramaTemizle.TabIndex = 61;
             this.btnAramaTemizle.Values.Text = "Temizle";
-            // 
-            // btnDetaylıArama
-            // 
-            this.btnDetaylıArama.Location = new System.Drawing.Point(37, 351);
-            this.btnDetaylıArama.Margin = new System.Windows.Forms.Padding(4);
-            this.btnDetaylıArama.Name = "btnDetaylıArama";
-            this.btnDetaylıArama.OverrideDefault.Back.Color1 = System.Drawing.Color.MediumBlue;
-            this.btnDetaylıArama.OverrideDefault.Back.Color2 = System.Drawing.Color.MediumBlue;
-            this.btnDetaylıArama.OverrideDefault.Back.ColorAngle = 45F;
-            this.btnDetaylıArama.OverrideDefault.Border.Color1 = System.Drawing.Color.Navy;
-            this.btnDetaylıArama.OverrideDefault.Border.Color2 = System.Drawing.Color.Navy;
-            this.btnDetaylıArama.OverrideDefault.Border.ColorAngle = 45F;
-            this.btnDetaylıArama.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnDetaylıArama.OverrideDefault.Border.Rounding = 18;
-            this.btnDetaylıArama.OverrideDefault.Border.Width = 1;
-            this.btnDetaylıArama.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnDetaylıArama.Size = new System.Drawing.Size(306, 50);
-            this.btnDetaylıArama.StateCommon.Back.Color1 = System.Drawing.Color.MediumBlue;
-            this.btnDetaylıArama.StateCommon.Back.Color2 = System.Drawing.Color.MediumBlue;
-            this.btnDetaylıArama.StateCommon.Back.ColorAngle = 45F;
-            this.btnDetaylıArama.StateCommon.Border.Color1 = System.Drawing.Color.Navy;
-            this.btnDetaylıArama.StateCommon.Border.Color2 = System.Drawing.Color.Navy;
-            this.btnDetaylıArama.StateCommon.Border.ColorAngle = 45F;
-            this.btnDetaylıArama.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnDetaylıArama.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnDetaylıArama.StateCommon.Border.Rounding = 18;
-            this.btnDetaylıArama.StateCommon.Border.Width = 1;
-            this.btnDetaylıArama.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnDetaylıArama.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnDetaylıArama.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 12.25F, System.Drawing.FontStyle.Bold);
-            this.btnDetaylıArama.StatePressed.Back.ColorAngle = 130F;
-            this.btnDetaylıArama.StatePressed.Border.Color1 = System.Drawing.Color.DarkGray;
-            this.btnDetaylıArama.StatePressed.Border.Color2 = System.Drawing.Color.DimGray;
-            this.btnDetaylıArama.StatePressed.Border.ColorAngle = 130F;
-            this.btnDetaylıArama.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnDetaylıArama.StatePressed.Border.Rounding = 18;
-            this.btnDetaylıArama.StatePressed.Border.Width = 1;
-            this.btnDetaylıArama.StateTracking.Back.ColorAngle = 45F;
-            this.btnDetaylıArama.StateTracking.Border.Color1 = System.Drawing.Color.DarkGray;
-            this.btnDetaylıArama.StateTracking.Border.Color2 = System.Drawing.Color.DimGray;
-            this.btnDetaylıArama.StateTracking.Border.ColorAngle = 45F;
-            this.btnDetaylıArama.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnDetaylıArama.StateTracking.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnDetaylıArama.StateTracking.Border.Rounding = 18;
-            this.btnDetaylıArama.StateTracking.Border.Width = 1;
-            this.btnDetaylıArama.TabIndex = 58;
-            this.btnDetaylıArama.Values.Text = "Detaylı Arama";
             // 
             // txtHastaAdı
             // 
@@ -348,9 +302,9 @@
             // 
             // kryptonPanel1
             // 
+            this.kryptonPanel1.Controls.Add(this.btnDetaylıArama);
             this.kryptonPanel1.Controls.Add(this.btnAra);
             this.kryptonPanel1.Controls.Add(this.btnAramaTemizle);
-            this.kryptonPanel1.Controls.Add(this.btnDetaylıArama);
             this.kryptonPanel1.Controls.Add(this.txtHastaAdı);
             this.kryptonPanel1.Controls.Add(this.kryptonPanel2);
             this.kryptonPanel1.Controls.Add(this.txtMusteriAdSoyad);
@@ -364,60 +318,6 @@
             this.kryptonPanel1.StateCommon.Color2 = System.Drawing.Color.LightCyan;
             this.kryptonPanel1.TabIndex = 4;
             // 
-            // btnAra
-            // 
-            this.btnAra.Location = new System.Drawing.Point(37, 293);
-            this.btnAra.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAra.Name = "btnAra";
-            this.btnAra.OverrideDefault.Back.Color1 = System.Drawing.Color.MediumBlue;
-            this.btnAra.OverrideDefault.Back.Color2 = System.Drawing.Color.MediumBlue;
-            this.btnAra.OverrideDefault.Back.ColorAngle = 45F;
-            this.btnAra.OverrideDefault.Border.Color1 = System.Drawing.Color.Navy;
-            this.btnAra.OverrideDefault.Border.Color2 = System.Drawing.Color.Navy;
-            this.btnAra.OverrideDefault.Border.ColorAngle = 45F;
-            this.btnAra.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAra.OverrideDefault.Border.Rounding = 18;
-            this.btnAra.OverrideDefault.Border.Width = 1;
-            this.btnAra.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnAra.Size = new System.Drawing.Size(306, 50);
-            this.btnAra.StateCommon.Back.Color1 = System.Drawing.Color.MediumBlue;
-            this.btnAra.StateCommon.Back.Color2 = System.Drawing.Color.MediumBlue;
-            this.btnAra.StateCommon.Back.ColorAngle = 45F;
-            this.btnAra.StateCommon.Border.Color1 = System.Drawing.Color.Navy;
-            this.btnAra.StateCommon.Border.Color2 = System.Drawing.Color.Navy;
-            this.btnAra.StateCommon.Border.ColorAngle = 45F;
-            this.btnAra.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAra.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnAra.StateCommon.Border.Rounding = 18;
-            this.btnAra.StateCommon.Border.Width = 1;
-            this.btnAra.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnAra.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnAra.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 12.25F, System.Drawing.FontStyle.Bold);
-            this.btnAra.StatePressed.Back.ColorAngle = 130F;
-            this.btnAra.StatePressed.Border.ColorAngle = 130F;
-            this.btnAra.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAra.StatePressed.Border.Rounding = 18;
-            this.btnAra.StatePressed.Border.Width = 1;
-            this.btnAra.StateTracking.Back.ColorAngle = 45F;
-            this.btnAra.StateTracking.Border.Color1 = System.Drawing.Color.DarkGray;
-            this.btnAra.StateTracking.Border.Color2 = System.Drawing.Color.DimGray;
-            this.btnAra.StateTracking.Border.ColorAngle = 45F;
-            this.btnAra.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAra.StateTracking.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnAra.StateTracking.Border.Rounding = 18;
-            this.btnAra.StateTracking.Border.Width = 1;
-            this.btnAra.TabIndex = 62;
-            this.btnAra.Values.Image = global::VeterinaryApp.Properties.Resources.white_search_icon;
-            this.btnAra.Values.Text = "Ara";
-            // 
             // panelDesktopPane
             // 
             this.panelDesktopPane.Controls.Add(this.kryptonPanel5);
@@ -430,14 +330,84 @@
             this.panelDesktopPane.Size = new System.Drawing.Size(1222, 826);
             this.panelDesktopPane.TabIndex = 5;
             // 
-            // TreeViewKayıtlıMusteriler
+            // btnAra
             // 
-            this.TreeViewKayıtlıMusteriler.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.TreeViewKayıtlıMusteriler.Location = new System.Drawing.Point(18, 78);
-            this.TreeViewKayıtlıMusteriler.Name = "TreeViewKayıtlıMusteriler";
-            this.TreeViewKayıtlıMusteriler.Size = new System.Drawing.Size(366, 330);
-            this.TreeViewKayıtlıMusteriler.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.TreeViewKayıtlıMusteriler.TabIndex = 62;
+            this.btnAra.Location = new System.Drawing.Point(37, 310);
+            this.btnAra.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAra.Name = "btnAra";
+            this.btnAra.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnAra.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnAra.Size = new System.Drawing.Size(306, 42);
+            this.btnAra.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnAra.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnAra.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnAra.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnAra.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnAra.StateCommon.Border.Rounding = 10;
+            this.btnAra.StateCommon.Border.Width = 1;
+            this.btnAra.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnAra.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnAra.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 10F, System.Drawing.FontStyle.Bold);
+            this.btnAra.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnAra.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnAra.StateDisabled.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnAra.StateDisabled.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnAra.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnAra.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnAra.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnAra.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnAra.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
+            this.btnAra.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
+            this.btnAra.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnAra.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnAra.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
+            this.btnAra.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
+            this.btnAra.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnAra.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnAra.TabIndex = 37;
+            this.btnAra.Values.Image = global::VeterinaryApp.Properties.Resources.white_search_icon;
+            this.btnAra.Values.Text = "Ara";
+            // 
+            // btnDetaylıArama
+            // 
+            this.btnDetaylıArama.Location = new System.Drawing.Point(37, 360);
+            this.btnDetaylıArama.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDetaylıArama.Name = "btnDetaylıArama";
+            this.btnDetaylıArama.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnDetaylıArama.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnDetaylıArama.Size = new System.Drawing.Size(306, 42);
+            this.btnDetaylıArama.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnDetaylıArama.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnDetaylıArama.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnDetaylıArama.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnDetaylıArama.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnDetaylıArama.StateCommon.Border.Rounding = 10;
+            this.btnDetaylıArama.StateCommon.Border.Width = 1;
+            this.btnDetaylıArama.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnDetaylıArama.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnDetaylıArama.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 10F, System.Drawing.FontStyle.Bold);
+            this.btnDetaylıArama.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnDetaylıArama.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnDetaylıArama.StateDisabled.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnDetaylıArama.StateDisabled.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnDetaylıArama.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnDetaylıArama.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnDetaylıArama.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnDetaylıArama.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnDetaylıArama.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
+            this.btnDetaylıArama.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
+            this.btnDetaylıArama.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnDetaylıArama.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnDetaylıArama.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
+            this.btnDetaylıArama.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
+            this.btnDetaylıArama.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnDetaylıArama.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnDetaylıArama.TabIndex = 63;
+            this.btnDetaylıArama.Values.Text = "Detaylı Arama";
             // 
             // AnasayfaControl
             // 
@@ -470,7 +440,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel3;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel4;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnAramaTemizle;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnDetaylıArama;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtHastaAdı;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel2;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtMusteriAdSoyad;
@@ -481,7 +450,8 @@
         private Krypton.Toolkit.KryptonPanel kryptonPanel5;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private System.Windows.Forms.Panel panelDesktopPane;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnAra;
         private Krypton.Toolkit.KryptonTreeView TreeViewKayıtlıMusteriler;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnAra;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnDetaylıArama;
     }
 }

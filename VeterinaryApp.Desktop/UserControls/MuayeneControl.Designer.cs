@@ -80,6 +80,8 @@
             this.btnVeteriner.Location = new System.Drawing.Point(623, 30);
             this.btnVeteriner.Margin = new System.Windows.Forms.Padding(4);
             this.btnVeteriner.Name = "btnVeteriner";
+            this.btnVeteriner.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnVeteriner.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnVeteriner.Size = new System.Drawing.Size(71, 63);
             this.btnVeteriner.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnVeteriner.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
@@ -249,7 +251,7 @@
             this.DoktorNotu.HeaderText = "Doktor Notu";
             this.DoktorNotu.MinimumWidth = 6;
             this.DoktorNotu.Name = "DoktorNotu";
-            this.DoktorNotu.Width = 125;
+            this.DoktorNotu.Width = 123;
             // 
             // Tarih
             // 
@@ -257,7 +259,7 @@
             this.Tarih.HeaderText = "Tarih";
             this.Tarih.MinimumWidth = 6;
             this.Tarih.Name = "Tarih";
-            this.Tarih.Width = 73;
+            this.Tarih.Width = 82;
             // 
             // UcretDurumu
             // 
@@ -265,7 +267,7 @@
             this.UcretDurumu.HeaderText = "Ücret Durumu";
             this.UcretDurumu.MinimumWidth = 6;
             this.UcretDurumu.Name = "UcretDurumu";
-            this.UcretDurumu.Width = 134;
+            this.UcretDurumu.Width = 136;
             // 
             // cmbVeterinerSecimi
             // 
@@ -299,6 +301,8 @@
             this.btnSil.Location = new System.Drawing.Point(369, 630);
             this.btnSil.Margin = new System.Windows.Forms.Padding(4);
             this.btnSil.Name = "btnSil";
+            this.btnSil.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnSil.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnSil.Size = new System.Drawing.Size(129, 42);
             this.btnSil.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnSil.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
@@ -336,6 +340,8 @@
             this.btnGuncelle.Location = new System.Drawing.Point(207, 630);
             this.btnGuncelle.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuncelle.Name = "btnGuncelle";
+            this.btnGuncelle.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnGuncelle.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnGuncelle.Size = new System.Drawing.Size(131, 42);
             this.btnGuncelle.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnGuncelle.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
@@ -387,6 +393,8 @@
             this.btnEkle.Location = new System.Drawing.Point(44, 630);
             this.btnEkle.Margin = new System.Windows.Forms.Padding(4);
             this.btnEkle.Name = "btnEkle";
+            this.btnEkle.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnEkle.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnEkle.Size = new System.Drawing.Size(131, 42);
             this.btnEkle.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnEkle.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
@@ -425,7 +433,7 @@
             this.Islem.HeaderText = "İşlem";
             this.Islem.MinimumWidth = 6;
             this.Islem.Name = "Islem";
-            this.Islem.Width = 77;
+            this.Islem.Width = 80;
             // 
             // txtYapilanİslem
             // 
@@ -513,13 +521,15 @@
             this.Ucret.HeaderText = "Ücret";
             this.Ucret.MinimumWidth = 6;
             this.Ucret.Name = "Ucret";
-            this.Ucret.Width = 77;
+            this.Ucret.Width = 82;
             // 
             // btnTarih
             // 
             this.btnTarih.Location = new System.Drawing.Point(702, 30);
             this.btnTarih.Margin = new System.Windows.Forms.Padding(4);
             this.btnTarih.Name = "btnTarih";
+            this.btnTarih.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnTarih.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnTarih.Size = new System.Drawing.Size(71, 63);
             this.btnTarih.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnTarih.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
@@ -584,7 +594,7 @@
             this.Hasta.HeaderText = "Hasta";
             this.Hasta.MinimumWidth = 6;
             this.Hasta.Name = "Hasta";
-            this.Hasta.Width = 80;
+            this.Hasta.Width = 84;
             // 
             // Veteriner
             // 
@@ -593,7 +603,7 @@
             this.Veteriner.MinimumWidth = 6;
             this.Veteriner.Name = "Veteriner";
             this.Veteriner.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Veteriner.Width = 101;
+            this.Veteriner.Width = 111;
             // 
             // DataGridmuayene
             // 
@@ -608,7 +618,7 @@
             this.Tarih,
             this.DoktorNotu});
             this.DataGridmuayene.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.DataGridmuayene.Location = new System.Drawing.Point(591, 168);
+            this.DataGridmuayene.Location = new System.Drawing.Point(591, 165);
             this.DataGridmuayene.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DataGridmuayene.Name = "DataGridmuayene";
             this.DataGridmuayene.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
@@ -656,7 +666,7 @@
             this.Column1.HeaderText = "Şikayeti";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
-            this.Column1.Width = 93;
+            this.Column1.Width = 101;
             // 
             // label2
             // 
@@ -741,6 +751,8 @@
             this.btnFiltreyiTemizle.Location = new System.Drawing.Point(780, 51);
             this.btnFiltreyiTemizle.Margin = new System.Windows.Forms.Padding(4);
             this.btnFiltreyiTemizle.Name = "btnFiltreyiTemizle";
+            this.btnFiltreyiTemizle.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnFiltreyiTemizle.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnFiltreyiTemizle.Size = new System.Drawing.Size(325, 42);
             this.btnFiltreyiTemizle.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnFiltreyiTemizle.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));

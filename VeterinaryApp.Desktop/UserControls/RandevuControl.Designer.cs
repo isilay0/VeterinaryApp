@@ -29,13 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
-            this.btnRandevuIstekTemizle = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.btnRandevuIstekGoster = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.dataGridRandevuIstek = new System.Windows.Forms.DataGridView();
             this.DGVTxtMusteriAdi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DGVTxtMusteriSoyad = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -76,6 +74,8 @@
             this.DGV2ImageDüzenle = new System.Windows.Forms.DataGridViewImageColumn();
             this.DGV2ImageSil = new System.Windows.Forms.DataGridViewImageColumn();
             this.kryptonPanel5 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.btnRandevuIstekTemizle = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btnRandevuIstekGoster = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridRandevuIstek)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
@@ -90,113 +90,6 @@
             this.kryptonPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnRandevuIstekTemizle
-            // 
-            this.btnRandevuIstekTemizle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnRandevuIstekTemizle.Location = new System.Drawing.Point(414, 57);
-            this.btnRandevuIstekTemizle.Margin = new System.Windows.Forms.Padding(4);
-            this.btnRandevuIstekTemizle.Name = "btnRandevuIstekTemizle";
-            this.btnRandevuIstekTemizle.OverrideDefault.Back.Color1 = System.Drawing.Color.MediumBlue;
-            this.btnRandevuIstekTemizle.OverrideDefault.Back.Color2 = System.Drawing.Color.MediumBlue;
-            this.btnRandevuIstekTemizle.OverrideDefault.Back.ColorAngle = 45F;
-            this.btnRandevuIstekTemizle.OverrideDefault.Border.Color1 = System.Drawing.Color.Navy;
-            this.btnRandevuIstekTemizle.OverrideDefault.Border.Color2 = System.Drawing.Color.Navy;
-            this.btnRandevuIstekTemizle.OverrideDefault.Border.ColorAngle = 45F;
-            this.btnRandevuIstekTemizle.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnRandevuIstekTemizle.OverrideDefault.Border.Rounding = 18;
-            this.btnRandevuIstekTemizle.OverrideDefault.Border.Width = 1;
-            this.btnRandevuIstekTemizle.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnRandevuIstekTemizle.Size = new System.Drawing.Size(155, 50);
-            this.btnRandevuIstekTemizle.StateCommon.Back.Color1 = System.Drawing.Color.MediumBlue;
-            this.btnRandevuIstekTemizle.StateCommon.Back.Color2 = System.Drawing.Color.MediumBlue;
-            this.btnRandevuIstekTemizle.StateCommon.Back.ColorAngle = 45F;
-            this.btnRandevuIstekTemizle.StateCommon.Border.Color1 = System.Drawing.Color.Navy;
-            this.btnRandevuIstekTemizle.StateCommon.Border.Color2 = System.Drawing.Color.Navy;
-            this.btnRandevuIstekTemizle.StateCommon.Border.ColorAngle = 45F;
-            this.btnRandevuIstekTemizle.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnRandevuIstekTemizle.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnRandevuIstekTemizle.StateCommon.Border.Rounding = 18;
-            this.btnRandevuIstekTemizle.StateCommon.Border.Width = 1;
-            this.btnRandevuIstekTemizle.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnRandevuIstekTemizle.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnRandevuIstekTemizle.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 12.25F, System.Drawing.FontStyle.Bold);
-            this.btnRandevuIstekTemizle.StatePressed.Back.ColorAngle = 130F;
-            this.btnRandevuIstekTemizle.StatePressed.Border.ColorAngle = 130F;
-            this.btnRandevuIstekTemizle.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnRandevuIstekTemizle.StatePressed.Border.Rounding = 18;
-            this.btnRandevuIstekTemizle.StatePressed.Border.Width = 1;
-            this.btnRandevuIstekTemizle.StateTracking.Back.ColorAngle = 45F;
-            this.btnRandevuIstekTemizle.StateTracking.Border.Color1 = System.Drawing.Color.DarkGray;
-            this.btnRandevuIstekTemizle.StateTracking.Border.Color2 = System.Drawing.Color.DimGray;
-            this.btnRandevuIstekTemizle.StateTracking.Border.ColorAngle = 45F;
-            this.btnRandevuIstekTemizle.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnRandevuIstekTemizle.StateTracking.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnRandevuIstekTemizle.StateTracking.Border.Rounding = 18;
-            this.btnRandevuIstekTemizle.StateTracking.Border.Width = 1;
-            this.btnRandevuIstekTemizle.TabIndex = 93;
-            this.btnRandevuIstekTemizle.Values.Text = "Temizle";
-            // 
-            // btnRandevuIstekGoster
-            // 
-            this.btnRandevuIstekGoster.Location = new System.Drawing.Point(23, 57);
-            this.btnRandevuIstekGoster.Margin = new System.Windows.Forms.Padding(4);
-            this.btnRandevuIstekGoster.Name = "btnRandevuIstekGoster";
-            this.btnRandevuIstekGoster.OverrideDefault.Back.Color1 = System.Drawing.Color.MediumBlue;
-            this.btnRandevuIstekGoster.OverrideDefault.Back.Color2 = System.Drawing.Color.MediumBlue;
-            this.btnRandevuIstekGoster.OverrideDefault.Back.ColorAngle = 45F;
-            this.btnRandevuIstekGoster.OverrideDefault.Border.Color1 = System.Drawing.Color.Navy;
-            this.btnRandevuIstekGoster.OverrideDefault.Border.Color2 = System.Drawing.Color.Navy;
-            this.btnRandevuIstekGoster.OverrideDefault.Border.ColorAngle = 45F;
-            this.btnRandevuIstekGoster.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnRandevuIstekGoster.OverrideDefault.Border.Rounding = 18;
-            this.btnRandevuIstekGoster.OverrideDefault.Border.Width = 1;
-            this.btnRandevuIstekGoster.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnRandevuIstekGoster.Size = new System.Drawing.Size(370, 50);
-            this.btnRandevuIstekGoster.StateCommon.Back.Color1 = System.Drawing.Color.MediumBlue;
-            this.btnRandevuIstekGoster.StateCommon.Back.Color2 = System.Drawing.Color.MediumBlue;
-            this.btnRandevuIstekGoster.StateCommon.Back.ColorAngle = 45F;
-            this.btnRandevuIstekGoster.StateCommon.Border.Color1 = System.Drawing.Color.Navy;
-            this.btnRandevuIstekGoster.StateCommon.Border.Color2 = System.Drawing.Color.Navy;
-            this.btnRandevuIstekGoster.StateCommon.Border.ColorAngle = 45F;
-            this.btnRandevuIstekGoster.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnRandevuIstekGoster.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnRandevuIstekGoster.StateCommon.Border.Rounding = 18;
-            this.btnRandevuIstekGoster.StateCommon.Border.Width = 1;
-            this.btnRandevuIstekGoster.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnRandevuIstekGoster.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnRandevuIstekGoster.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 12.25F, System.Drawing.FontStyle.Bold);
-            this.btnRandevuIstekGoster.StatePressed.Back.ColorAngle = 130F;
-            this.btnRandevuIstekGoster.StatePressed.Border.ColorAngle = 130F;
-            this.btnRandevuIstekGoster.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnRandevuIstekGoster.StatePressed.Border.Rounding = 18;
-            this.btnRandevuIstekGoster.StatePressed.Border.Width = 1;
-            this.btnRandevuIstekGoster.StateTracking.Back.ColorAngle = 45F;
-            this.btnRandevuIstekGoster.StateTracking.Border.Color1 = System.Drawing.Color.DarkGray;
-            this.btnRandevuIstekGoster.StateTracking.Border.Color2 = System.Drawing.Color.DimGray;
-            this.btnRandevuIstekGoster.StateTracking.Border.ColorAngle = 45F;
-            this.btnRandevuIstekGoster.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnRandevuIstekGoster.StateTracking.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnRandevuIstekGoster.StateTracking.Border.Rounding = 18;
-            this.btnRandevuIstekGoster.StateTracking.Border.Width = 1;
-            this.btnRandevuIstekGoster.TabIndex = 61;
-            this.btnRandevuIstekGoster.Values.Text = "Randevu İsteklerini Göster";
-            // 
             // dataGridRandevuIstek
             // 
             this.dataGridRandevuIstek.AllowUserToAddRows = false;
@@ -207,14 +100,14 @@
             this.dataGridRandevuIstek.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridRandevuIstek.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridRandevuIstek.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridRandevuIstek.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridRandevuIstek.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridRandevuIstek.ColumnHeadersHeight = 60;
             this.dataGridRandevuIstek.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridRandevuIstek.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -232,14 +125,14 @@
             this.DGVTxtOlusturmaTarih,
             this.DGVImageEkle,
             this.DGVImageSil});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(234)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridRandevuIstek.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(234)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridRandevuIstek.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridRandevuIstek.EnableHeadersVisualStyles = false;
             this.dataGridRandevuIstek.GridColor = System.Drawing.Color.White;
             this.dataGridRandevuIstek.Location = new System.Drawing.Point(23, 126);
@@ -460,112 +353,85 @@
             this.kryptonPanel3.Name = "kryptonPanel3";
             this.kryptonPanel3.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.kryptonPanel3.Size = new System.Drawing.Size(1262, 397);
+            this.kryptonPanel3.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel3.TabIndex = 1;
             // 
             // btnRandevuDetayTemizle
             // 
-            this.btnRandevuDetayTemizle.Location = new System.Drawing.Point(414, 56);
+            this.btnRandevuDetayTemizle.Location = new System.Drawing.Point(414, 64);
             this.btnRandevuDetayTemizle.Margin = new System.Windows.Forms.Padding(4);
             this.btnRandevuDetayTemizle.Name = "btnRandevuDetayTemizle";
-            this.btnRandevuDetayTemizle.OverrideDefault.Back.Color1 = System.Drawing.Color.MediumBlue;
-            this.btnRandevuDetayTemizle.OverrideDefault.Back.Color2 = System.Drawing.Color.MediumBlue;
-            this.btnRandevuDetayTemizle.OverrideDefault.Back.ColorAngle = 45F;
-            this.btnRandevuDetayTemizle.OverrideDefault.Border.Color1 = System.Drawing.Color.Navy;
-            this.btnRandevuDetayTemizle.OverrideDefault.Border.Color2 = System.Drawing.Color.Navy;
-            this.btnRandevuDetayTemizle.OverrideDefault.Border.ColorAngle = 45F;
-            this.btnRandevuDetayTemizle.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnRandevuDetayTemizle.OverrideDefault.Border.Rounding = 18;
-            this.btnRandevuDetayTemizle.OverrideDefault.Border.Width = 1;
-            this.btnRandevuDetayTemizle.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnRandevuDetayTemizle.Size = new System.Drawing.Size(155, 50);
-            this.btnRandevuDetayTemizle.StateCommon.Back.Color1 = System.Drawing.Color.MediumBlue;
-            this.btnRandevuDetayTemizle.StateCommon.Back.Color2 = System.Drawing.Color.MediumBlue;
-            this.btnRandevuDetayTemizle.StateCommon.Back.ColorAngle = 45F;
-            this.btnRandevuDetayTemizle.StateCommon.Border.Color1 = System.Drawing.Color.Navy;
-            this.btnRandevuDetayTemizle.StateCommon.Border.Color2 = System.Drawing.Color.Navy;
-            this.btnRandevuDetayTemizle.StateCommon.Border.ColorAngle = 45F;
+            this.btnRandevuDetayTemizle.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuDetayTemizle.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuDetayTemizle.Size = new System.Drawing.Size(131, 42);
+            this.btnRandevuDetayTemizle.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuDetayTemizle.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuDetayTemizle.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnRandevuDetayTemizle.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.btnRandevuDetayTemizle.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnRandevuDetayTemizle.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnRandevuDetayTemizle.StateCommon.Border.Rounding = 18;
+            this.btnRandevuDetayTemizle.StateCommon.Border.Rounding = 10;
             this.btnRandevuDetayTemizle.StateCommon.Border.Width = 1;
             this.btnRandevuDetayTemizle.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnRandevuDetayTemizle.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnRandevuDetayTemizle.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 12.25F, System.Drawing.FontStyle.Bold);
-            this.btnRandevuDetayTemizle.StatePressed.Back.ColorAngle = 130F;
-            this.btnRandevuDetayTemizle.StatePressed.Border.ColorAngle = 130F;
-            this.btnRandevuDetayTemizle.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnRandevuDetayTemizle.StatePressed.Border.Rounding = 18;
-            this.btnRandevuDetayTemizle.StatePressed.Border.Width = 1;
-            this.btnRandevuDetayTemizle.StateTracking.Back.ColorAngle = 45F;
-            this.btnRandevuDetayTemizle.StateTracking.Border.Color1 = System.Drawing.Color.DarkGray;
-            this.btnRandevuDetayTemizle.StateTracking.Border.Color2 = System.Drawing.Color.DimGray;
-            this.btnRandevuDetayTemizle.StateTracking.Border.ColorAngle = 45F;
-            this.btnRandevuDetayTemizle.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnRandevuDetayTemizle.StateTracking.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnRandevuDetayTemizle.StateTracking.Border.Rounding = 18;
-            this.btnRandevuDetayTemizle.StateTracking.Border.Width = 1;
-            this.btnRandevuDetayTemizle.TabIndex = 94;
+            this.btnRandevuDetayTemizle.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 10F, System.Drawing.FontStyle.Bold);
+            this.btnRandevuDetayTemizle.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuDetayTemizle.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuDetayTemizle.StateDisabled.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnRandevuDetayTemizle.StateDisabled.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnRandevuDetayTemizle.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuDetayTemizle.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuDetayTemizle.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnRandevuDetayTemizle.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnRandevuDetayTemizle.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
+            this.btnRandevuDetayTemizle.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
+            this.btnRandevuDetayTemizle.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnRandevuDetayTemizle.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnRandevuDetayTemizle.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
+            this.btnRandevuDetayTemizle.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
+            this.btnRandevuDetayTemizle.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnRandevuDetayTemizle.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnRandevuDetayTemizle.TabIndex = 106;
             this.btnRandevuDetayTemizle.Values.Text = "Temizle";
             // 
             // btnRandevuDetayGoster
             // 
-            this.btnRandevuDetayGoster.Location = new System.Drawing.Point(23, 56);
+            this.btnRandevuDetayGoster.Location = new System.Drawing.Point(23, 64);
             this.btnRandevuDetayGoster.Margin = new System.Windows.Forms.Padding(4);
             this.btnRandevuDetayGoster.Name = "btnRandevuDetayGoster";
-            this.btnRandevuDetayGoster.OverrideDefault.Back.Color1 = System.Drawing.Color.MediumBlue;
-            this.btnRandevuDetayGoster.OverrideDefault.Back.Color2 = System.Drawing.Color.MediumBlue;
-            this.btnRandevuDetayGoster.OverrideDefault.Back.ColorAngle = 45F;
-            this.btnRandevuDetayGoster.OverrideDefault.Border.Color1 = System.Drawing.Color.Navy;
-            this.btnRandevuDetayGoster.OverrideDefault.Border.Color2 = System.Drawing.Color.Navy;
-            this.btnRandevuDetayGoster.OverrideDefault.Border.ColorAngle = 45F;
-            this.btnRandevuDetayGoster.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnRandevuDetayGoster.OverrideDefault.Border.Rounding = 18;
-            this.btnRandevuDetayGoster.OverrideDefault.Border.Width = 1;
-            this.btnRandevuDetayGoster.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnRandevuDetayGoster.Size = new System.Drawing.Size(370, 50);
-            this.btnRandevuDetayGoster.StateCommon.Back.Color1 = System.Drawing.Color.MediumBlue;
-            this.btnRandevuDetayGoster.StateCommon.Back.Color2 = System.Drawing.Color.MediumBlue;
-            this.btnRandevuDetayGoster.StateCommon.Back.ColorAngle = 45F;
-            this.btnRandevuDetayGoster.StateCommon.Border.Color1 = System.Drawing.Color.Navy;
-            this.btnRandevuDetayGoster.StateCommon.Border.Color2 = System.Drawing.Color.Navy;
-            this.btnRandevuDetayGoster.StateCommon.Border.ColorAngle = 45F;
+            this.btnRandevuDetayGoster.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuDetayGoster.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuDetayGoster.Size = new System.Drawing.Size(370, 42);
+            this.btnRandevuDetayGoster.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuDetayGoster.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuDetayGoster.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnRandevuDetayGoster.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.btnRandevuDetayGoster.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnRandevuDetayGoster.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnRandevuDetayGoster.StateCommon.Border.Rounding = 18;
+            this.btnRandevuDetayGoster.StateCommon.Border.Rounding = 10;
             this.btnRandevuDetayGoster.StateCommon.Border.Width = 1;
             this.btnRandevuDetayGoster.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnRandevuDetayGoster.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnRandevuDetayGoster.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 12.25F, System.Drawing.FontStyle.Bold);
-            this.btnRandevuDetayGoster.StatePressed.Back.ColorAngle = 130F;
-            this.btnRandevuDetayGoster.StatePressed.Border.ColorAngle = 130F;
-            this.btnRandevuDetayGoster.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnRandevuDetayGoster.StatePressed.Border.Rounding = 18;
-            this.btnRandevuDetayGoster.StatePressed.Border.Width = 1;
-            this.btnRandevuDetayGoster.StateTracking.Back.ColorAngle = 45F;
-            this.btnRandevuDetayGoster.StateTracking.Border.Color1 = System.Drawing.Color.DarkGray;
-            this.btnRandevuDetayGoster.StateTracking.Border.Color2 = System.Drawing.Color.DimGray;
-            this.btnRandevuDetayGoster.StateTracking.Border.ColorAngle = 45F;
-            this.btnRandevuDetayGoster.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnRandevuDetayGoster.StateTracking.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnRandevuDetayGoster.StateTracking.Border.Rounding = 18;
-            this.btnRandevuDetayGoster.StateTracking.Border.Width = 1;
-            this.btnRandevuDetayGoster.TabIndex = 62;
+            this.btnRandevuDetayGoster.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 10F, System.Drawing.FontStyle.Bold);
+            this.btnRandevuDetayGoster.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuDetayGoster.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuDetayGoster.StateDisabled.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnRandevuDetayGoster.StateDisabled.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnRandevuDetayGoster.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuDetayGoster.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuDetayGoster.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnRandevuDetayGoster.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnRandevuDetayGoster.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
+            this.btnRandevuDetayGoster.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
+            this.btnRandevuDetayGoster.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnRandevuDetayGoster.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnRandevuDetayGoster.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
+            this.btnRandevuDetayGoster.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
+            this.btnRandevuDetayGoster.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnRandevuDetayGoster.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnRandevuDetayGoster.TabIndex = 105;
             this.btnRandevuDetayGoster.Values.Text = "Randevu Detaylarını Göster";
             // 
             // dataGridRandevuDetay
@@ -578,14 +444,14 @@
             this.dataGridRandevuDetay.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridRandevuDetay.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridRandevuDetay.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridRandevuDetay.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridRandevuDetay.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridRandevuDetay.ColumnHeadersHeight = 60;
             this.dataGridRandevuDetay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridRandevuDetay.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -604,14 +470,14 @@
             this.DGV2TxtNot,
             this.DGV2ImageDüzenle,
             this.DGV2ImageSil});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(234)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridRandevuDetay.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(234)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridRandevuDetay.DefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridRandevuDetay.EnableHeadersVisualStyles = false;
             this.dataGridRandevuDetay.GridColor = System.Drawing.Color.White;
             this.dataGridRandevuDetay.Location = new System.Drawing.Point(23, 124);
@@ -768,7 +634,86 @@
             this.kryptonPanel5.Name = "kryptonPanel5";
             this.kryptonPanel5.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.kryptonPanel5.Size = new System.Drawing.Size(1262, 437);
+            this.kryptonPanel5.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel5.TabIndex = 0;
+            // 
+            // btnRandevuIstekTemizle
+            // 
+            this.btnRandevuIstekTemizle.Location = new System.Drawing.Point(414, 57);
+            this.btnRandevuIstekTemizle.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRandevuIstekTemizle.Name = "btnRandevuIstekTemizle";
+            this.btnRandevuIstekTemizle.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuIstekTemizle.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuIstekTemizle.Size = new System.Drawing.Size(131, 42);
+            this.btnRandevuIstekTemizle.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuIstekTemizle.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuIstekTemizle.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnRandevuIstekTemizle.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnRandevuIstekTemizle.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnRandevuIstekTemizle.StateCommon.Border.Rounding = 10;
+            this.btnRandevuIstekTemizle.StateCommon.Border.Width = 1;
+            this.btnRandevuIstekTemizle.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnRandevuIstekTemizle.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnRandevuIstekTemizle.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 10F, System.Drawing.FontStyle.Bold);
+            this.btnRandevuIstekTemizle.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuIstekTemizle.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuIstekTemizle.StateDisabled.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnRandevuIstekTemizle.StateDisabled.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnRandevuIstekTemizle.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuIstekTemizle.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuIstekTemizle.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnRandevuIstekTemizle.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnRandevuIstekTemizle.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
+            this.btnRandevuIstekTemizle.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
+            this.btnRandevuIstekTemizle.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnRandevuIstekTemizle.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnRandevuIstekTemizle.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
+            this.btnRandevuIstekTemizle.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
+            this.btnRandevuIstekTemizle.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnRandevuIstekTemizle.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnRandevuIstekTemizle.TabIndex = 104;
+            this.btnRandevuIstekTemizle.Values.Text = "Temizle";
+            // 
+            // btnRandevuIstekGoster
+            // 
+            this.btnRandevuIstekGoster.Location = new System.Drawing.Point(23, 57);
+            this.btnRandevuIstekGoster.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRandevuIstekGoster.Name = "btnRandevuIstekGoster";
+            this.btnRandevuIstekGoster.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuIstekGoster.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuIstekGoster.Size = new System.Drawing.Size(370, 42);
+            this.btnRandevuIstekGoster.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuIstekGoster.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuIstekGoster.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnRandevuIstekGoster.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnRandevuIstekGoster.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnRandevuIstekGoster.StateCommon.Border.Rounding = 10;
+            this.btnRandevuIstekGoster.StateCommon.Border.Width = 1;
+            this.btnRandevuIstekGoster.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnRandevuIstekGoster.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnRandevuIstekGoster.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 10F, System.Drawing.FontStyle.Bold);
+            this.btnRandevuIstekGoster.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuIstekGoster.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuIstekGoster.StateDisabled.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnRandevuIstekGoster.StateDisabled.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnRandevuIstekGoster.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuIstekGoster.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnRandevuIstekGoster.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnRandevuIstekGoster.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnRandevuIstekGoster.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
+            this.btnRandevuIstekGoster.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
+            this.btnRandevuIstekGoster.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnRandevuIstekGoster.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnRandevuIstekGoster.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
+            this.btnRandevuIstekGoster.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
+            this.btnRandevuIstekGoster.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnRandevuIstekGoster.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnRandevuIstekGoster.TabIndex = 103;
+            this.btnRandevuIstekGoster.Values.Text = "Randevu İsteklerini Göster";
             // 
             // RandevuControl
             // 
@@ -799,8 +744,6 @@
         #endregion
 
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnRandevuIstekTemizle;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnRandevuIstekGoster;
         private System.Windows.Forms.DataGridView dataGridRandevuIstek;
         private System.Windows.Forms.DataGridViewTextBoxColumn DGVTxtMusteriAdi;
         private System.Windows.Forms.DataGridViewTextBoxColumn DGVTxtMusteriSoyad;
@@ -822,8 +765,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel2;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel4;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel3;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnRandevuDetayTemizle;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnRandevuDetayGoster;
         private System.Windows.Forms.DataGridView dataGridRandevuDetay;
         private System.Windows.Forms.DataGridViewTextBoxColumn DGV2TxtMusteriAdi;
         private System.Windows.Forms.DataGridViewTextBoxColumn DGV2TxtMusteriSoyadi;
@@ -841,5 +782,9 @@
         private System.Windows.Forms.DataGridViewImageColumn DGV2ImageDüzenle;
         private System.Windows.Forms.DataGridViewImageColumn DGV2ImageSil;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel5;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnRandevuDetayTemizle;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnRandevuDetayGoster;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnRandevuIstekTemizle;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnRandevuIstekGoster;
     }
 }

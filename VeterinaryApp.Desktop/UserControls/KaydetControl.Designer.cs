@@ -54,14 +54,15 @@
             this.kryptonLabel8 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonGroupBox1 = new Krypton.Toolkit.KryptonGroupBox();
             this.btnMusteriTemizle = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.btnMusteriKaydet = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnMusteriIptal = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.btnHastaTemizle = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.btnHastaKaydet = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.btnHastaIptal = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.dtpHastaYas = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
-            this.TxtHastaGelmeNedeni = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.btnMusteriKaydet = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonGroupBox2 = new Krypton.Toolkit.KryptonGroupBox();
+            this.btnHastaTemizle = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btnHastaIptal = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btnHastaKaydet = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.txtHastaYas = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.txtGelmeNedeni = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonLabel20 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.numericHastaKilo = new ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown();
             this.ComBoHastaKanGrubu = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.txtHastaRenk = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -70,7 +71,6 @@
             this.ComBoHastaIrk = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.ComBoHastaTur = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.txtHastaHbsNo = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonLabel20 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel19 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel18 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel17 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
@@ -304,7 +304,8 @@
             this.kryptonLabel1.Location = new System.Drawing.Point(16, 25);
             this.kryptonLabel1.Name = "kryptonLabel1";
             this.kryptonLabel1.Size = new System.Drawing.Size(47, 23);
-            this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
+            this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonLabel1.StateNormal.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonLabel1.StateNormal.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 9.5F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel1.TabIndex = 2;
             this.kryptonLabel1.Values.Text = "AD : ";
@@ -313,7 +314,7 @@
             // 
             this.ComBoHastaKisir.DropButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Alternate;
             this.ComBoHastaKisir.DropDownWidth = 190;
-            this.ComBoHastaKisir.Location = new System.Drawing.Point(107, 444);
+            this.ComBoHastaKisir.Location = new System.Drawing.Point(107, 442);
             this.ComBoHastaKisir.Name = "ComBoHastaKisir";
             this.ComBoHastaKisir.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.ComBoHastaKisir.Size = new System.Drawing.Size(207, 35);
@@ -399,12 +400,12 @@
             // kryptonGroupBox1.Panel
             // 
             this.kryptonGroupBox1.Panel.Controls.Add(this.btnMusteriTemizle);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.btnMusteriKaydet);
             this.kryptonGroupBox1.Panel.Controls.Add(this.btnTC);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.btnMusteriIptal);
             this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonLabel2);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.btnMusteriIptal);
             this.kryptonGroupBox1.Panel.Controls.Add(this.txtMusteriAdres);
             this.kryptonGroupBox1.Panel.Controls.Add(this.txtEposta);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.btnMusteriKaydet);
             this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonLabel16);
             this.kryptonGroupBox1.Panel.Controls.Add(this.txtMusteriIlce);
             this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonLabel7);
@@ -429,365 +430,120 @@
             // 
             // btnMusteriTemizle
             // 
-            this.btnMusteriTemizle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnMusteriTemizle.Location = new System.Drawing.Point(132, 545);
+            this.btnMusteriTemizle.Location = new System.Drawing.Point(154, 742);
             this.btnMusteriTemizle.Margin = new System.Windows.Forms.Padding(4);
             this.btnMusteriTemizle.Name = "btnMusteriTemizle";
-            this.btnMusteriTemizle.OverrideDefault.Back.Color1 = System.Drawing.Color.MediumBlue;
-            this.btnMusteriTemizle.OverrideDefault.Back.Color2 = System.Drawing.Color.MediumBlue;
-            this.btnMusteriTemizle.OverrideDefault.Back.ColorAngle = 45F;
-            this.btnMusteriTemizle.OverrideDefault.Border.Color1 = System.Drawing.Color.Navy;
-            this.btnMusteriTemizle.OverrideDefault.Border.Color2 = System.Drawing.Color.Navy;
-            this.btnMusteriTemizle.OverrideDefault.Border.ColorAngle = 45F;
-            this.btnMusteriTemizle.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnMusteriTemizle.OverrideDefault.Border.Rounding = 18;
-            this.btnMusteriTemizle.OverrideDefault.Border.Width = 1;
-            this.btnMusteriTemizle.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnMusteriTemizle.Size = new System.Drawing.Size(155, 50);
-            this.btnMusteriTemizle.StateCommon.Back.Color1 = System.Drawing.Color.MediumBlue;
-            this.btnMusteriTemizle.StateCommon.Back.Color2 = System.Drawing.Color.MediumBlue;
-            this.btnMusteriTemizle.StateCommon.Back.ColorAngle = 45F;
-            this.btnMusteriTemizle.StateCommon.Border.Color1 = System.Drawing.Color.Navy;
-            this.btnMusteriTemizle.StateCommon.Border.Color2 = System.Drawing.Color.Navy;
-            this.btnMusteriTemizle.StateCommon.Border.ColorAngle = 45F;
+            this.btnMusteriTemizle.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriTemizle.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriTemizle.Size = new System.Drawing.Size(131, 42);
+            this.btnMusteriTemizle.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriTemizle.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriTemizle.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnMusteriTemizle.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.btnMusteriTemizle.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnMusteriTemizle.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnMusteriTemizle.StateCommon.Border.Rounding = 18;
+            this.btnMusteriTemizle.StateCommon.Border.Rounding = 10;
             this.btnMusteriTemizle.StateCommon.Border.Width = 1;
             this.btnMusteriTemizle.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnMusteriTemizle.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnMusteriTemizle.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 12.25F, System.Drawing.FontStyle.Bold);
-            this.btnMusteriTemizle.StatePressed.Back.ColorAngle = 130F;
-            this.btnMusteriTemizle.StatePressed.Border.ColorAngle = 130F;
-            this.btnMusteriTemizle.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnMusteriTemizle.StatePressed.Border.Rounding = 18;
-            this.btnMusteriTemizle.StatePressed.Border.Width = 1;
-            this.btnMusteriTemizle.StateTracking.Back.ColorAngle = 45F;
-            this.btnMusteriTemizle.StateTracking.Border.Color1 = System.Drawing.Color.DarkGray;
-            this.btnMusteriTemizle.StateTracking.Border.Color2 = System.Drawing.Color.DimGray;
-            this.btnMusteriTemizle.StateTracking.Border.ColorAngle = 45F;
-            this.btnMusteriTemizle.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnMusteriTemizle.StateTracking.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnMusteriTemizle.StateTracking.Border.Rounding = 18;
-            this.btnMusteriTemizle.StateTracking.Border.Width = 1;
-            this.btnMusteriTemizle.TabIndex = 91;
+            this.btnMusteriTemizle.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 10F, System.Drawing.FontStyle.Bold);
+            this.btnMusteriTemizle.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriTemizle.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriTemizle.StateDisabled.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnMusteriTemizle.StateDisabled.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnMusteriTemizle.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriTemizle.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriTemizle.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnMusteriTemizle.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnMusteriTemizle.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
+            this.btnMusteriTemizle.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
+            this.btnMusteriTemizle.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnMusteriTemizle.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnMusteriTemizle.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
+            this.btnMusteriTemizle.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
+            this.btnMusteriTemizle.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnMusteriTemizle.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnMusteriTemizle.TabIndex = 101;
             this.btnMusteriTemizle.Values.Text = "Temizle";
-            // 
-            // btnMusteriKaydet
-            // 
-            this.btnMusteriKaydet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnMusteriKaydet.Location = new System.Drawing.Point(37, 465);
-            this.btnMusteriKaydet.Margin = new System.Windows.Forms.Padding(4);
-            this.btnMusteriKaydet.Name = "btnMusteriKaydet";
-            this.btnMusteriKaydet.OverrideDefault.Back.Color1 = System.Drawing.Color.MediumBlue;
-            this.btnMusteriKaydet.OverrideDefault.Back.Color2 = System.Drawing.Color.MediumBlue;
-            this.btnMusteriKaydet.OverrideDefault.Back.ColorAngle = 45F;
-            this.btnMusteriKaydet.OverrideDefault.Border.Color1 = System.Drawing.Color.Navy;
-            this.btnMusteriKaydet.OverrideDefault.Border.Color2 = System.Drawing.Color.Navy;
-            this.btnMusteriKaydet.OverrideDefault.Border.ColorAngle = 45F;
-            this.btnMusteriKaydet.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnMusteriKaydet.OverrideDefault.Border.Rounding = 18;
-            this.btnMusteriKaydet.OverrideDefault.Border.Width = 1;
-            this.btnMusteriKaydet.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnMusteriKaydet.Size = new System.Drawing.Size(155, 50);
-            this.btnMusteriKaydet.StateCommon.Back.Color1 = System.Drawing.Color.MediumBlue;
-            this.btnMusteriKaydet.StateCommon.Back.Color2 = System.Drawing.Color.MediumBlue;
-            this.btnMusteriKaydet.StateCommon.Back.ColorAngle = 45F;
-            this.btnMusteriKaydet.StateCommon.Border.Color1 = System.Drawing.Color.Navy;
-            this.btnMusteriKaydet.StateCommon.Border.Color2 = System.Drawing.Color.Navy;
-            this.btnMusteriKaydet.StateCommon.Border.ColorAngle = 45F;
-            this.btnMusteriKaydet.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnMusteriKaydet.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnMusteriKaydet.StateCommon.Border.Rounding = 18;
-            this.btnMusteriKaydet.StateCommon.Border.Width = 1;
-            this.btnMusteriKaydet.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnMusteriKaydet.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnMusteriKaydet.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 12.25F, System.Drawing.FontStyle.Bold);
-            this.btnMusteriKaydet.StatePressed.Back.ColorAngle = 130F;
-            this.btnMusteriKaydet.StatePressed.Border.ColorAngle = 130F;
-            this.btnMusteriKaydet.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnMusteriKaydet.StatePressed.Border.Rounding = 18;
-            this.btnMusteriKaydet.StatePressed.Border.Width = 1;
-            this.btnMusteriKaydet.StateTracking.Back.ColorAngle = 45F;
-            this.btnMusteriKaydet.StateTracking.Border.Color1 = System.Drawing.Color.DarkGray;
-            this.btnMusteriKaydet.StateTracking.Border.Color2 = System.Drawing.Color.DimGray;
-            this.btnMusteriKaydet.StateTracking.Border.ColorAngle = 45F;
-            this.btnMusteriKaydet.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnMusteriKaydet.StateTracking.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnMusteriKaydet.StateTracking.Border.Rounding = 18;
-            this.btnMusteriKaydet.StateTracking.Border.Width = 1;
-            this.btnMusteriKaydet.TabIndex = 92;
-            this.btnMusteriKaydet.Values.Text = "Kaydet";
             // 
             // btnMusteriIptal
             // 
-            this.btnMusteriIptal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnMusteriIptal.Location = new System.Drawing.Point(223, 465);
+            this.btnMusteriIptal.Location = new System.Drawing.Point(236, 682);
             this.btnMusteriIptal.Margin = new System.Windows.Forms.Padding(4);
             this.btnMusteriIptal.Name = "btnMusteriIptal";
-            this.btnMusteriIptal.OverrideDefault.Back.Color1 = System.Drawing.Color.MediumBlue;
-            this.btnMusteriIptal.OverrideDefault.Back.Color2 = System.Drawing.Color.MediumBlue;
-            this.btnMusteriIptal.OverrideDefault.Back.ColorAngle = 45F;
-            this.btnMusteriIptal.OverrideDefault.Border.Color1 = System.Drawing.Color.Navy;
-            this.btnMusteriIptal.OverrideDefault.Border.Color2 = System.Drawing.Color.Navy;
-            this.btnMusteriIptal.OverrideDefault.Border.ColorAngle = 45F;
-            this.btnMusteriIptal.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnMusteriIptal.OverrideDefault.Border.Rounding = 18;
-            this.btnMusteriIptal.OverrideDefault.Border.Width = 1;
-            this.btnMusteriIptal.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnMusteriIptal.Size = new System.Drawing.Size(155, 50);
-            this.btnMusteriIptal.StateCommon.Back.Color1 = System.Drawing.Color.MediumBlue;
-            this.btnMusteriIptal.StateCommon.Back.Color2 = System.Drawing.Color.MediumBlue;
-            this.btnMusteriIptal.StateCommon.Back.ColorAngle = 45F;
-            this.btnMusteriIptal.StateCommon.Border.Color1 = System.Drawing.Color.Navy;
-            this.btnMusteriIptal.StateCommon.Border.Color2 = System.Drawing.Color.Navy;
-            this.btnMusteriIptal.StateCommon.Border.ColorAngle = 45F;
+            this.btnMusteriIptal.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriIptal.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriIptal.Size = new System.Drawing.Size(131, 42);
+            this.btnMusteriIptal.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriIptal.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriIptal.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnMusteriIptal.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.btnMusteriIptal.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnMusteriIptal.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnMusteriIptal.StateCommon.Border.Rounding = 18;
+            this.btnMusteriIptal.StateCommon.Border.Rounding = 10;
             this.btnMusteriIptal.StateCommon.Border.Width = 1;
             this.btnMusteriIptal.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnMusteriIptal.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnMusteriIptal.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 12.25F, System.Drawing.FontStyle.Bold);
-            this.btnMusteriIptal.StatePressed.Back.ColorAngle = 130F;
-            this.btnMusteriIptal.StatePressed.Border.ColorAngle = 130F;
-            this.btnMusteriIptal.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnMusteriIptal.StatePressed.Border.Rounding = 18;
-            this.btnMusteriIptal.StatePressed.Border.Width = 1;
-            this.btnMusteriIptal.StateTracking.Back.ColorAngle = 45F;
-            this.btnMusteriIptal.StateTracking.Border.Color1 = System.Drawing.Color.DarkGray;
-            this.btnMusteriIptal.StateTracking.Border.Color2 = System.Drawing.Color.DimGray;
-            this.btnMusteriIptal.StateTracking.Border.ColorAngle = 45F;
-            this.btnMusteriIptal.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnMusteriIptal.StateTracking.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnMusteriIptal.StateTracking.Border.Rounding = 18;
-            this.btnMusteriIptal.StateTracking.Border.Width = 1;
-            this.btnMusteriIptal.TabIndex = 90;
+            this.btnMusteriIptal.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 10F, System.Drawing.FontStyle.Bold);
+            this.btnMusteriIptal.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriIptal.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriIptal.StateDisabled.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnMusteriIptal.StateDisabled.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnMusteriIptal.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriIptal.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriIptal.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnMusteriIptal.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnMusteriIptal.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
+            this.btnMusteriIptal.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
+            this.btnMusteriIptal.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnMusteriIptal.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnMusteriIptal.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
+            this.btnMusteriIptal.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
+            this.btnMusteriIptal.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnMusteriIptal.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnMusteriIptal.TabIndex = 100;
             this.btnMusteriIptal.Values.Text = "İptal Et";
             // 
-            // btnHastaTemizle
+            // btnMusteriKaydet
             // 
-            this.btnHastaTemizle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnHastaTemizle.Location = new System.Drawing.Point(562, 526);
-            this.btnHastaTemizle.Margin = new System.Windows.Forms.Padding(4);
-            this.btnHastaTemizle.Name = "btnHastaTemizle";
-            this.btnHastaTemizle.OverrideDefault.Back.Color1 = System.Drawing.Color.MediumBlue;
-            this.btnHastaTemizle.OverrideDefault.Back.Color2 = System.Drawing.Color.MediumBlue;
-            this.btnHastaTemizle.OverrideDefault.Back.ColorAngle = 45F;
-            this.btnHastaTemizle.OverrideDefault.Border.Color1 = System.Drawing.Color.Navy;
-            this.btnHastaTemizle.OverrideDefault.Border.Color2 = System.Drawing.Color.Navy;
-            this.btnHastaTemizle.OverrideDefault.Border.ColorAngle = 45F;
-            this.btnHastaTemizle.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnMusteriKaydet.Location = new System.Drawing.Point(66, 682);
+            this.btnMusteriKaydet.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMusteriKaydet.Name = "btnMusteriKaydet";
+            this.btnMusteriKaydet.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriKaydet.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriKaydet.Size = new System.Drawing.Size(131, 42);
+            this.btnMusteriKaydet.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriKaydet.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriKaydet.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnMusteriKaydet.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnMusteriKaydet.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnHastaTemizle.OverrideDefault.Border.Rounding = 18;
-            this.btnHastaTemizle.OverrideDefault.Border.Width = 1;
-            this.btnHastaTemizle.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnHastaTemizle.Size = new System.Drawing.Size(155, 50);
-            this.btnHastaTemizle.StateCommon.Back.Color1 = System.Drawing.Color.MediumBlue;
-            this.btnHastaTemizle.StateCommon.Back.Color2 = System.Drawing.Color.MediumBlue;
-            this.btnHastaTemizle.StateCommon.Back.ColorAngle = 45F;
-            this.btnHastaTemizle.StateCommon.Border.Color1 = System.Drawing.Color.Navy;
-            this.btnHastaTemizle.StateCommon.Border.Color2 = System.Drawing.Color.Navy;
-            this.btnHastaTemizle.StateCommon.Border.ColorAngle = 45F;
-            this.btnHastaTemizle.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnHastaTemizle.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnHastaTemizle.StateCommon.Border.Rounding = 18;
-            this.btnHastaTemizle.StateCommon.Border.Width = 1;
-            this.btnHastaTemizle.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnHastaTemizle.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnHastaTemizle.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 12.25F, System.Drawing.FontStyle.Bold);
-            this.btnHastaTemizle.StatePressed.Back.ColorAngle = 130F;
-            this.btnHastaTemizle.StatePressed.Border.ColorAngle = 130F;
-            this.btnHastaTemizle.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnHastaTemizle.StatePressed.Border.Rounding = 18;
-            this.btnHastaTemizle.StatePressed.Border.Width = 1;
-            this.btnHastaTemizle.StateTracking.Back.ColorAngle = 45F;
-            this.btnHastaTemizle.StateTracking.Border.Color1 = System.Drawing.Color.DarkGray;
-            this.btnHastaTemizle.StateTracking.Border.Color2 = System.Drawing.Color.DimGray;
-            this.btnHastaTemizle.StateTracking.Border.ColorAngle = 45F;
-            this.btnHastaTemizle.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnHastaTemizle.StateTracking.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnHastaTemizle.StateTracking.Border.Rounding = 18;
-            this.btnHastaTemizle.StateTracking.Border.Width = 1;
-            this.btnHastaTemizle.TabIndex = 90;
-            this.btnHastaTemizle.Values.Text = "Temizle";
-            // 
-            // btnHastaKaydet
-            // 
-            this.btnHastaKaydet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnHastaKaydet.Location = new System.Drawing.Point(96, 526);
-            this.btnHastaKaydet.Margin = new System.Windows.Forms.Padding(4);
-            this.btnHastaKaydet.Name = "btnHastaKaydet";
-            this.btnHastaKaydet.OverrideDefault.Back.Color1 = System.Drawing.Color.MediumBlue;
-            this.btnHastaKaydet.OverrideDefault.Back.Color2 = System.Drawing.Color.MediumBlue;
-            this.btnHastaKaydet.OverrideDefault.Back.ColorAngle = 45F;
-            this.btnHastaKaydet.OverrideDefault.Border.Color1 = System.Drawing.Color.Navy;
-            this.btnHastaKaydet.OverrideDefault.Border.Color2 = System.Drawing.Color.Navy;
-            this.btnHastaKaydet.OverrideDefault.Border.ColorAngle = 45F;
-            this.btnHastaKaydet.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnHastaKaydet.OverrideDefault.Border.Rounding = 18;
-            this.btnHastaKaydet.OverrideDefault.Border.Width = 1;
-            this.btnHastaKaydet.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnHastaKaydet.Size = new System.Drawing.Size(155, 50);
-            this.btnHastaKaydet.StateCommon.Back.Color1 = System.Drawing.Color.MediumBlue;
-            this.btnHastaKaydet.StateCommon.Back.Color2 = System.Drawing.Color.MediumBlue;
-            this.btnHastaKaydet.StateCommon.Back.ColorAngle = 45F;
-            this.btnHastaKaydet.StateCommon.Border.Color1 = System.Drawing.Color.Navy;
-            this.btnHastaKaydet.StateCommon.Border.Color2 = System.Drawing.Color.Navy;
-            this.btnHastaKaydet.StateCommon.Border.ColorAngle = 45F;
-            this.btnHastaKaydet.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnHastaKaydet.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnHastaKaydet.StateCommon.Border.Rounding = 18;
-            this.btnHastaKaydet.StateCommon.Border.Width = 1;
-            this.btnHastaKaydet.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnHastaKaydet.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnHastaKaydet.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 12.25F, System.Drawing.FontStyle.Bold);
-            this.btnHastaKaydet.StatePressed.Back.ColorAngle = 130F;
-            this.btnHastaKaydet.StatePressed.Border.ColorAngle = 130F;
-            this.btnHastaKaydet.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnHastaKaydet.StatePressed.Border.Rounding = 18;
-            this.btnHastaKaydet.StatePressed.Border.Width = 1;
-            this.btnHastaKaydet.StateTracking.Back.ColorAngle = 45F;
-            this.btnHastaKaydet.StateTracking.Border.Color1 = System.Drawing.Color.DarkGray;
-            this.btnHastaKaydet.StateTracking.Border.Color2 = System.Drawing.Color.DimGray;
-            this.btnHastaKaydet.StateTracking.Border.ColorAngle = 45F;
-            this.btnHastaKaydet.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnHastaKaydet.StateTracking.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnHastaKaydet.StateTracking.Border.Rounding = 18;
-            this.btnHastaKaydet.StateTracking.Border.Width = 1;
-            this.btnHastaKaydet.TabIndex = 89;
-            this.btnHastaKaydet.Values.Text = "Kaydet";
-            // 
-            // btnHastaIptal
-            // 
-            this.btnHastaIptal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnHastaIptal.Location = new System.Drawing.Point(329, 526);
-            this.btnHastaIptal.Margin = new System.Windows.Forms.Padding(4);
-            this.btnHastaIptal.Name = "btnHastaIptal";
-            this.btnHastaIptal.OverrideDefault.Back.Color1 = System.Drawing.Color.MediumBlue;
-            this.btnHastaIptal.OverrideDefault.Back.Color2 = System.Drawing.Color.MediumBlue;
-            this.btnHastaIptal.OverrideDefault.Back.ColorAngle = 45F;
-            this.btnHastaIptal.OverrideDefault.Border.Color1 = System.Drawing.Color.Navy;
-            this.btnHastaIptal.OverrideDefault.Border.Color2 = System.Drawing.Color.Navy;
-            this.btnHastaIptal.OverrideDefault.Border.ColorAngle = 45F;
-            this.btnHastaIptal.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnHastaIptal.OverrideDefault.Border.Rounding = 18;
-            this.btnHastaIptal.OverrideDefault.Border.Width = 1;
-            this.btnHastaIptal.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnHastaIptal.Size = new System.Drawing.Size(155, 50);
-            this.btnHastaIptal.StateCommon.Back.Color1 = System.Drawing.Color.MediumBlue;
-            this.btnHastaIptal.StateCommon.Back.Color2 = System.Drawing.Color.MediumBlue;
-            this.btnHastaIptal.StateCommon.Back.ColorAngle = 45F;
-            this.btnHastaIptal.StateCommon.Border.Color1 = System.Drawing.Color.Navy;
-            this.btnHastaIptal.StateCommon.Border.Color2 = System.Drawing.Color.Navy;
-            this.btnHastaIptal.StateCommon.Border.ColorAngle = 45F;
-            this.btnHastaIptal.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnHastaIptal.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnHastaIptal.StateCommon.Border.Rounding = 18;
-            this.btnHastaIptal.StateCommon.Border.Width = 1;
-            this.btnHastaIptal.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnHastaIptal.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnHastaIptal.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 12.25F, System.Drawing.FontStyle.Bold);
-            this.btnHastaIptal.StatePressed.Back.ColorAngle = 130F;
-            this.btnHastaIptal.StatePressed.Border.ColorAngle = 130F;
-            this.btnHastaIptal.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnHastaIptal.StatePressed.Border.Rounding = 18;
-            this.btnHastaIptal.StatePressed.Border.Width = 1;
-            this.btnHastaIptal.StateTracking.Back.ColorAngle = 45F;
-            this.btnHastaIptal.StateTracking.Border.Color1 = System.Drawing.Color.DarkGray;
-            this.btnHastaIptal.StateTracking.Border.Color2 = System.Drawing.Color.DimGray;
-            this.btnHastaIptal.StateTracking.Border.ColorAngle = 45F;
-            this.btnHastaIptal.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnHastaIptal.StateTracking.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnHastaIptal.StateTracking.Border.Rounding = 18;
-            this.btnHastaIptal.StateTracking.Border.Width = 1;
-            this.btnHastaIptal.TabIndex = 87;
-            this.btnHastaIptal.Values.Text = "İptal Et";
-            // 
-            // dtpHastaYas
-            // 
-            this.dtpHastaYas.CalendarTodayDate = new System.DateTime(2025, 4, 20, 0, 0, 0, 0);
-            this.dtpHastaYas.DropButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Gallery;
-            this.dtpHastaYas.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpHastaYas.Location = new System.Drawing.Point(107, 173);
-            this.dtpHastaYas.Margin = new System.Windows.Forms.Padding(4);
-            this.dtpHastaYas.Name = "dtpHastaYas";
-            this.dtpHastaYas.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.dtpHastaYas.Size = new System.Drawing.Size(207, 41);
-            this.dtpHastaYas.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.dtpHastaYas.StateCommon.Border.Color1 = System.Drawing.Color.Black;
-            this.dtpHastaYas.StateCommon.Border.Color2 = System.Drawing.Color.Black;
-            this.dtpHastaYas.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.dtpHastaYas.StateCommon.Border.Rounding = 18;
-            this.dtpHastaYas.StateCommon.Border.Width = 1;
-            this.dtpHastaYas.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dtpHastaYas.StateNormal.Back.Color1 = System.Drawing.Color.White;
-            this.dtpHastaYas.StateNormal.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dtpHastaYas.TabIndex = 57;
-            this.dtpHastaYas.UpDownButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Gallery;
-            // 
-            // TxtHastaGelmeNedeni
-            // 
-            this.TxtHastaGelmeNedeni.Location = new System.Drawing.Point(386, 428);
-            this.TxtHastaGelmeNedeni.Multiline = true;
-            this.TxtHastaGelmeNedeni.Name = "TxtHastaGelmeNedeni";
-            this.TxtHastaGelmeNedeni.Size = new System.Drawing.Size(367, 176);
-            this.TxtHastaGelmeNedeni.StateCommon.Back.Color1 = System.Drawing.Color.Snow;
-            this.TxtHastaGelmeNedeni.StateCommon.Border.Color1 = System.Drawing.Color.Black;
-            this.TxtHastaGelmeNedeni.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.TxtHastaGelmeNedeni.StateCommon.Border.Rounding = 15;
-            this.TxtHastaGelmeNedeni.TabIndex = 86;
+            this.btnMusteriKaydet.StateCommon.Border.Rounding = 10;
+            this.btnMusteriKaydet.StateCommon.Border.Width = 1;
+            this.btnMusteriKaydet.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnMusteriKaydet.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnMusteriKaydet.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 10F, System.Drawing.FontStyle.Bold);
+            this.btnMusteriKaydet.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriKaydet.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriKaydet.StateDisabled.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnMusteriKaydet.StateDisabled.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnMusteriKaydet.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriKaydet.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnMusteriKaydet.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnMusteriKaydet.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnMusteriKaydet.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
+            this.btnMusteriKaydet.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
+            this.btnMusteriKaydet.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnMusteriKaydet.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnMusteriKaydet.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
+            this.btnMusteriKaydet.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
+            this.btnMusteriKaydet.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnMusteriKaydet.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnMusteriKaydet.TabIndex = 99;
+            this.btnMusteriKaydet.Values.Text = "Kaydet";
             // 
             // kryptonGroupBox2
             // 
@@ -796,13 +552,14 @@
             // 
             // kryptonGroupBox2.Panel
             // 
+            this.kryptonGroupBox2.Panel.Controls.Add(this.btnHastaTemizle);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.btnHastaIptal);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.btnHastaKaydet);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.txtHastaYas);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.txtGelmeNedeni);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.kryptonLabel20);
             this.kryptonGroupBox2.Panel.Controls.Add(this.ComBoHastaKisir);
             this.kryptonGroupBox2.Panel.Controls.Add(this.kryptonLabel21);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.btnHastaTemizle);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.btnHastaKaydet);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.btnHastaIptal);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.dtpHastaYas);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.TxtHastaGelmeNedeni);
             this.kryptonGroupBox2.Panel.Controls.Add(this.numericHastaKilo);
             this.kryptonGroupBox2.Panel.Controls.Add(this.ComBoHastaKanGrubu);
             this.kryptonGroupBox2.Panel.Controls.Add(this.txtHastaRenk);
@@ -811,7 +568,6 @@
             this.kryptonGroupBox2.Panel.Controls.Add(this.ComBoHastaIrk);
             this.kryptonGroupBox2.Panel.Controls.Add(this.ComBoHastaTur);
             this.kryptonGroupBox2.Panel.Controls.Add(this.txtHastaHbsNo);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.kryptonLabel20);
             this.kryptonGroupBox2.Panel.Controls.Add(this.kryptonLabel19);
             this.kryptonGroupBox2.Panel.Controls.Add(this.kryptonLabel18);
             this.kryptonGroupBox2.Panel.Controls.Add(this.kryptonLabel17);
@@ -832,9 +588,164 @@
             this.kryptonGroupBox2.TabIndex = 60;
             this.kryptonGroupBox2.Values.Heading = "Hasta Kayıt";
             // 
+            // btnHastaTemizle
+            // 
+            this.btnHastaTemizle.Location = new System.Drawing.Point(564, 660);
+            this.btnHastaTemizle.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHastaTemizle.Name = "btnHastaTemizle";
+            this.btnHastaTemizle.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnHastaTemizle.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnHastaTemizle.Size = new System.Drawing.Size(131, 42);
+            this.btnHastaTemizle.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnHastaTemizle.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnHastaTemizle.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnHastaTemizle.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnHastaTemizle.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnHastaTemizle.StateCommon.Border.Rounding = 10;
+            this.btnHastaTemizle.StateCommon.Border.Width = 1;
+            this.btnHastaTemizle.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnHastaTemizle.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnHastaTemizle.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 10F, System.Drawing.FontStyle.Bold);
+            this.btnHastaTemizle.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnHastaTemizle.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnHastaTemizle.StateDisabled.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnHastaTemizle.StateDisabled.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnHastaTemizle.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnHastaTemizle.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnHastaTemizle.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnHastaTemizle.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnHastaTemizle.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
+            this.btnHastaTemizle.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
+            this.btnHastaTemizle.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnHastaTemizle.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnHastaTemizle.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
+            this.btnHastaTemizle.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
+            this.btnHastaTemizle.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnHastaTemizle.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnHastaTemizle.TabIndex = 104;
+            this.btnHastaTemizle.Values.Text = "Temizle";
+            // 
+            // btnHastaIptal
+            // 
+            this.btnHastaIptal.Location = new System.Drawing.Point(340, 660);
+            this.btnHastaIptal.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHastaIptal.Name = "btnHastaIptal";
+            this.btnHastaIptal.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnHastaIptal.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnHastaIptal.Size = new System.Drawing.Size(131, 42);
+            this.btnHastaIptal.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnHastaIptal.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnHastaIptal.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnHastaIptal.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnHastaIptal.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnHastaIptal.StateCommon.Border.Rounding = 10;
+            this.btnHastaIptal.StateCommon.Border.Width = 1;
+            this.btnHastaIptal.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnHastaIptal.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnHastaIptal.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 10F, System.Drawing.FontStyle.Bold);
+            this.btnHastaIptal.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnHastaIptal.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnHastaIptal.StateDisabled.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnHastaIptal.StateDisabled.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnHastaIptal.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnHastaIptal.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnHastaIptal.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnHastaIptal.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnHastaIptal.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
+            this.btnHastaIptal.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
+            this.btnHastaIptal.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnHastaIptal.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnHastaIptal.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
+            this.btnHastaIptal.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
+            this.btnHastaIptal.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnHastaIptal.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnHastaIptal.TabIndex = 103;
+            this.btnHastaIptal.Values.Text = "İptal Et";
+            // 
+            // btnHastaKaydet
+            // 
+            this.btnHastaKaydet.Location = new System.Drawing.Point(116, 660);
+            this.btnHastaKaydet.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHastaKaydet.Name = "btnHastaKaydet";
+            this.btnHastaKaydet.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnHastaKaydet.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnHastaKaydet.Size = new System.Drawing.Size(131, 42);
+            this.btnHastaKaydet.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnHastaKaydet.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnHastaKaydet.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnHastaKaydet.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnHastaKaydet.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnHastaKaydet.StateCommon.Border.Rounding = 10;
+            this.btnHastaKaydet.StateCommon.Border.Width = 1;
+            this.btnHastaKaydet.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnHastaKaydet.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnHastaKaydet.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 10F, System.Drawing.FontStyle.Bold);
+            this.btnHastaKaydet.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnHastaKaydet.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnHastaKaydet.StateDisabled.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnHastaKaydet.StateDisabled.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnHastaKaydet.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnHastaKaydet.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnHastaKaydet.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnHastaKaydet.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnHastaKaydet.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
+            this.btnHastaKaydet.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
+            this.btnHastaKaydet.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnHastaKaydet.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnHastaKaydet.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
+            this.btnHastaKaydet.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
+            this.btnHastaKaydet.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnHastaKaydet.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnHastaKaydet.TabIndex = 102;
+            this.btnHastaKaydet.Values.Text = "Kaydet";
+            // 
+            // txtHastaYas
+            // 
+            this.txtHastaYas.Location = new System.Drawing.Point(107, 174);
+            this.txtHastaYas.Name = "txtHastaYas";
+            this.txtHastaYas.Size = new System.Drawing.Size(207, 37);
+            this.txtHastaYas.StateCommon.Back.Color1 = System.Drawing.Color.Snow;
+            this.txtHastaYas.StateCommon.Border.Color1 = System.Drawing.Color.Black;
+            this.txtHastaYas.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtHastaYas.StateCommon.Border.Rounding = 15;
+            this.txtHastaYas.TabIndex = 96;
+            // 
+            // txtGelmeNedeni
+            // 
+            this.txtGelmeNedeni.Location = new System.Drawing.Point(386, 422);
+            this.txtGelmeNedeni.Multiline = true;
+            this.txtGelmeNedeni.Name = "txtGelmeNedeni";
+            this.txtGelmeNedeni.Size = new System.Drawing.Size(374, 183);
+            this.txtGelmeNedeni.StateCommon.Back.Color1 = System.Drawing.Color.Snow;
+            this.txtGelmeNedeni.StateCommon.Border.Color1 = System.Drawing.Color.Black;
+            this.txtGelmeNedeni.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtGelmeNedeni.StateCommon.Border.Rounding = 15;
+            this.txtGelmeNedeni.TabIndex = 95;
+            // 
+            // kryptonLabel20
+            // 
+            this.kryptonLabel20.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.BoldControl;
+            this.kryptonLabel20.Location = new System.Drawing.Point(386, 384);
+            this.kryptonLabel20.Name = "kryptonLabel20";
+            this.kryptonLabel20.Size = new System.Drawing.Size(169, 23);
+            this.kryptonLabel20.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
+            this.kryptonLabel20.StateNormal.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 9.5F, System.Drawing.FontStyle.Bold);
+            this.kryptonLabel20.TabIndex = 94;
+            this.kryptonLabel20.Values.Text = "GELME NEDENİ  : ";
+            // 
             // numericHastaKilo
             // 
-            this.numericHastaKilo.Location = new System.Drawing.Point(107, 373);
+            this.numericHastaKilo.Location = new System.Drawing.Point(107, 374);
             this.numericHastaKilo.Margin = new System.Windows.Forms.Padding(4);
             this.numericHastaKilo.Maximum = new decimal(new int[] {
             10000,
@@ -930,7 +841,7 @@
             // 
             this.ComBoHastaTur.DropButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Alternate;
             this.ComBoHastaTur.DropDownWidth = 190;
-            this.ComBoHastaTur.Location = new System.Drawing.Point(107, 243);
+            this.ComBoHastaTur.Location = new System.Drawing.Point(107, 242);
             this.ComBoHastaTur.Name = "ComBoHastaTur";
             this.ComBoHastaTur.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.ComBoHastaTur.Size = new System.Drawing.Size(207, 35);
@@ -955,17 +866,6 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtHastaHbsNo.StateCommon.Border.Rounding = 15;
             this.txtHastaHbsNo.TabIndex = 75;
-            // 
-            // kryptonLabel20
-            // 
-            this.kryptonLabel20.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.BoldControl;
-            this.kryptonLabel20.Location = new System.Drawing.Point(386, 387);
-            this.kryptonLabel20.Name = "kryptonLabel20";
-            this.kryptonLabel20.Size = new System.Drawing.Size(165, 23);
-            this.kryptonLabel20.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.kryptonLabel20.StateNormal.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 9.5F, System.Drawing.FontStyle.Bold);
-            this.kryptonLabel20.TabIndex = 74;
-            this.kryptonLabel20.Values.Text = "GELME NEDENİ : ";
             // 
             // kryptonLabel19
             // 
@@ -1109,14 +1009,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtMusteriTelNo;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel8;
         private Krypton.Toolkit.KryptonGroupBox kryptonGroupBox1;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnMusteriTemizle;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnMusteriKaydet;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnMusteriIptal;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnHastaTemizle;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnHastaKaydet;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnHastaIptal;
-        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker dtpHastaYas;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox TxtHastaGelmeNedeni;
         private Krypton.Toolkit.KryptonGroupBox kryptonGroupBox2;
         private ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown numericHastaKilo;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox ComBoHastaKanGrubu;
@@ -1126,7 +1018,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox ComBoHastaIrk;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox ComBoHastaTur;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtHastaHbsNo;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel20;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel19;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel18;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel17;
@@ -1135,5 +1026,14 @@
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel12;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel11;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel10;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtGelmeNedeni;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel20;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtHastaYas;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnMusteriTemizle;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnMusteriIptal;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnMusteriKaydet;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnHastaTemizle;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnHastaIptal;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnHastaKaydet;
     }
 }

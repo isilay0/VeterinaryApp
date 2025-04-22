@@ -5,10 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9935D055-3F57-4764-9CDE-D866920CE612}|VeterinaryApp.Desktop\\VeterinaryApp.Desktop.csproj|c:\\users\\bagria\u00E7ik\\documents\\github\\veterinaryapp\\veterinaryapp.desktop\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9935D055-3F57-4764-9CDE-D866920CE612}|VeterinaryApp.Desktop\\VeterinaryApp.Desktop.csproj|solutionrelative:veterinaryapp.desktop\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9935D055-3F57-4764-9CDE-D866920CE612}|VeterinaryApp.Desktop\\VeterinaryApp.Desktop.csproj|C:\\Users\\BAGRIA\u00C7IK\\Documents\\GitHub\\VeterinaryApp\\veterinaryapp.desktop\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9935D055-3F57-4764-9CDE-D866920CE612}|VeterinaryApp.Desktop\\VeterinaryApp.Desktop.csproj|solutionrelative:veterinaryapp.desktop\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -61,21 +57,8 @@
               "ToolTip": "C:\\Users\\BAGRIA\u00C7IK\\Documents\\GitHub\\VeterinaryApp\\VeterinaryApp.Desktop\\Form1.cs [Design]",
               "RelativeToolTip": "VeterinaryApp.Desktop\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T19:10:02.899Z",
+              "WhenOpened": "2025-04-22T19:14:52.031Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\BAGRIA\u00C7IK\\Documents\\GitHub\\VeterinaryApp\\VeterinaryApp.Desktop\\Form1.cs",
-              "RelativeDocumentMoniker": "VeterinaryApp.Desktop\\Form1.cs",
-              "ToolTip": "C:\\Users\\BAGRIA\u00C7IK\\Documents\\GitHub\\VeterinaryApp\\VeterinaryApp.Desktop\\Form1.cs",
-              "RelativeToolTip": "VeterinaryApp.Desktop\\Form1.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T13:04:39.102Z",
-              "EditorCaption": ""
             }
           ]
         }

@@ -77,6 +77,8 @@
             this.btnSil.Location = new System.Drawing.Point(383, 426);
             this.btnSil.Margin = new System.Windows.Forms.Padding(4);
             this.btnSil.Name = "btnSil";
+            this.btnSil.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnSil.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnSil.Size = new System.Drawing.Size(129, 42);
             this.btnSil.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnSil.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
@@ -114,6 +116,8 @@
             this.btnStoguBitenler.Location = new System.Drawing.Point(1031, 33);
             this.btnStoguBitenler.Margin = new System.Windows.Forms.Padding(4);
             this.btnStoguBitenler.Name = "btnStoguBitenler";
+            this.btnStoguBitenler.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnStoguBitenler.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnStoguBitenler.Size = new System.Drawing.Size(71, 63);
             this.btnStoguBitenler.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnStoguBitenler.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
@@ -152,6 +156,8 @@
             this.btnBarkod.Location = new System.Drawing.Point(739, 33);
             this.btnBarkod.Margin = new System.Windows.Forms.Padding(4);
             this.btnBarkod.Name = "btnBarkod";
+            this.btnBarkod.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnBarkod.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnBarkod.Size = new System.Drawing.Size(71, 63);
             this.btnBarkod.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnBarkod.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
@@ -190,6 +196,8 @@
             this.btnSonKullanma.Location = new System.Drawing.Point(641, 33);
             this.btnSonKullanma.Margin = new System.Windows.Forms.Padding(4);
             this.btnSonKullanma.Name = "btnSonKullanma";
+            this.btnSonKullanma.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnSonKullanma.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnSonKullanma.Size = new System.Drawing.Size(71, 63);
             this.btnSonKullanma.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnSonKullanma.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
@@ -228,6 +236,8 @@
             this.btnIlac.Location = new System.Drawing.Point(835, 33);
             this.btnIlac.Margin = new System.Windows.Forms.Padding(4);
             this.btnIlac.Name = "btnIlac";
+            this.btnIlac.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnIlac.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnIlac.Size = new System.Drawing.Size(71, 63);
             this.btnIlac.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnIlac.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
@@ -266,6 +276,8 @@
             this.btnAsi.Location = new System.Drawing.Point(937, 33);
             this.btnAsi.Margin = new System.Windows.Forms.Padding(4);
             this.btnAsi.Name = "btnAsi";
+            this.btnAsi.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnAsi.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnAsi.Size = new System.Drawing.Size(71, 63);
             this.btnAsi.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnAsi.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
@@ -304,6 +316,8 @@
             this.btnFiltreyiTemizle.Location = new System.Drawing.Point(1123, 53);
             this.btnFiltreyiTemizle.Margin = new System.Windows.Forms.Padding(4);
             this.btnFiltreyiTemizle.Name = "btnFiltreyiTemizle";
+            this.btnFiltreyiTemizle.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnFiltreyiTemizle.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnFiltreyiTemizle.Size = new System.Drawing.Size(325, 42);
             this.btnFiltreyiTemizle.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnFiltreyiTemizle.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
@@ -502,6 +516,8 @@
             this.btnGuncelle.Location = new System.Drawing.Point(215, 426);
             this.btnGuncelle.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuncelle.Name = "btnGuncelle";
+            this.btnGuncelle.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnGuncelle.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnGuncelle.Size = new System.Drawing.Size(131, 42);
             this.btnGuncelle.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnGuncelle.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
@@ -680,6 +696,8 @@
             this.btnEkle.Location = new System.Drawing.Point(57, 426);
             this.btnEkle.Margin = new System.Windows.Forms.Padding(4);
             this.btnEkle.Name = "btnEkle";
+            this.btnEkle.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
+            this.btnEkle.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnEkle.Size = new System.Drawing.Size(131, 42);
             this.btnEkle.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnEkle.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
