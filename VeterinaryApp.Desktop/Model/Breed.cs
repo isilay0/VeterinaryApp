@@ -10,5 +10,6 @@ namespace VeterinaryApp.Model
     {
         public int Id { get; set; }
         public string BreedName { get; set; }
+        public int SpeciesId { get; set; }
     }
 }

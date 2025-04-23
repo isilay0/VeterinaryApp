@@ -15,9 +15,17 @@ namespace VeterinaryApp.Model
         public int DoctorId { get; set; }
         public string Name { get; set; }
         public string Disease { get; set; }
-        public int Age { get; set; }
+        public string Age { get; set; }
         public bool Gender { get; set; }
-        public string Anımal { get; set; }
+
+        public int SpeciesId { get; set; }
+        public string Color { get; set; }
+        public string Blood {  get; set; }
+        public int Weight { get; set; }
+        public string HbsId { get; set; }
+
+        public string Geld { get; set; }
+        
 
 
     }

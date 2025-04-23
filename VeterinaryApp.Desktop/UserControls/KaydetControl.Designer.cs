@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.kryptonLabel9 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.btnTC = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.txtTC = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.txtMusteriAdres = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.txtEposta = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -49,7 +49,7 @@
             this.ComBoHastaKisir = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.kryptonLabel21 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.txtHastaAdi = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.ComBoHastaSahipSec = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.ComboHastaSahipSec = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.txtMusteriTelNo = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel8 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonGroupBox1 = new Krypton.Toolkit.KryptonGroupBox();
@@ -64,12 +64,12 @@
             this.txtGelmeNedeni = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel20 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.numericHastaKilo = new ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown();
-            this.ComBoHastaKanGrubu = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.ComboHastaKanGrubu = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.txtHastaRenk = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.RadioBtnErkek = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
             this.RadioBtnDisi = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
-            this.ComBoHastaIrk = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
-            this.ComBoHastaTur = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.ComboHastaIrk = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.ComboHastaTur = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.txtHastaHbsNo = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel19 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel18 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
@@ -80,7 +80,7 @@
             this.kryptonLabel11 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel10 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             ((System.ComponentModel.ISupportInitialize)(this.ComBoHastaKisir)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ComBoHastaSahipSec)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ComboHastaSahipSec)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).BeginInit();
             this.kryptonGroupBox1.Panel.SuspendLayout();
@@ -89,52 +89,56 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2.Panel)).BeginInit();
             this.kryptonGroupBox2.Panel.SuspendLayout();
             this.kryptonGroupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ComBoHastaKanGrubu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ComBoHastaIrk)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ComBoHastaTur)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ComboHastaKanGrubu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ComboHastaIrk)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ComboHastaTur)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonLabel9
             // 
             this.kryptonLabel9.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.BoldControl;
-            this.kryptonLabel9.Location = new System.Drawing.Point(15, 12);
+            this.kryptonLabel9.Location = new System.Drawing.Point(11, 10);
+            this.kryptonLabel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabel9.Name = "kryptonLabel9";
-            this.kryptonLabel9.Size = new System.Drawing.Size(232, 23);
+            this.kryptonLabel9.Size = new System.Drawing.Size(164, 18);
             this.kryptonLabel9.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.kryptonLabel9.StateCommon.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 9.5F, System.Drawing.FontStyle.Bold);
+            this.kryptonLabel9.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel9.TabIndex = 63;
             this.kryptonLabel9.Values.Text = "Hastanın Sahibini Seçiniz ";
             // 
-            // btnTC
+            // txtTC
             // 
-            this.btnTC.Location = new System.Drawing.Point(188, 120);
-            this.btnTC.Name = "btnTC";
-            this.btnTC.Size = new System.Drawing.Size(207, 37);
-            this.btnTC.StateCommon.Back.Color1 = System.Drawing.Color.Snow;
-            this.btnTC.StateCommon.Border.Color1 = System.Drawing.Color.Black;
-            this.btnTC.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtTC.Location = new System.Drawing.Point(141, 98);
+            this.txtTC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTC.Name = "txtTC";
+            this.txtTC.Size = new System.Drawing.Size(155, 33);
+            this.txtTC.StateCommon.Back.Color1 = System.Drawing.Color.Snow;
+            this.txtTC.StateCommon.Border.Color1 = System.Drawing.Color.Black;
+            this.txtTC.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnTC.StateCommon.Border.Rounding = 15;
-            this.btnTC.TabIndex = 63;
+            this.txtTC.StateCommon.Border.Rounding = 15;
+            this.txtTC.TabIndex = 63;
             // 
             // kryptonLabel2
             // 
             this.kryptonLabel2.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.BoldControl;
-            this.kryptonLabel2.Location = new System.Drawing.Point(16, 133);
+            this.kryptonLabel2.Location = new System.Drawing.Point(12, 108);
+            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(45, 23);
+            this.kryptonLabel2.Size = new System.Drawing.Size(36, 18);
             this.kryptonLabel2.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.kryptonLabel2.StateNormal.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 9.5F, System.Drawing.FontStyle.Bold);
+            this.kryptonLabel2.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel2.TabIndex = 62;
             this.kryptonLabel2.Values.Text = "TC :";
             // 
             // txtMusteriAdres
             // 
-            this.txtMusteriAdres.Location = new System.Drawing.Point(52, 487);
+            this.txtMusteriAdres.Location = new System.Drawing.Point(39, 396);
+            this.txtMusteriAdres.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMusteriAdres.Multiline = true;
             this.txtMusteriAdres.Name = "txtMusteriAdres";
-            this.txtMusteriAdres.Size = new System.Drawing.Size(341, 176);
+            this.txtMusteriAdres.Size = new System.Drawing.Size(256, 143);
             this.txtMusteriAdres.StateCommon.Back.Color1 = System.Drawing.Color.Snow;
             this.txtMusteriAdres.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.txtMusteriAdres.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -145,9 +149,10 @@
             // 
             // txtEposta
             // 
-            this.txtEposta.Location = new System.Drawing.Point(188, 390);
+            this.txtEposta.Location = new System.Drawing.Point(141, 317);
+            this.txtEposta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtEposta.Name = "txtEposta";
-            this.txtEposta.Size = new System.Drawing.Size(207, 37);
+            this.txtEposta.Size = new System.Drawing.Size(155, 33);
             this.txtEposta.StateCommon.Back.Color1 = System.Drawing.Color.Snow;
             this.txtEposta.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.txtEposta.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -159,19 +164,21 @@
             // kryptonLabel16
             // 
             this.kryptonLabel16.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.BoldControl;
-            this.kryptonLabel16.Location = new System.Drawing.Point(16, 403);
+            this.kryptonLabel16.Location = new System.Drawing.Point(12, 327);
+            this.kryptonLabel16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabel16.Name = "kryptonLabel16";
-            this.kryptonLabel16.Size = new System.Drawing.Size(91, 23);
+            this.kryptonLabel16.Size = new System.Drawing.Size(70, 18);
             this.kryptonLabel16.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.kryptonLabel16.StateNormal.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 9.5F, System.Drawing.FontStyle.Bold);
+            this.kryptonLabel16.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel16.TabIndex = 59;
             this.kryptonLabel16.Values.Text = "E-POSTA";
             // 
             // txtMusteriIlce
             // 
-            this.txtMusteriIlce.Location = new System.Drawing.Point(188, 336);
+            this.txtMusteriIlce.Location = new System.Drawing.Point(141, 273);
+            this.txtMusteriIlce.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMusteriIlce.Name = "txtMusteriIlce";
-            this.txtMusteriIlce.Size = new System.Drawing.Size(207, 37);
+            this.txtMusteriIlce.Size = new System.Drawing.Size(155, 33);
             this.txtMusteriIlce.StateCommon.Back.Color1 = System.Drawing.Color.Snow;
             this.txtMusteriIlce.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.txtMusteriIlce.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -183,19 +190,21 @@
             // kryptonLabel7
             // 
             this.kryptonLabel7.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.BoldControl;
-            this.kryptonLabel7.Location = new System.Drawing.Point(16, 349);
+            this.kryptonLabel7.Location = new System.Drawing.Point(12, 284);
+            this.kryptonLabel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabel7.Name = "kryptonLabel7";
-            this.kryptonLabel7.Size = new System.Drawing.Size(65, 23);
+            this.kryptonLabel7.Size = new System.Drawing.Size(48, 18);
             this.kryptonLabel7.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.kryptonLabel7.StateNormal.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 9.5F, System.Drawing.FontStyle.Bold);
+            this.kryptonLabel7.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel7.TabIndex = 57;
             this.kryptonLabel7.Values.Text = "İLÇE : ";
             // 
             // txtMusteriIl
             // 
-            this.txtMusteriIl.Location = new System.Drawing.Point(188, 282);
+            this.txtMusteriIl.Location = new System.Drawing.Point(141, 229);
+            this.txtMusteriIl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMusteriIl.Name = "txtMusteriIl";
-            this.txtMusteriIl.Size = new System.Drawing.Size(207, 37);
+            this.txtMusteriIl.Size = new System.Drawing.Size(155, 33);
             this.txtMusteriIl.StateCommon.Back.Color1 = System.Drawing.Color.Snow;
             this.txtMusteriIl.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.txtMusteriIl.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -207,30 +216,33 @@
             // kryptonLabel6
             // 
             this.kryptonLabel6.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.BoldControl;
-            this.kryptonLabel6.Location = new System.Drawing.Point(16, 295);
+            this.kryptonLabel6.Location = new System.Drawing.Point(12, 240);
+            this.kryptonLabel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabel6.Name = "kryptonLabel6";
-            this.kryptonLabel6.Size = new System.Drawing.Size(45, 23);
+            this.kryptonLabel6.Size = new System.Drawing.Size(33, 18);
             this.kryptonLabel6.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.kryptonLabel6.StateNormal.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 9.5F, System.Drawing.FontStyle.Bold);
+            this.kryptonLabel6.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel6.TabIndex = 55;
             this.kryptonLabel6.Values.Text = "İL  : ";
             // 
             // kryptonLabel5
             // 
             this.kryptonLabel5.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.BoldControl;
-            this.kryptonLabel5.Location = new System.Drawing.Point(16, 457);
+            this.kryptonLabel5.Location = new System.Drawing.Point(12, 371);
+            this.kryptonLabel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabel5.Name = "kryptonLabel5";
-            this.kryptonLabel5.Size = new System.Drawing.Size(83, 23);
+            this.kryptonLabel5.Size = new System.Drawing.Size(64, 18);
             this.kryptonLabel5.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.kryptonLabel5.StateNormal.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 9.5F, System.Drawing.FontStyle.Bold);
+            this.kryptonLabel5.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel5.TabIndex = 54;
             this.kryptonLabel5.Values.Text = "ADRES : ";
             // 
             // txtMusteri2TelNo
             // 
-            this.txtMusteri2TelNo.Location = new System.Drawing.Point(188, 228);
+            this.txtMusteri2TelNo.Location = new System.Drawing.Point(141, 185);
+            this.txtMusteri2TelNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMusteri2TelNo.Name = "txtMusteri2TelNo";
-            this.txtMusteri2TelNo.Size = new System.Drawing.Size(207, 37);
+            this.txtMusteri2TelNo.Size = new System.Drawing.Size(155, 33);
             this.txtMusteri2TelNo.StateCommon.Back.Color1 = System.Drawing.Color.Snow;
             this.txtMusteri2TelNo.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.txtMusteri2TelNo.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -242,30 +254,33 @@
             // kryptonLabel14
             // 
             this.kryptonLabel14.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.BoldControl;
-            this.kryptonLabel14.Location = new System.Drawing.Point(16, 241);
+            this.kryptonLabel14.Location = new System.Drawing.Point(12, 196);
+            this.kryptonLabel14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabel14.Name = "kryptonLabel14";
-            this.kryptonLabel14.Size = new System.Drawing.Size(159, 23);
+            this.kryptonLabel14.Size = new System.Drawing.Size(118, 18);
             this.kryptonLabel14.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.kryptonLabel14.StateNormal.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 9.5F, System.Drawing.FontStyle.Bold);
+            this.kryptonLabel14.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel14.TabIndex = 52;
             this.kryptonLabel14.Values.Text = "2. TELEFON NO : ";
             // 
             // kryptonLabel4
             // 
             this.kryptonLabel4.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.BoldControl;
-            this.kryptonLabel4.Location = new System.Drawing.Point(16, 187);
+            this.kryptonLabel4.Location = new System.Drawing.Point(12, 152);
+            this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabel4.Name = "kryptonLabel4";
-            this.kryptonLabel4.Size = new System.Drawing.Size(140, 23);
+            this.kryptonLabel4.Size = new System.Drawing.Size(104, 18);
             this.kryptonLabel4.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.kryptonLabel4.StateNormal.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 9.5F, System.Drawing.FontStyle.Bold);
+            this.kryptonLabel4.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel4.TabIndex = 11;
             this.kryptonLabel4.Values.Text = "TELEFON NO : ";
             // 
             // txtMusteriSoyadi
             // 
-            this.txtMusteriSoyadi.Location = new System.Drawing.Point(188, 66);
+            this.txtMusteriSoyadi.Location = new System.Drawing.Point(141, 54);
+            this.txtMusteriSoyadi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMusteriSoyadi.Name = "txtMusteriSoyadi";
-            this.txtMusteriSoyadi.Size = new System.Drawing.Size(207, 37);
+            this.txtMusteriSoyadi.Size = new System.Drawing.Size(155, 33);
             this.txtMusteriSoyadi.StateCommon.Back.Color1 = System.Drawing.Color.Snow;
             this.txtMusteriSoyadi.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.txtMusteriSoyadi.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -276,9 +291,10 @@
             // 
             // txtMusteriAdi
             // 
-            this.txtMusteriAdi.Location = new System.Drawing.Point(188, 12);
+            this.txtMusteriAdi.Location = new System.Drawing.Point(141, 10);
+            this.txtMusteriAdi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMusteriAdi.Name = "txtMusteriAdi";
-            this.txtMusteriAdi.Size = new System.Drawing.Size(207, 37);
+            this.txtMusteriAdi.Size = new System.Drawing.Size(155, 33);
             this.txtMusteriAdi.StateCommon.Back.Color1 = System.Drawing.Color.Snow;
             this.txtMusteriAdi.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.txtMusteriAdi.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -290,23 +306,25 @@
             // kryptonLabel3
             // 
             this.kryptonLabel3.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.BoldControl;
-            this.kryptonLabel3.Location = new System.Drawing.Point(16, 79);
+            this.kryptonLabel3.Location = new System.Drawing.Point(12, 64);
+            this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(83, 23);
+            this.kryptonLabel3.Size = new System.Drawing.Size(65, 18);
             this.kryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.kryptonLabel3.StateNormal.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 9.5F, System.Drawing.FontStyle.Bold);
+            this.kryptonLabel3.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel3.TabIndex = 3;
             this.kryptonLabel3.Values.Text = "SOYAD : ";
             // 
             // kryptonLabel1
             // 
             this.kryptonLabel1.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.BoldControl;
-            this.kryptonLabel1.Location = new System.Drawing.Point(16, 25);
+            this.kryptonLabel1.Location = new System.Drawing.Point(12, 20);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(47, 23);
+            this.kryptonLabel1.Size = new System.Drawing.Size(37, 18);
             this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonLabel1.StateNormal.ShortText.Color1 = System.Drawing.Color.Black;
-            this.kryptonLabel1.StateNormal.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 9.5F, System.Drawing.FontStyle.Bold);
+            this.kryptonLabel1.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel1.TabIndex = 2;
             this.kryptonLabel1.Values.Text = "AD : ";
             // 
@@ -314,10 +332,11 @@
             // 
             this.ComBoHastaKisir.DropButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Alternate;
             this.ComBoHastaKisir.DropDownWidth = 190;
-            this.ComBoHastaKisir.Location = new System.Drawing.Point(107, 442);
+            this.ComBoHastaKisir.Location = new System.Drawing.Point(80, 359);
+            this.ComBoHastaKisir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ComBoHastaKisir.Name = "ComBoHastaKisir";
             this.ComBoHastaKisir.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.ComBoHastaKisir.Size = new System.Drawing.Size(207, 35);
+            this.ComBoHastaKisir.Size = new System.Drawing.Size(155, 31);
             this.ComBoHastaKisir.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.White;
             this.ComBoHastaKisir.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.LightGray;
             this.ComBoHastaKisir.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -330,19 +349,21 @@
             // kryptonLabel21
             // 
             this.kryptonLabel21.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.BoldControl;
-            this.kryptonLabel21.Location = new System.Drawing.Point(21, 455);
+            this.kryptonLabel21.Location = new System.Drawing.Point(16, 370);
+            this.kryptonLabel21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabel21.Name = "kryptonLabel21";
-            this.kryptonLabel21.Size = new System.Drawing.Size(73, 23);
+            this.kryptonLabel21.Size = new System.Drawing.Size(53, 18);
             this.kryptonLabel21.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.kryptonLabel21.StateNormal.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 9.5F, System.Drawing.FontStyle.Bold);
+            this.kryptonLabel21.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel21.TabIndex = 91;
             this.kryptonLabel21.Values.Text = "KISIR : ";
             // 
             // txtHastaAdi
             // 
-            this.txtHastaAdi.Location = new System.Drawing.Point(107, 107);
+            this.txtHastaAdi.Location = new System.Drawing.Point(80, 87);
+            this.txtHastaAdi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtHastaAdi.Name = "txtHastaAdi";
-            this.txtHastaAdi.Size = new System.Drawing.Size(207, 37);
+            this.txtHastaAdi.Size = new System.Drawing.Size(155, 33);
             this.txtHastaAdi.StateCommon.Back.Color1 = System.Drawing.Color.Snow;
             this.txtHastaAdi.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.txtHastaAdi.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -351,28 +372,30 @@
             this.txtHastaAdi.StateCommon.Border.Rounding = 15;
             this.txtHastaAdi.TabIndex = 65;
             // 
-            // ComBoHastaSahipSec
+            // ComboHastaSahipSec
             // 
-            this.ComBoHastaSahipSec.DropButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Alternate;
-            this.ComBoHastaSahipSec.DropDownWidth = 190;
-            this.ComBoHastaSahipSec.Location = new System.Drawing.Point(15, 42);
-            this.ComBoHastaSahipSec.Name = "ComBoHastaSahipSec";
-            this.ComBoHastaSahipSec.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.ComBoHastaSahipSec.Size = new System.Drawing.Size(190, 35);
-            this.ComBoHastaSahipSec.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.White;
-            this.ComBoHastaSahipSec.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.LightGray;
-            this.ComBoHastaSahipSec.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.ComboHastaSahipSec.DropButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Alternate;
+            this.ComboHastaSahipSec.DropDownWidth = 190;
+            this.ComboHastaSahipSec.Location = new System.Drawing.Point(11, 34);
+            this.ComboHastaSahipSec.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ComboHastaSahipSec.Name = "ComboHastaSahipSec";
+            this.ComboHastaSahipSec.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.ComboHastaSahipSec.Size = new System.Drawing.Size(142, 31);
+            this.ComboHastaSahipSec.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.White;
+            this.ComboHastaSahipSec.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.LightGray;
+            this.ComboHastaSahipSec.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.ComBoHastaSahipSec.StateCommon.ComboBox.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.None;
-            this.ComBoHastaSahipSec.StateCommon.ComboBox.Border.Rounding = 15;
-            this.ComBoHastaSahipSec.TabIndex = 64;
+            this.ComboHastaSahipSec.StateCommon.ComboBox.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.None;
+            this.ComboHastaSahipSec.StateCommon.ComboBox.Border.Rounding = 15;
+            this.ComboHastaSahipSec.TabIndex = 64;
             // 
             // txtMusteriTelNo
             // 
-            this.txtMusteriTelNo.Location = new System.Drawing.Point(188, 174);
+            this.txtMusteriTelNo.Location = new System.Drawing.Point(141, 141);
+            this.txtMusteriTelNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMusteriTelNo.Name = "txtMusteriTelNo";
-            this.txtMusteriTelNo.Size = new System.Drawing.Size(207, 37);
+            this.txtMusteriTelNo.Size = new System.Drawing.Size(155, 33);
             this.txtMusteriTelNo.StateCommon.Back.Color1 = System.Drawing.Color.Snow;
             this.txtMusteriTelNo.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.txtMusteriTelNo.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -384,23 +407,25 @@
             // kryptonLabel8
             // 
             this.kryptonLabel8.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.BoldControl;
-            this.kryptonLabel8.Location = new System.Drawing.Point(21, 120);
+            this.kryptonLabel8.Location = new System.Drawing.Point(16, 98);
+            this.kryptonLabel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabel8.Name = "kryptonLabel8";
-            this.kryptonLabel8.Size = new System.Drawing.Size(47, 23);
+            this.kryptonLabel8.Size = new System.Drawing.Size(37, 18);
             this.kryptonLabel8.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.kryptonLabel8.StateNormal.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 9.5F, System.Drawing.FontStyle.Bold);
+            this.kryptonLabel8.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel8.TabIndex = 3;
             this.kryptonLabel8.Values.Text = "AD : ";
             // 
             // kryptonGroupBox1
             // 
             this.kryptonGroupBox1.CaptionStyle = Krypton.Toolkit.LabelStyle.TitlePanel;
-            this.kryptonGroupBox1.Location = new System.Drawing.Point(157, 16);
+            this.kryptonGroupBox1.Location = new System.Drawing.Point(118, 13);
+            this.kryptonGroupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             // 
             // kryptonGroupBox1.Panel
             // 
             this.kryptonGroupBox1.Panel.Controls.Add(this.btnMusteriTemizle);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.btnTC);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.txtTC);
             this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonLabel2);
             this.kryptonGroupBox1.Panel.Controls.Add(this.btnMusteriIptal);
             this.kryptonGroupBox1.Panel.Controls.Add(this.txtMusteriAdres);
@@ -420,22 +445,21 @@
             this.kryptonGroupBox1.Panel.Controls.Add(this.txtMusteriAdi);
             this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonLabel3);
             this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonLabel1);
-            this.kryptonGroupBox1.Size = new System.Drawing.Size(433, 860);
+            this.kryptonGroupBox1.Size = new System.Drawing.Size(325, 699);
             this.kryptonGroupBox1.StateCommon.Back.Color1 = System.Drawing.Color.LightSkyBlue;
             this.kryptonGroupBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.kryptonGroupBox1.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.kryptonGroupBox1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold);
+            this.kryptonGroupBox1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
             this.kryptonGroupBox1.TabIndex = 59;
             this.kryptonGroupBox1.Values.Heading = "Müşteri Kayıt";
             // 
             // btnMusteriTemizle
             // 
-            this.btnMusteriTemizle.Location = new System.Drawing.Point(154, 742);
-            this.btnMusteriTemizle.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMusteriTemizle.Location = new System.Drawing.Point(116, 603);
             this.btnMusteriTemizle.Name = "btnMusteriTemizle";
             this.btnMusteriTemizle.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnMusteriTemizle.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
-            this.btnMusteriTemizle.Size = new System.Drawing.Size(131, 42);
+            this.btnMusteriTemizle.Size = new System.Drawing.Size(98, 34);
             this.btnMusteriTemizle.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnMusteriTemizle.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnMusteriTemizle.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
@@ -447,7 +471,7 @@
             this.btnMusteriTemizle.StateCommon.Border.Width = 1;
             this.btnMusteriTemizle.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnMusteriTemizle.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnMusteriTemizle.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 10F, System.Drawing.FontStyle.Bold);
+            this.btnMusteriTemizle.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.btnMusteriTemizle.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnMusteriTemizle.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnMusteriTemizle.StateDisabled.Content.ShortText.Color1 = System.Drawing.Color.White;
@@ -469,12 +493,11 @@
             // 
             // btnMusteriIptal
             // 
-            this.btnMusteriIptal.Location = new System.Drawing.Point(236, 682);
-            this.btnMusteriIptal.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMusteriIptal.Location = new System.Drawing.Point(177, 554);
             this.btnMusteriIptal.Name = "btnMusteriIptal";
             this.btnMusteriIptal.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnMusteriIptal.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
-            this.btnMusteriIptal.Size = new System.Drawing.Size(131, 42);
+            this.btnMusteriIptal.Size = new System.Drawing.Size(98, 34);
             this.btnMusteriIptal.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnMusteriIptal.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnMusteriIptal.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
@@ -486,7 +509,7 @@
             this.btnMusteriIptal.StateCommon.Border.Width = 1;
             this.btnMusteriIptal.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnMusteriIptal.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnMusteriIptal.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 10F, System.Drawing.FontStyle.Bold);
+            this.btnMusteriIptal.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.btnMusteriIptal.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnMusteriIptal.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnMusteriIptal.StateDisabled.Content.ShortText.Color1 = System.Drawing.Color.White;
@@ -508,12 +531,11 @@
             // 
             // btnMusteriKaydet
             // 
-            this.btnMusteriKaydet.Location = new System.Drawing.Point(66, 682);
-            this.btnMusteriKaydet.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMusteriKaydet.Location = new System.Drawing.Point(50, 554);
             this.btnMusteriKaydet.Name = "btnMusteriKaydet";
             this.btnMusteriKaydet.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnMusteriKaydet.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
-            this.btnMusteriKaydet.Size = new System.Drawing.Size(131, 42);
+            this.btnMusteriKaydet.Size = new System.Drawing.Size(98, 34);
             this.btnMusteriKaydet.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnMusteriKaydet.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnMusteriKaydet.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
@@ -525,7 +547,7 @@
             this.btnMusteriKaydet.StateCommon.Border.Width = 1;
             this.btnMusteriKaydet.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnMusteriKaydet.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnMusteriKaydet.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 10F, System.Drawing.FontStyle.Bold);
+            this.btnMusteriKaydet.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.btnMusteriKaydet.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnMusteriKaydet.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnMusteriKaydet.StateDisabled.Content.ShortText.Color1 = System.Drawing.Color.White;
@@ -548,7 +570,8 @@
             // kryptonGroupBox2
             // 
             this.kryptonGroupBox2.CaptionStyle = Krypton.Toolkit.LabelStyle.TitlePanel;
-            this.kryptonGroupBox2.Location = new System.Drawing.Point(749, 16);
+            this.kryptonGroupBox2.Location = new System.Drawing.Point(562, 13);
+            this.kryptonGroupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             // 
             // kryptonGroupBox2.Panel
             // 
@@ -561,12 +584,12 @@
             this.kryptonGroupBox2.Panel.Controls.Add(this.ComBoHastaKisir);
             this.kryptonGroupBox2.Panel.Controls.Add(this.kryptonLabel21);
             this.kryptonGroupBox2.Panel.Controls.Add(this.numericHastaKilo);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.ComBoHastaKanGrubu);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.ComboHastaKanGrubu);
             this.kryptonGroupBox2.Panel.Controls.Add(this.txtHastaRenk);
             this.kryptonGroupBox2.Panel.Controls.Add(this.RadioBtnErkek);
             this.kryptonGroupBox2.Panel.Controls.Add(this.RadioBtnDisi);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.ComBoHastaIrk);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.ComBoHastaTur);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.ComboHastaIrk);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.ComboHastaTur);
             this.kryptonGroupBox2.Panel.Controls.Add(this.txtHastaHbsNo);
             this.kryptonGroupBox2.Panel.Controls.Add(this.kryptonLabel19);
             this.kryptonGroupBox2.Panel.Controls.Add(this.kryptonLabel18);
@@ -577,25 +600,24 @@
             this.kryptonGroupBox2.Panel.Controls.Add(this.kryptonLabel11);
             this.kryptonGroupBox2.Panel.Controls.Add(this.kryptonLabel10);
             this.kryptonGroupBox2.Panel.Controls.Add(this.txtHastaAdi);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.ComBoHastaSahipSec);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.ComboHastaSahipSec);
             this.kryptonGroupBox2.Panel.Controls.Add(this.kryptonLabel9);
             this.kryptonGroupBox2.Panel.Controls.Add(this.kryptonLabel8);
-            this.kryptonGroupBox2.Size = new System.Drawing.Size(835, 860);
+            this.kryptonGroupBox2.Size = new System.Drawing.Size(626, 699);
             this.kryptonGroupBox2.StateCommon.Back.Color1 = System.Drawing.Color.LightSkyBlue;
             this.kryptonGroupBox2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.kryptonGroupBox2.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.kryptonGroupBox2.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold);
+            this.kryptonGroupBox2.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
             this.kryptonGroupBox2.TabIndex = 60;
             this.kryptonGroupBox2.Values.Heading = "Hasta Kayıt";
             // 
             // btnHastaTemizle
             // 
-            this.btnHastaTemizle.Location = new System.Drawing.Point(564, 660);
-            this.btnHastaTemizle.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHastaTemizle.Location = new System.Drawing.Point(423, 536);
             this.btnHastaTemizle.Name = "btnHastaTemizle";
             this.btnHastaTemizle.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnHastaTemizle.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
-            this.btnHastaTemizle.Size = new System.Drawing.Size(131, 42);
+            this.btnHastaTemizle.Size = new System.Drawing.Size(98, 34);
             this.btnHastaTemizle.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnHastaTemizle.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnHastaTemizle.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
@@ -607,7 +629,7 @@
             this.btnHastaTemizle.StateCommon.Border.Width = 1;
             this.btnHastaTemizle.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnHastaTemizle.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnHastaTemizle.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 10F, System.Drawing.FontStyle.Bold);
+            this.btnHastaTemizle.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.btnHastaTemizle.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnHastaTemizle.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnHastaTemizle.StateDisabled.Content.ShortText.Color1 = System.Drawing.Color.White;
@@ -629,12 +651,11 @@
             // 
             // btnHastaIptal
             // 
-            this.btnHastaIptal.Location = new System.Drawing.Point(340, 660);
-            this.btnHastaIptal.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHastaIptal.Location = new System.Drawing.Point(255, 536);
             this.btnHastaIptal.Name = "btnHastaIptal";
             this.btnHastaIptal.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnHastaIptal.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
-            this.btnHastaIptal.Size = new System.Drawing.Size(131, 42);
+            this.btnHastaIptal.Size = new System.Drawing.Size(98, 34);
             this.btnHastaIptal.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnHastaIptal.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnHastaIptal.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
@@ -646,7 +667,7 @@
             this.btnHastaIptal.StateCommon.Border.Width = 1;
             this.btnHastaIptal.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnHastaIptal.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnHastaIptal.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 10F, System.Drawing.FontStyle.Bold);
+            this.btnHastaIptal.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.btnHastaIptal.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnHastaIptal.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnHastaIptal.StateDisabled.Content.ShortText.Color1 = System.Drawing.Color.White;
@@ -668,12 +689,11 @@
             // 
             // btnHastaKaydet
             // 
-            this.btnHastaKaydet.Location = new System.Drawing.Point(116, 660);
-            this.btnHastaKaydet.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHastaKaydet.Location = new System.Drawing.Point(87, 536);
             this.btnHastaKaydet.Name = "btnHastaKaydet";
             this.btnHastaKaydet.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnHastaKaydet.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
-            this.btnHastaKaydet.Size = new System.Drawing.Size(131, 42);
+            this.btnHastaKaydet.Size = new System.Drawing.Size(98, 34);
             this.btnHastaKaydet.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnHastaKaydet.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnHastaKaydet.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
@@ -685,7 +705,7 @@
             this.btnHastaKaydet.StateCommon.Border.Width = 1;
             this.btnHastaKaydet.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnHastaKaydet.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnHastaKaydet.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 10F, System.Drawing.FontStyle.Bold);
+            this.btnHastaKaydet.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.btnHastaKaydet.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnHastaKaydet.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnHastaKaydet.StateDisabled.Content.ShortText.Color1 = System.Drawing.Color.White;
@@ -707,9 +727,10 @@
             // 
             // txtHastaYas
             // 
-            this.txtHastaYas.Location = new System.Drawing.Point(107, 174);
+            this.txtHastaYas.Location = new System.Drawing.Point(80, 141);
+            this.txtHastaYas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtHastaYas.Name = "txtHastaYas";
-            this.txtHastaYas.Size = new System.Drawing.Size(207, 37);
+            this.txtHastaYas.Size = new System.Drawing.Size(155, 33);
             this.txtHastaYas.StateCommon.Back.Color1 = System.Drawing.Color.Snow;
             this.txtHastaYas.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.txtHastaYas.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -720,10 +741,11 @@
             // 
             // txtGelmeNedeni
             // 
-            this.txtGelmeNedeni.Location = new System.Drawing.Point(386, 422);
+            this.txtGelmeNedeni.Location = new System.Drawing.Point(290, 343);
+            this.txtGelmeNedeni.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtGelmeNedeni.Multiline = true;
             this.txtGelmeNedeni.Name = "txtGelmeNedeni";
-            this.txtGelmeNedeni.Size = new System.Drawing.Size(374, 183);
+            this.txtGelmeNedeni.Size = new System.Drawing.Size(280, 149);
             this.txtGelmeNedeni.StateCommon.Back.Color1 = System.Drawing.Color.Snow;
             this.txtGelmeNedeni.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.txtGelmeNedeni.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -735,18 +757,18 @@
             // kryptonLabel20
             // 
             this.kryptonLabel20.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.BoldControl;
-            this.kryptonLabel20.Location = new System.Drawing.Point(386, 384);
+            this.kryptonLabel20.Location = new System.Drawing.Point(290, 312);
+            this.kryptonLabel20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabel20.Name = "kryptonLabel20";
-            this.kryptonLabel20.Size = new System.Drawing.Size(169, 23);
+            this.kryptonLabel20.Size = new System.Drawing.Size(123, 18);
             this.kryptonLabel20.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.kryptonLabel20.StateNormal.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 9.5F, System.Drawing.FontStyle.Bold);
+            this.kryptonLabel20.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel20.TabIndex = 94;
             this.kryptonLabel20.Values.Text = "GELME NEDENİ  : ";
             // 
             // numericHastaKilo
             // 
-            this.numericHastaKilo.Location = new System.Drawing.Point(107, 374);
-            this.numericHastaKilo.Margin = new System.Windows.Forms.Padding(4);
+            this.numericHastaKilo.Location = new System.Drawing.Point(80, 304);
             this.numericHastaKilo.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -754,7 +776,7 @@
             0});
             this.numericHastaKilo.Name = "numericHastaKilo";
             this.numericHastaKilo.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.numericHastaKilo.Size = new System.Drawing.Size(207, 38);
+            this.numericHastaKilo.Size = new System.Drawing.Size(155, 34);
             this.numericHastaKilo.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.numericHastaKilo.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.numericHastaKilo.StateCommon.Border.Color2 = System.Drawing.Color.Black;
@@ -766,28 +788,30 @@
             this.numericHastaKilo.TabIndex = 58;
             this.numericHastaKilo.UpDownButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Gallery;
             // 
-            // ComBoHastaKanGrubu
+            // ComboHastaKanGrubu
             // 
-            this.ComBoHastaKanGrubu.DropButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Alternate;
-            this.ComBoHastaKanGrubu.DropDownWidth = 190;
-            this.ComBoHastaKanGrubu.Location = new System.Drawing.Point(553, 309);
-            this.ComBoHastaKanGrubu.Name = "ComBoHastaKanGrubu";
-            this.ComBoHastaKanGrubu.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.ComBoHastaKanGrubu.Size = new System.Drawing.Size(207, 35);
-            this.ComBoHastaKanGrubu.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.White;
-            this.ComBoHastaKanGrubu.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.LightGray;
-            this.ComBoHastaKanGrubu.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.ComboHastaKanGrubu.DropButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Alternate;
+            this.ComboHastaKanGrubu.DropDownWidth = 190;
+            this.ComboHastaKanGrubu.Location = new System.Drawing.Point(415, 251);
+            this.ComboHastaKanGrubu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ComboHastaKanGrubu.Name = "ComboHastaKanGrubu";
+            this.ComboHastaKanGrubu.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.ComboHastaKanGrubu.Size = new System.Drawing.Size(155, 31);
+            this.ComboHastaKanGrubu.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.White;
+            this.ComboHastaKanGrubu.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.LightGray;
+            this.ComboHastaKanGrubu.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.ComBoHastaKanGrubu.StateCommon.ComboBox.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.None;
-            this.ComBoHastaKanGrubu.StateCommon.ComboBox.Border.Rounding = 15;
-            this.ComBoHastaKanGrubu.TabIndex = 85;
+            this.ComboHastaKanGrubu.StateCommon.ComboBox.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.None;
+            this.ComboHastaKanGrubu.StateCommon.ComboBox.Border.Rounding = 15;
+            this.ComboHastaKanGrubu.TabIndex = 85;
             // 
             // txtHastaRenk
             // 
-            this.txtHastaRenk.Location = new System.Drawing.Point(107, 307);
+            this.txtHastaRenk.Location = new System.Drawing.Point(80, 249);
+            this.txtHastaRenk.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtHastaRenk.Name = "txtHastaRenk";
-            this.txtHastaRenk.Size = new System.Drawing.Size(207, 37);
+            this.txtHastaRenk.Size = new System.Drawing.Size(155, 33);
             this.txtHastaRenk.StateCommon.Back.Color1 = System.Drawing.Color.Snow;
             this.txtHastaRenk.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.txtHastaRenk.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -798,10 +822,10 @@
             // 
             // RadioBtnErkek
             // 
-            this.RadioBtnErkek.Location = new System.Drawing.Point(661, 181);
-            this.RadioBtnErkek.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.RadioBtnErkek.Location = new System.Drawing.Point(496, 147);
+            this.RadioBtnErkek.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RadioBtnErkek.Name = "RadioBtnErkek";
-            this.RadioBtnErkek.Size = new System.Drawing.Size(58, 19);
+            this.RadioBtnErkek.Size = new System.Drawing.Size(50, 16);
             this.RadioBtnErkek.StateNormal.ShortText.Color1 = System.Drawing.Color.Black;
             this.RadioBtnErkek.StateNormal.ShortText.Color2 = System.Drawing.Color.Black;
             this.RadioBtnErkek.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -810,55 +834,58 @@
             // 
             // RadioBtnDisi
             // 
-            this.RadioBtnDisi.Location = new System.Drawing.Point(565, 181);
-            this.RadioBtnDisi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.RadioBtnDisi.Location = new System.Drawing.Point(424, 147);
+            this.RadioBtnDisi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RadioBtnDisi.Name = "RadioBtnDisi";
-            this.RadioBtnDisi.Size = new System.Drawing.Size(46, 19);
+            this.RadioBtnDisi.Size = new System.Drawing.Size(41, 16);
             this.RadioBtnDisi.StateNormal.ShortText.Color1 = System.Drawing.Color.Black;
             this.RadioBtnDisi.StateNormal.ShortText.Color2 = System.Drawing.Color.Black;
             this.RadioBtnDisi.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.RadioBtnDisi.TabIndex = 80;
             this.RadioBtnDisi.Values.Text = "Dişi";
             // 
-            // ComBoHastaIrk
+            // ComboHastaIrk
             // 
-            this.ComBoHastaIrk.DropButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Alternate;
-            this.ComBoHastaIrk.DropDownWidth = 190;
-            this.ComBoHastaIrk.Location = new System.Drawing.Point(553, 243);
-            this.ComBoHastaIrk.Name = "ComBoHastaIrk";
-            this.ComBoHastaIrk.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.ComBoHastaIrk.Size = new System.Drawing.Size(207, 35);
-            this.ComBoHastaIrk.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.White;
-            this.ComBoHastaIrk.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.LightGray;
-            this.ComBoHastaIrk.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.ComboHastaIrk.DropButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Alternate;
+            this.ComboHastaIrk.DropDownWidth = 190;
+            this.ComboHastaIrk.Location = new System.Drawing.Point(415, 197);
+            this.ComboHastaIrk.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ComboHastaIrk.Name = "ComboHastaIrk";
+            this.ComboHastaIrk.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.ComboHastaIrk.Size = new System.Drawing.Size(155, 31);
+            this.ComboHastaIrk.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.White;
+            this.ComboHastaIrk.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.LightGray;
+            this.ComboHastaIrk.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.ComBoHastaIrk.StateCommon.ComboBox.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.None;
-            this.ComBoHastaIrk.StateCommon.ComboBox.Border.Rounding = 15;
-            this.ComBoHastaIrk.TabIndex = 79;
+            this.ComboHastaIrk.StateCommon.ComboBox.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.None;
+            this.ComboHastaIrk.StateCommon.ComboBox.Border.Rounding = 15;
+            this.ComboHastaIrk.TabIndex = 79;
             // 
-            // ComBoHastaTur
+            // ComboHastaTur
             // 
-            this.ComBoHastaTur.DropButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Alternate;
-            this.ComBoHastaTur.DropDownWidth = 190;
-            this.ComBoHastaTur.Location = new System.Drawing.Point(107, 242);
-            this.ComBoHastaTur.Name = "ComBoHastaTur";
-            this.ComBoHastaTur.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.ComBoHastaTur.Size = new System.Drawing.Size(207, 35);
-            this.ComBoHastaTur.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.White;
-            this.ComBoHastaTur.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.LightGray;
-            this.ComBoHastaTur.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.ComboHastaTur.DropButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Alternate;
+            this.ComboHastaTur.DropDownWidth = 190;
+            this.ComboHastaTur.Location = new System.Drawing.Point(80, 197);
+            this.ComboHastaTur.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ComboHastaTur.Name = "ComboHastaTur";
+            this.ComboHastaTur.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.ComboHastaTur.Size = new System.Drawing.Size(155, 31);
+            this.ComboHastaTur.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.White;
+            this.ComboHastaTur.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.LightGray;
+            this.ComboHastaTur.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.ComBoHastaTur.StateCommon.ComboBox.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.None;
-            this.ComBoHastaTur.StateCommon.ComboBox.Border.Rounding = 15;
-            this.ComBoHastaTur.TabIndex = 78;
+            this.ComboHastaTur.StateCommon.ComboBox.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.None;
+            this.ComboHastaTur.StateCommon.ComboBox.Border.Rounding = 15;
+            this.ComboHastaTur.TabIndex = 78;
             // 
             // txtHastaHbsNo
             // 
-            this.txtHastaHbsNo.Location = new System.Drawing.Point(553, 107);
+            this.txtHastaHbsNo.Location = new System.Drawing.Point(415, 87);
+            this.txtHastaHbsNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtHastaHbsNo.Name = "txtHastaHbsNo";
-            this.txtHastaHbsNo.Size = new System.Drawing.Size(207, 37);
+            this.txtHastaHbsNo.Size = new System.Drawing.Size(155, 33);
             this.txtHastaHbsNo.StateCommon.Back.Color1 = System.Drawing.Color.Snow;
             this.txtHastaHbsNo.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.txtHastaHbsNo.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -870,101 +897,110 @@
             // kryptonLabel19
             // 
             this.kryptonLabel19.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.BoldControl;
-            this.kryptonLabel19.Location = new System.Drawing.Point(21, 388);
+            this.kryptonLabel19.Location = new System.Drawing.Point(16, 315);
+            this.kryptonLabel19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabel19.Name = "kryptonLabel19";
-            this.kryptonLabel19.Size = new System.Drawing.Size(67, 23);
+            this.kryptonLabel19.Size = new System.Drawing.Size(49, 18);
             this.kryptonLabel19.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.kryptonLabel19.StateNormal.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 9.5F, System.Drawing.FontStyle.Bold);
+            this.kryptonLabel19.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel19.TabIndex = 73;
             this.kryptonLabel19.Values.Text = "KİLO : ";
             // 
             // kryptonLabel18
             // 
             this.kryptonLabel18.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.BoldControl;
-            this.kryptonLabel18.Location = new System.Drawing.Point(386, 318);
+            this.kryptonLabel18.Location = new System.Drawing.Point(290, 258);
+            this.kryptonLabel18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabel18.Name = "kryptonLabel18";
-            this.kryptonLabel18.Size = new System.Drawing.Size(132, 23);
+            this.kryptonLabel18.Size = new System.Drawing.Size(98, 18);
             this.kryptonLabel18.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.kryptonLabel18.StateNormal.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 9.5F, System.Drawing.FontStyle.Bold);
+            this.kryptonLabel18.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel18.TabIndex = 72;
             this.kryptonLabel18.Values.Text = "KAN GRUBU : ";
             // 
             // kryptonLabel17
             // 
             this.kryptonLabel17.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.BoldControl;
-            this.kryptonLabel17.Location = new System.Drawing.Point(21, 321);
+            this.kryptonLabel17.Location = new System.Drawing.Point(16, 261);
+            this.kryptonLabel17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabel17.Name = "kryptonLabel17";
-            this.kryptonLabel17.Size = new System.Drawing.Size(74, 23);
+            this.kryptonLabel17.Size = new System.Drawing.Size(55, 18);
             this.kryptonLabel17.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.kryptonLabel17.StateNormal.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 9.5F, System.Drawing.FontStyle.Bold);
+            this.kryptonLabel17.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel17.TabIndex = 71;
             this.kryptonLabel17.Values.Text = "RENK : ";
             // 
             // kryptonLabel15
             // 
             this.kryptonLabel15.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.BoldControl;
-            this.kryptonLabel15.Location = new System.Drawing.Point(386, 186);
+            this.kryptonLabel15.Location = new System.Drawing.Point(290, 151);
+            this.kryptonLabel15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabel15.Name = "kryptonLabel15";
-            this.kryptonLabel15.Size = new System.Drawing.Size(109, 23);
+            this.kryptonLabel15.Size = new System.Drawing.Size(80, 18);
             this.kryptonLabel15.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.kryptonLabel15.StateNormal.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 9.5F, System.Drawing.FontStyle.Bold);
+            this.kryptonLabel15.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel15.TabIndex = 70;
             this.kryptonLabel15.Values.Text = "CİNSİYET : ";
             // 
             // kryptonLabel13
             // 
             this.kryptonLabel13.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.BoldControl;
-            this.kryptonLabel13.Location = new System.Drawing.Point(386, 252);
+            this.kryptonLabel13.Location = new System.Drawing.Point(290, 205);
+            this.kryptonLabel13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabel13.Name = "kryptonLabel13";
-            this.kryptonLabel13.Size = new System.Drawing.Size(55, 23);
+            this.kryptonLabel13.Size = new System.Drawing.Size(41, 18);
             this.kryptonLabel13.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.kryptonLabel13.StateNormal.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 9.5F, System.Drawing.FontStyle.Bold);
+            this.kryptonLabel13.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel13.TabIndex = 69;
             this.kryptonLabel13.Values.Text = "IRK : ";
             // 
             // kryptonLabel12
             // 
             this.kryptonLabel12.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.BoldControl;
-            this.kryptonLabel12.Location = new System.Drawing.Point(21, 254);
+            this.kryptonLabel12.Location = new System.Drawing.Point(16, 206);
+            this.kryptonLabel12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabel12.Name = "kryptonLabel12";
-            this.kryptonLabel12.Size = new System.Drawing.Size(60, 23);
+            this.kryptonLabel12.Size = new System.Drawing.Size(46, 18);
             this.kryptonLabel12.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.kryptonLabel12.StateNormal.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 9.5F, System.Drawing.FontStyle.Bold);
+            this.kryptonLabel12.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel12.TabIndex = 68;
             this.kryptonLabel12.Values.Text = "TÜR : ";
             // 
             // kryptonLabel11
             // 
             this.kryptonLabel11.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.BoldControl;
-            this.kryptonLabel11.Location = new System.Drawing.Point(21, 187);
+            this.kryptonLabel11.Location = new System.Drawing.Point(16, 152);
+            this.kryptonLabel11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabel11.Name = "kryptonLabel11";
-            this.kryptonLabel11.Size = new System.Drawing.Size(56, 23);
+            this.kryptonLabel11.Size = new System.Drawing.Size(45, 18);
             this.kryptonLabel11.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.kryptonLabel11.StateNormal.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 9.5F, System.Drawing.FontStyle.Bold);
+            this.kryptonLabel11.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel11.TabIndex = 67;
             this.kryptonLabel11.Values.Text = "YAŞ :";
             // 
             // kryptonLabel10
             // 
             this.kryptonLabel10.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.BoldControl;
-            this.kryptonLabel10.Location = new System.Drawing.Point(386, 120);
+            this.kryptonLabel10.Location = new System.Drawing.Point(290, 98);
+            this.kryptonLabel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabel10.Name = "kryptonLabel10";
-            this.kryptonLabel10.Size = new System.Drawing.Size(164, 23);
+            this.kryptonLabel10.Size = new System.Drawing.Size(117, 18);
             this.kryptonLabel10.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.kryptonLabel10.StateNormal.ShortText.Font = new System.Drawing.Font("Century Schoolbook", 9.5F, System.Drawing.FontStyle.Bold);
+            this.kryptonLabel10.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel10.TabIndex = 66;
             this.kryptonLabel10.Values.Text = "HBS KİMLİK NO : ";
             // 
             // KaydetControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.kryptonGroupBox1);
             this.Controls.Add(this.kryptonGroupBox2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "KaydetControl";
-            this.Size = new System.Drawing.Size(1569, 893);
+            this.Size = new System.Drawing.Size(1177, 726);
             ((System.ComponentModel.ISupportInitialize)(this.ComBoHastaKisir)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ComBoHastaSahipSec)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ComboHastaSahipSec)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).EndInit();
             this.kryptonGroupBox1.Panel.ResumeLayout(false);
             this.kryptonGroupBox1.Panel.PerformLayout();
@@ -975,9 +1011,9 @@
             this.kryptonGroupBox2.Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox2)).EndInit();
             this.kryptonGroupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ComBoHastaKanGrubu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ComBoHastaIrk)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ComBoHastaTur)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ComboHastaKanGrubu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ComboHastaIrk)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ComboHastaTur)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -985,7 +1021,7 @@
         #endregion
 
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel9;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox btnTC;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtTC;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel2;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtMusteriAdres;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtEposta;
@@ -1005,18 +1041,18 @@
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox ComBoHastaKisir;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel21;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtHastaAdi;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox ComBoHastaSahipSec;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox ComboHastaSahipSec;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtMusteriTelNo;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel8;
         private Krypton.Toolkit.KryptonGroupBox kryptonGroupBox1;
         private Krypton.Toolkit.KryptonGroupBox kryptonGroupBox2;
         private ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown numericHastaKilo;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox ComBoHastaKanGrubu;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox ComboHastaKanGrubu;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtHastaRenk;
         private ComponentFactory.Krypton.Toolkit.KryptonRadioButton RadioBtnErkek;
         private ComponentFactory.Krypton.Toolkit.KryptonRadioButton RadioBtnDisi;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox ComBoHastaIrk;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox ComBoHastaTur;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox ComboHastaIrk;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox ComboHastaTur;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtHastaHbsNo;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel19;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel18;

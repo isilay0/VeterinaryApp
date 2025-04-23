@@ -30,9 +30,9 @@ namespace VeterinaryApp.WebApi.Model
         [JsonProperty("disease")]
         public string? Disease { get; set; }
 
-        [Column("BIRTHDATE")]
-        [JsonProperty("birthDate")]
-        public long BirthDate { get; set; }
+        [Column("AGE")]
+        [JsonProperty("age")]
+        public string Age { get; set; }
         [Column("GENDER")]
         [JsonProperty("gender")]
         public bool Gender { get; set; }
@@ -51,9 +51,11 @@ namespace VeterinaryApp.WebApi.Model
         [Column("HBS_ID")]
         [JsonProperty("hbsId")]
         public string? HbsId { get; set; }
-        [Column("ADAPTION")]
-        [JsonProperty("adaption")]
-        public bool Adaption { get; set; }
+            [Column("GELD")]
+        [JsonProperty("geld")]
+        public string? Geld { get; set; }
+
+        
 
     }
 }
