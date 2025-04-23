@@ -42,8 +42,8 @@ namespace VeterinaryApp.WebApi.Model
         [Column("COLOR")]
         [JsonProperty("color")]
         public string? Color { get; set; }
-        [Column("BLOOD_GROUP")]
-        [JsonProperty("bloodGroup")]
+        [Column("BLOOD")]
+        [JsonProperty("blood")]
         public string? Blood { get; set; }
         [Column("WEIGHT")]
         [JsonProperty("weight")]

@@ -33,7 +33,9 @@ namespace VeterinaryApp.UserControls
             LoadCustomer();
         }
 
-        private async void btnMusteriKaydet_Click(object sender, EventArgs e)
+        
+
+        private async void btnMusteriKaydet_Click_1(object sender, EventArgs e)
         {
             var customer = new Customer();
             {
@@ -59,7 +61,7 @@ namespace VeterinaryApp.UserControls
             }
         }
 
-        private async void btnHastaKaydet_Click(object sender, EventArgs e)
+        private async void btnHastaKaydet_Click_1(object sender, EventArgs e)
         {
             var animal = new Animal();
             {
@@ -72,7 +74,7 @@ namespace VeterinaryApp.UserControls
                 animal.SpeciesId = (int)ComboHastaTur.SelectedValue;
                 animal.BreedId = (int)ComboHastaIrk.SelectedValue;
                 animal.Color = txtHastaRenk.Text;
-                animal.Blood = ComboHastaKanGrubu.SelectedItem?.ToString();
+                animal.Blood = ComboHastaKanGrubu.SelectedItem.ToString();
                 animal.Weight = (int)numericHastaKilo.Value;
                 animal.Geld = ComBoHastaKisir.SelectedItem.ToString();
                 animal.Disease = txtGelmeNedeni.Text;
@@ -87,8 +89,8 @@ namespace VeterinaryApp.UserControls
             {
                 MessageBox.Show($"Kaydetme başarısız: {ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
+
         private async void LoadSpecies()
         {
             try
@@ -141,7 +143,7 @@ namespace VeterinaryApp.UserControls
 
         private void LoadBlood()
         {
-            var blood = new List<string> { "A", "B", "AB" };
+            var blood = new List<string> { "ARH+", "BRH-", "AB" };
             ComboHastaKanGrubu.Items.AddRange(blood.ToArray());
         }
         private void LoadGeld()
@@ -180,5 +182,6 @@ namespace VeterinaryApp.UserControls
             }
         }
 
+        
     }
 }

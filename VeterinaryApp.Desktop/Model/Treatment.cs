@@ -15,6 +15,9 @@ namespace VeterinaryApp.Model
         public string DoctorNote { get; set; }
         public double TreatmentFee { get; set; }
         public long Date { get; set; }
+        public string Disease {  get; set; }
+        public int ProductId { get; set; }
+        public string FeeStatus { get; set; }
 
 
     }

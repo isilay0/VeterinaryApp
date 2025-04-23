@@ -15,5 +15,7 @@ namespace VeterinaryApp.Model
         public int Quantity { get; set; }
         public double BuyFee { get; set; }
         public double SellFee { get; set; }
+        public long ExpirationDate { get; set; }
+        public string Barcode { get; set; }
     }
 }
