@@ -29,5 +29,14 @@ namespace VeterinaryApp.WebApi.Model
         [Column("DATE")]
         [JsonProperty("date")]
         public long Date { get; set; }
+        [Column("DISEASE")]
+        [JsonProperty("disease")]
+        public long Disease { get; set; }
+        [Column("PRODUCT_ID")]
+        [JsonProperty("productId")]
+        public long ProductId { get; set; }
+        [Column("FEE_STATUS")]
+        [JsonProperty("feeStatus")]
+        public long FeeStatus { get; set; }
     }
 }

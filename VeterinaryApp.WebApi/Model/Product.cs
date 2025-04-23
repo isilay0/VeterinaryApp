@@ -27,5 +27,11 @@ namespace VeterinaryApp.WebApi.Model
         [Column("SELL_FEE")]
         [JsonProperty("sellFee")]
         public double SellFee { get; set; }
+        [Column("EXPIRATION_DATE")]
+        [JsonProperty("expirationDate")]
+        public double ExpirationDate { get; set; }
+        [Column("BARCODE")]
+        [JsonProperty("barcode")]
+        public double Barcode { get; set; }
     }
 }
