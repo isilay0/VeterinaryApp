@@ -36,6 +36,37 @@ namespace VeterinaryApp.WebApi.Repository
 
         }
 
+        public async Task<Animal[]> GetByCustomerId(int customerId)
+        {
+            IQueryable<Animal> query = from animal in context.Animals
+                                       join breed in context.Breeds on animal.BreedId equals breed.Id
+                                       join species in context.Species on animal.SpeciesId equals species.Id
+                                       join doctor in context.Doctors on animal.DoctorId equals doctor.Id
+                                       where animal.CustomerId == customerId
+                                       //join customer in context.Customers on animal.CustomerId equals customer.Id
+                                       select new Animal
+                                       {
+                                           Id = animal.Id,
+                                           Doctor = animal.Doctor,
+                                           Breed = breed,
+                                           Species = species,
+                                           Age = animal.Age,
+                                           Blood = animal.Blood,
+                                           Color = animal.Color,
+                                           CustomerId = customerId,
+                                           //Customer = customer,
+                                           Disease = animal.Disease,
+                                           Geld = animal.Geld,
+                                           Gender = animal.Gender,
+                                           HbsId = animal.HbsId,
+                                           Name = animal.Name,
+                                           Weight = animal.Weight,
+                                       };
+
+            //return await context.Animals.Where(x => x.CustomerId == customerId).ToArrayAsync();
+            return await query.ToArrayAsync();
+        }
+
         public async Task<Animal> GetById(int id)
         {
             Animal animal = await context.Animals.FindAsync(id) ?? throw new EntityNotFoundException("Aranan Hayvan Bulunamadı.");

@@ -26,14 +26,14 @@ namespace VeterinaryApp.UserControls
         {
             api = new Api();
             InitializeComponent();
+            ComboHastaTur.SelectedIndexChanged += ComboHastaTur_SelectedIndexChanged;
             LoadSpecies();
-            LoadBreed();
             LoadBlood();
             LoadGeld();
             LoadCustomer();
         }
 
-        
+
 
         private async void btnMusteriKaydet_Click_1(object sender, EventArgs e)
         {
@@ -95,21 +95,12 @@ namespace VeterinaryApp.UserControls
         {
             try
             {
-                // Türleri API'den veya veritabanından al (API örneği kullanılmıştır)
                 var speciesList = await api.Get<List<Species>>("api/Species");
 
-                // ComboBox'ı temizle
-                ComboHastaTur.Items.Clear();
+                ComboHastaTur.DataSource = speciesList;
+                ComboHastaTur.DisplayMember = "Name"; // Gözükecek alan
+                ComboHastaTur.ValueMember = "Id";
 
-                // ComboBox'a türleri ekle
-                foreach (var species in speciesList)
-                {
-                    ComboHastaTur.DataSource = speciesList;
-                    ComboHastaTur.DisplayMember = "Name"; // Gözükecek alan
-                    ComboHastaTur.ValueMember = "Id";
-                }
-
-                // İlk öğeyi seçili yapmak (opsiyonel)
                 if (ComboHastaTur.Items.Count > 0)
                 {
                     ComboHastaTur.SelectedIndex = 0;
@@ -120,11 +111,11 @@ namespace VeterinaryApp.UserControls
                 MessageBox.Show($"Türler alınırken hata oluştu: {ex.Message}");
             }
         }
-        private async void LoadBreed()
+        private async void LoadBreed(int SpeciesId)
         {
             try
             {
-                var breedList = await api.Get<List<Breed>>("api/Breed");
+                var breedList = await api.Get<List<Breed>>($"api/Breed/by-species/{SpeciesId}");
 
                 ComboHastaIrk.DataSource = breedList;
                 ComboHastaIrk.DisplayMember = "BreedName";  // Gözüken kısım
@@ -163,13 +154,15 @@ namespace VeterinaryApp.UserControls
                 // Ad soyad birleştirip yeni bir liste oluştur
                 var displayList = customerList.Select(c => new
                 {
-                    FullName = $"{c.Name} {c.Surname}",
+                    FullName = $"{c.Name} {c.Surname} - {c.Tckn}",
                     c.Id
                 }).ToList();
-
+                AutoCompleteStringCollection autoComplete = new AutoCompleteStringCollection();
+                autoComplete.AddRange(displayList.Select(x => x.FullName).ToArray());
                 ComboHastaSahipSec.DataSource = displayList;
                 ComboHastaSahipSec.DisplayMember = "FullName";
                 ComboHastaSahipSec.ValueMember = "Id";
+                ComboHastaSahipSec.AutoCompleteCustomSource = autoComplete;
 
                 if (customerList.Count > 0)
                 {
@@ -181,7 +174,34 @@ namespace VeterinaryApp.UserControls
                 MessageBox.Show($"Müşteriler alınırken hata oluştu: {ex.Message}");
             }
         }
+        private void ComboHastaTur_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (ComboHastaTur.SelectedValue is int selectedSpeciesId)
+            {
+                LoadBreed(selectedSpeciesId);
+            }
+        }
 
-        
+        private void btnMusteriTemizle_Click(object sender, EventArgs e)
+        {
+            foreach (Control control in this.Controls)
+            {
+                if (control is TextBox)
+                {
+                    ((TextBox)control).Text = "";
+                }
+            }
+        }
+
+        private void btnHastaTemizle_Click(object sender, EventArgs e)
+        {
+            foreach (Control control in this.Controls)
+            {
+                if (control is TextBox)
+                {
+                    ((TextBox)control).Text = "";
+                }
+            }
+        }
     }
 }

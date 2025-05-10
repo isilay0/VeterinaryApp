@@ -62,6 +62,9 @@ builder.Services.AddScoped<IBreedRepository, BreedRepository>();
 builder.Services.AddScoped<ISpeciesService, SpeciesService>();
 builder.Services.AddScoped<ISpeciesRepository, SpeciesRepository>();
 #endregion
+#region Auth Services
+builder.Services.AddScoped<IAuthService, AuthService>();
+#endregion
 
 builder.Services.AddDbContext<AppDbContext>(opt =>
 {

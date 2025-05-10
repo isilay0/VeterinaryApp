@@ -54,11 +54,9 @@
             this.kryptonLabel8 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonGroupBox1 = new Krypton.Toolkit.KryptonGroupBox();
             this.btnMusteriTemizle = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.btnMusteriIptal = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnMusteriKaydet = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonGroupBox2 = new Krypton.Toolkit.KryptonGroupBox();
             this.btnHastaTemizle = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.btnHastaIptal = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnHastaKaydet = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.txtHastaYas = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.txtGelmeNedeni = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -338,7 +336,8 @@
             this.ComBoHastaKisir.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.ComBoHastaKisir.Size = new System.Drawing.Size(155, 31);
             this.ComBoHastaKisir.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.White;
-            this.ComBoHastaKisir.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.LightGray;
+            this.ComBoHastaKisir.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Black;
+            this.ComBoHastaKisir.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.Black;
             this.ComBoHastaKisir.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -374,13 +373,15 @@
             // 
             // ComboHastaSahipSec
             // 
+            this.ComboHastaSahipSec.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.ComboHastaSahipSec.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.ComboHastaSahipSec.DropButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Alternate;
             this.ComboHastaSahipSec.DropDownWidth = 190;
             this.ComboHastaSahipSec.Location = new System.Drawing.Point(11, 34);
             this.ComboHastaSahipSec.Margin = new System.Windows.Forms.Padding(2);
             this.ComboHastaSahipSec.Name = "ComboHastaSahipSec";
             this.ComboHastaSahipSec.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.ComboHastaSahipSec.Size = new System.Drawing.Size(142, 31);
+            this.ComboHastaSahipSec.Size = new System.Drawing.Size(224, 31);
             this.ComboHastaSahipSec.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.White;
             this.ComboHastaSahipSec.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.LightGray;
             this.ComboHastaSahipSec.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -427,7 +428,6 @@
             this.kryptonGroupBox1.Panel.Controls.Add(this.btnMusteriTemizle);
             this.kryptonGroupBox1.Panel.Controls.Add(this.txtTC);
             this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonLabel2);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.btnMusteriIptal);
             this.kryptonGroupBox1.Panel.Controls.Add(this.txtMusteriAdres);
             this.kryptonGroupBox1.Panel.Controls.Add(this.txtEposta);
             this.kryptonGroupBox1.Panel.Controls.Add(this.btnMusteriKaydet);
@@ -455,7 +455,7 @@
             // 
             // btnMusteriTemizle
             // 
-            this.btnMusteriTemizle.Location = new System.Drawing.Point(116, 603);
+            this.btnMusteriTemizle.Location = new System.Drawing.Point(181, 554);
             this.btnMusteriTemizle.Name = "btnMusteriTemizle";
             this.btnMusteriTemizle.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnMusteriTemizle.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
@@ -490,44 +490,7 @@
             this.btnMusteriTemizle.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.btnMusteriTemizle.TabIndex = 101;
             this.btnMusteriTemizle.Values.Text = "Temizle";
-            // 
-            // btnMusteriIptal
-            // 
-            this.btnMusteriIptal.Location = new System.Drawing.Point(177, 554);
-            this.btnMusteriIptal.Name = "btnMusteriIptal";
-            this.btnMusteriIptal.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
-            this.btnMusteriIptal.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
-            this.btnMusteriIptal.Size = new System.Drawing.Size(98, 34);
-            this.btnMusteriIptal.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
-            this.btnMusteriIptal.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
-            this.btnMusteriIptal.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.btnMusteriIptal.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.btnMusteriIptal.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnMusteriIptal.StateCommon.Border.Rounding = 10;
-            this.btnMusteriIptal.StateCommon.Border.Width = 1;
-            this.btnMusteriIptal.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnMusteriIptal.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnMusteriIptal.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.btnMusteriIptal.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
-            this.btnMusteriIptal.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
-            this.btnMusteriIptal.StateDisabled.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnMusteriIptal.StateDisabled.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnMusteriIptal.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
-            this.btnMusteriIptal.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
-            this.btnMusteriIptal.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnMusteriIptal.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnMusteriIptal.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
-            this.btnMusteriIptal.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
-            this.btnMusteriIptal.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnMusteriIptal.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnMusteriIptal.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
-            this.btnMusteriIptal.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
-            this.btnMusteriIptal.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnMusteriIptal.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnMusteriIptal.TabIndex = 100;
-            this.btnMusteriIptal.Values.Text = "İptal Et";
+            this.btnMusteriTemizle.Click += new System.EventHandler(this.btnMusteriTemizle_Click);
             // 
             // btnMusteriKaydet
             // 
@@ -577,7 +540,6 @@
             // kryptonGroupBox2.Panel
             // 
             this.kryptonGroupBox2.Panel.Controls.Add(this.btnHastaTemizle);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.btnHastaIptal);
             this.kryptonGroupBox2.Panel.Controls.Add(this.btnHastaKaydet);
             this.kryptonGroupBox2.Panel.Controls.Add(this.txtHastaYas);
             this.kryptonGroupBox2.Panel.Controls.Add(this.txtGelmeNedeni);
@@ -614,7 +576,7 @@
             // 
             // btnHastaTemizle
             // 
-            this.btnHastaTemizle.Location = new System.Drawing.Point(423, 536);
+            this.btnHastaTemizle.Location = new System.Drawing.Point(335, 536);
             this.btnHastaTemizle.Name = "btnHastaTemizle";
             this.btnHastaTemizle.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnHastaTemizle.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
@@ -649,48 +611,11 @@
             this.btnHastaTemizle.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.btnHastaTemizle.TabIndex = 104;
             this.btnHastaTemizle.Values.Text = "Temizle";
-            // 
-            // btnHastaIptal
-            // 
-            this.btnHastaIptal.Location = new System.Drawing.Point(255, 536);
-            this.btnHastaIptal.Name = "btnHastaIptal";
-            this.btnHastaIptal.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
-            this.btnHastaIptal.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
-            this.btnHastaIptal.Size = new System.Drawing.Size(98, 34);
-            this.btnHastaIptal.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
-            this.btnHastaIptal.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
-            this.btnHastaIptal.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.btnHastaIptal.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.btnHastaIptal.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnHastaIptal.StateCommon.Border.Rounding = 10;
-            this.btnHastaIptal.StateCommon.Border.Width = 1;
-            this.btnHastaIptal.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnHastaIptal.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnHastaIptal.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.btnHastaIptal.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
-            this.btnHastaIptal.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
-            this.btnHastaIptal.StateDisabled.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnHastaIptal.StateDisabled.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnHastaIptal.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
-            this.btnHastaIptal.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
-            this.btnHastaIptal.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnHastaIptal.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnHastaIptal.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
-            this.btnHastaIptal.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
-            this.btnHastaIptal.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnHastaIptal.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnHastaIptal.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
-            this.btnHastaIptal.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(197)))), ((int)(((byte)(253)))));
-            this.btnHastaIptal.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnHastaIptal.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnHastaIptal.TabIndex = 103;
-            this.btnHastaIptal.Values.Text = "İptal Et";
+            this.btnHastaTemizle.Click += new System.EventHandler(this.btnHastaTemizle_Click);
             // 
             // btnHastaKaydet
             // 
-            this.btnHastaKaydet.Location = new System.Drawing.Point(87, 536);
+            this.btnHastaKaydet.Location = new System.Drawing.Point(179, 536);
             this.btnHastaKaydet.Name = "btnHastaKaydet";
             this.btnHastaKaydet.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
             this.btnHastaKaydet.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(138)))));
@@ -800,7 +725,8 @@
             this.ComboHastaKanGrubu.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.ComboHastaKanGrubu.Size = new System.Drawing.Size(155, 31);
             this.ComboHastaKanGrubu.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.White;
-            this.ComboHastaKanGrubu.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.LightGray;
+            this.ComboHastaKanGrubu.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Black;
+            this.ComboHastaKanGrubu.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.Black;
             this.ComboHastaKanGrubu.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -856,7 +782,8 @@
             this.ComboHastaIrk.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.ComboHastaIrk.Size = new System.Drawing.Size(155, 31);
             this.ComboHastaIrk.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.White;
-            this.ComboHastaIrk.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.LightGray;
+            this.ComboHastaIrk.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Black;
+            this.ComboHastaIrk.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.Black;
             this.ComboHastaIrk.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -874,7 +801,8 @@
             this.ComboHastaTur.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.ComboHastaTur.Size = new System.Drawing.Size(155, 31);
             this.ComboHastaTur.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.White;
-            this.ComboHastaTur.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.LightGray;
+            this.ComboHastaTur.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Black;
+            this.ComboHastaTur.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.Black;
             this.ComboHastaTur.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -1068,10 +996,8 @@
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel20;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtHastaYas;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnMusteriTemizle;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnMusteriIptal;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnMusteriKaydet;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnHastaTemizle;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnHastaIptal;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnHastaKaydet;
     }
 }

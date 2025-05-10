@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using VeterinaryApp.WebApi.Business;
 using VeterinaryApp.WebApi.Business.Abstractions;
 using VeterinaryApp.WebApi.Core.Exceptions;
 using VeterinaryApp.WebApi.Core.Response;
@@ -108,6 +109,20 @@ namespace VeterinaryApp.WebApi.Controllers
                 return BadRequest(new ResponseModel(false, ex.Message, "Cins Silinemedi"));
             }
 
+        }
+        [HttpGet("by-species/{speciesId}")]
+        [ActionName("GetBySpecies")]
+        public IActionResult GetBreedBySpecies(int speciesId)
+        {
+            try
+            {
+                var breeds = service.GetBreedBySpecies(speciesId).Select(b => new { b.Id, b.BreedName }).ToList();
+                return Ok(new ResponseModel(true, breeds));
+            }
+            catch (EntityNotFoundException ex)
+            {
+                return BadRequest(new ResponseModel(false, ex.Message, "Cinsler Getirilemedi"));
+            }
         }
     }
 }

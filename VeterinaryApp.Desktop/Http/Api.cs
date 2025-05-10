@@ -8,13 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using VeterinaryApp.Exceptions;
 using VeterinaryApp.Http.Model;
+using VeterinaryApp.Model;
 
 namespace VeterinaryApp.Http
 {
     public class Api : IHttpApi
     {
         //private readonly HttpClient httpClient;
-
+        private readonly JsonSerializerSettings serializerSettings = new JsonSerializerSettings();
         public Api()
         {
             //httpClient = new HttpClient()
@@ -22,6 +23,8 @@ namespace VeterinaryApp.Http
             //    BaseAddress = new Uri("https://localhost:7189"),
             //    Timeout = TimeSpan.FromSeconds(30)
             //};
+            serializerSettings.MissingMemberHandling = MissingMemberHandling.Ignore;
+            serializerSettings.NullValueHandling = NullValueHandling.Ignore;
         }
 
         public async Task<TRes> Delete<TRes>(string ep)

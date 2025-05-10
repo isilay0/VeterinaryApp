@@ -16,10 +16,11 @@ namespace VeterinaryApp.WebApi.Repository
             this.logger = logger;
         }
 
-        public async Task Add(Doctor doctor)
+        public async Task<Doctor> Add(Doctor doctor)
         {
-            context.Doctors.Add(doctor);
+            var newDoctor = context.Doctors.Add(doctor);
             await context.SaveChangesAsync();
+            return newDoctor.Entity;
         }
 
         public async Task Delete(int id)
@@ -37,6 +38,10 @@ namespace VeterinaryApp.WebApi.Repository
         public async Task<Doctor> GetById(int id)
         {
             return await context.Doctors.FindAsync(id) ?? throw new EntityNotFoundException("Aranan Doktor Bulunamadı.");
+        }
+        public async Task<Doctor?> GetByEmail(string email)
+        {
+            return await context.Doctors.FirstOrDefaultAsync(x => x.Email == email);
         }
 
         public async Task Update(Doctor doctor)

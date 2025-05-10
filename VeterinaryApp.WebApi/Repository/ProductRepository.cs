@@ -39,6 +39,11 @@ namespace VeterinaryApp.WebApi.Repository
             return await context.Products.FindAsync(id) ?? throw new EntityNotFoundException("Aranan Ürün Bulunamadı.");
         }
 
+        public async Task<Product> SearchName(string name)
+        {
+            return await context.Products.FirstOrDefaultAsync(x => x.Name!.StartsWith(name)) ?? throw new EntityNotFoundException("Girilen İsimde bir hayvan bulunamadı"); 
+        }
+
         public async Task Update(Product product)
         {
             bool exists = await context.Customers.AnyAsync(x => x.Id == product.Id);

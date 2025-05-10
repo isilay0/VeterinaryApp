@@ -55,7 +55,22 @@ namespace VeterinaryApp.WebApi.Model
         [JsonProperty("geld")]
         public string? Geld { get; set; }
 
-        
+        [NotMapped]
+        [JsonProperty("breed")]
+        public Breed? Breed { get; set; }
+
+        [NotMapped]
+        [JsonProperty("doctor")]
+        public Doctor? Doctor { get; set; }
+
+        [NotMapped]
+        [JsonProperty("species")]
+        public Species? Species { get; set; }
+
+        [NotMapped]
+        [JsonProperty("customer")]
+        public Customer? Customer { get; set; }
+
 
     }
 }

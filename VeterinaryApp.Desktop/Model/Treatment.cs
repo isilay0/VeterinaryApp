@@ -18,7 +18,9 @@ namespace VeterinaryApp.Model
         public string Disease {  get; set; }
         public int ProductId { get; set; }
         public string FeeStatus { get; set; }
-
-
+        public string DoctorName { get; set; }
+        public string AnimalName { get; set; }
+        public Doctor[] Doctors { get; set; }
+        public Animal[] Animals { get; set; }
     }
 }

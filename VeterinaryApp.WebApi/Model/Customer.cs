@@ -19,24 +19,34 @@ namespace VeterinaryApp.WebApi.Model
         [Column("ADDRESS")]
         [JsonProperty("address")]
         public string? Address { get; set; }
+
         [Column("PHONE_NUMBER")]
         [JsonProperty("phoneNumber")]
         public string? PhoneNumber { get; set; }
+
         [Column("CITY")]
         [JsonProperty("city")]
         public string? City { get; set; }
+
         [Column("DISTRICT")]
         [JsonProperty("district")]
         public string? District { get; set; }
+
         [Column("PHONE_NUMBER2")]
         [JsonProperty("phoneNumber2")]
         public string? PhoneNumber2 { get; set; }
+
         [Column("EMAIL")]
         [JsonProperty("email")]
         public string? Email { get; set; }
+
         [Column("TCKN")]
         [JsonProperty("tckn")]
         public string? Tckn { get; set; }
-        
+
+        [NotMapped]
+        [JsonProperty("animals")]
+        public Animal[]? Animals { get; set; }
+
     }
 }

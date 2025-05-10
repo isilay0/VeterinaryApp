@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VeterinaryApp.ViewModel;
 
 namespace VeterinaryApp.Model
 {
@@ -17,5 +18,7 @@ namespace VeterinaryApp.Model
         public double SellFee { get; set; }
         public long ExpirationDate { get; set; }
         public string Barcode { get; set; }
+
+        
     }
 }

@@ -34,6 +34,13 @@ namespace VeterinaryApp.WebApi.Repository
             return await context.Breeds.ToListAsync();
         }
 
+        public List<Breed> GetBreedBySpeciesId(int speciesId)
+        {
+            return context.Breeds
+            .Where(b => b.SpeciesId == speciesId)
+            .ToList();
+        }
+
         public async Task<Breed> GetById(int id)
         {
             return await context.Breeds.FindAsync(id) ?? throw new EntityNotFoundException("Aranan Cins Bulunamadı.");

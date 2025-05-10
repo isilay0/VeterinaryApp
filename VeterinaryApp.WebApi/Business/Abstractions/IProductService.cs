@@ -9,5 +9,6 @@ namespace VeterinaryApp.WebApi.Business.Abstractions
         Task Update(Product product);
         Task Delete(int id);
         Task<Product> GetById(int id);
+        Task<Product> SearchName (string name);
     }
 }

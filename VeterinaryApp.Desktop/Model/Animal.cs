@@ -26,6 +26,9 @@ namespace VeterinaryApp.Model
 
         public string Geld { get; set; }
         
+        public Doctor Doctor { get; set; }
+        public Breed Breed { get; set; }
+        public Species Species { get; set; }
 
 
     }

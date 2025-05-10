@@ -25,7 +25,6 @@ namespace VeterinaryApp.WebApi.Repository
 
             context.Customers.Add(customer);
             await context.SaveChangesAsync();
-
         }
 
         public async Task Delete(int id)
@@ -45,6 +44,16 @@ namespace VeterinaryApp.WebApi.Repository
             return await context.Customers.FindAsync(id) ?? throw new EntityNotFoundException("Aranan Müşteri Bulunamadı.");
         }
 
+        public async Task<Customer[]> SearchFullName(string fullName)
+        {
+            return await context.Customers.Where(u => EF.Functions.Like(u.Name + u.Surname, $"%{fullName}%", " ")).ToArrayAsync();
+        }
+
+        public async Task<Customer> SearchTckn(string tckn)
+        {
+            return await context.Customers.FirstOrDefaultAsync(u => u.Tckn!.StartsWith(tckn)) ?? throw new EntityNotFoundException("Girilen TCKN'ye ait müşteri bulunamadı.");
+        }
+
         public async Task Update(Customer customer)
         {
             bool exists = await context.Customers.AnyAsync(x => x.Id == customer.Id);
@@ -55,7 +64,5 @@ namespace VeterinaryApp.WebApi.Repository
             context.Customers.Update(customer);
             await context.SaveChangesAsync();
         }
-
-
     }
 }

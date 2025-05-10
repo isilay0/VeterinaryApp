@@ -17,6 +17,26 @@ namespace VeterinaryApp.UserControls
             InitializeComponent();
         }
 
-        
+        private void btnTemizle_Click(object sender, EventArgs e)
+        {
+            foreach (Control control in this.Controls)
+            {
+                if (control is TextBox)
+                {
+                    ((TextBox)control).Text = "";
+                }
+            }
+        }
+
+        private void btnToplamUcretTemizle_Click(object sender, EventArgs e)
+        {
+            foreach (Control control in this.Controls)
+            {
+                if (control is TextBox)
+                {
+                    ((TextBox)control).Text = "";
+                }
+            }
+        }
     }
 }

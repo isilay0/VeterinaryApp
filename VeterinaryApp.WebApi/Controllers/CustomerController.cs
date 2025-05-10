@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Runtime.InteropServices;
+using VeterinaryApp.WebApi.Business;
 using VeterinaryApp.WebApi.Business.Abstractions;
 using VeterinaryApp.WebApi.Core.Exceptions;
 using VeterinaryApp.WebApi.Core.Response;
@@ -42,6 +43,43 @@ namespace VeterinaryApp.WebApi.Controllers
             try
             {
                 return Ok(new ResponseModel(true, await service.GetById(id)));
+            }
+            catch (EntityNotFoundException ex)
+            {
+                return NotFound(new ResponseModel(false, message: ex.Message));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new ResponseModel(false, message: ex.Message));
+            }
+        }
+        
+        [HttpGet("search/fullname/{fullName}")]
+        [ActionName("SearchFullName")]
+        public async Task<IActionResult> SearchFullName(string fullName)
+        {
+            try
+            {
+                return Ok(new ResponseModel(true, await service.SearchFullName(fullName)));
+            }
+            catch (EntityNotFoundException ex)
+            {
+                return NotFound(new ResponseModel(false, message: ex.Message));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new ResponseModel(false, message: ex.Message));
+            }
+        }
+        
+        
+        [HttpGet("search/tckn/{tckn}")]
+        [ActionName("SearchTckn")]
+        public async Task<IActionResult> SearchTckn(string tckn)
+        {
+            try
+            {
+                return Ok(new ResponseModel(true, await service.SearchTckn(tckn)));
             }
             catch (EntityNotFoundException ex)
             {
@@ -110,5 +148,7 @@ namespace VeterinaryApp.WebApi.Controllers
                 return BadRequest(new ResponseModel(false, ex.Message, "Müşteri Silinemedi."));
             }
         }
+
+
     }
 }

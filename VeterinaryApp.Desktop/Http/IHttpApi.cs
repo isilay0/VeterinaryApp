@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VeterinaryApp.Model;
 
 namespace VeterinaryApp.Http
 {
@@ -12,5 +13,7 @@ namespace VeterinaryApp.Http
         Task<TRes> Post<TBody, TRes>(string ep, TBody body);
         Task<TRes> Delete<TRes>(string ep);
         Task<TRes> Put<TBody, TRes>(string ep, TBody body);
+        
     }
 }
+

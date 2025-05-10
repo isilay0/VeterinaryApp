@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ComponentFactory.Krypton.Toolkit;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,17 +9,18 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VeterinaryApp.Component;
 using VeterinaryApp.UserControls;
 
 
 
 namespace VeterinaryApp
 {
-    public partial class Form1 : Form
+    public partial class Form1 : KryptonForm
     {
 
         private Button currentButton;
-        private Random random;
+        //private Random random;
         private int tempIndex;
         // private Form activeForm;
 
@@ -40,7 +42,7 @@ namespace VeterinaryApp
             if (activeControl != null)
                 activeControl.Visible = false;
 
-            ActivateButton(btnSender); // Renkleri değiştirme kısmı aynı kalıyor
+            //ActivateButton(btnSender); // Renkleri değiştirme kısmı aynı kalıyor
 
             activeControl = userControls[key];
             activeControl.Visible = true;
@@ -50,7 +52,7 @@ namespace VeterinaryApp
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            LoadUserControl("ana sayfa", () => new AnasayfaControl(), null);
+            LoadUserControl("ana sayfa", () => new AnasayfaControl(), sender);
         }
 
 
@@ -59,7 +61,7 @@ namespace VeterinaryApp
         public Form1()
         {
             InitializeComponent();
-            random = new Random();
+            //random = new Random();
             btnCloseChildForm.Visible = false;
             this.Text = string.Empty;
             this.ControlBox = false;                //Kontrol çubuğunu kaldırdık.
@@ -76,49 +78,51 @@ namespace VeterinaryApp
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
         //Methods
-        private Color SelectThemeColor()
-        {
-            int index = random.Next(ThemeColor.ColorList.Count);
-            while (tempIndex == index)
-            {
-                index = random.Next(ThemeColor.ColorList.Count);
-            }
-            tempIndex = index;
-            string color = ThemeColor.ColorList[index];
-            return ColorTranslator.FromHtml(color);
-        }
+        //private Color SelectThemeColor()
+        //{
+        //    int index = random.Next(ThemeColor.ColorList.Count);
+        //    while (tempIndex == index)
+        //    {
+        //        index = random.Next(ThemeColor.ColorList.Count);
+        //    }
+        //    tempIndex = index;
+        //    string color = ThemeColor.ColorList[index];
+        //    return ColorTranslator.FromHtml(color);
+        //}
 
-        private void ActivateButton(object btnSender)
-        {
-            if (btnSender != null)
-            {
-                if (currentButton != (Button)btnSender)
-                {
-                    DisableButton();
-                    Color color = SelectThemeColor();
-                    currentButton = (Button)btnSender;
-                    currentButton.BackColor = color;
-                    currentButton.ForeColor = Color.White;
-                    currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-                    panelTitleBar.BackColor = color;
-                    panelLogo.BackColor = ThemeColor.ChangeColorBrightness(color, -0.3);
-                    btnCloseChildForm.Visible = true;
-                }
-            }
-        }
+        //private void ActivateButton(object btnSender)
+        //{
+        //    if (btnSender != null)
+        //    {
+        //        if (currentButton != (Button)btnSender)
+        //        {
+        //            //DisableButton();
+        //            Color color = Color.LightSkyBlue;
+        //            currentButton = (Button)btnSender;
+        //            currentButton.BackColor = color;
+        //            currentButton.ForeColor = Color.White;
+        //            currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+        //            panelTitleBar.BackColor = color;
+        //            panelTitleBar.BackColor = ThemeColor.ChangeColorBrightness(color, -0.3);
+        //            btnCloseChildForm.Visible = true;
+        //        }
+        //    }
+        //}
 
-        private void DisableButton()
-        {
-            foreach (Control previousBtn in panelMenu.Controls)
-            {
-                if (previousBtn.GetType() == typeof(Button))
-                {
-                    previousBtn.BackColor = Color.FromArgb(51, 51, 76);
-                    previousBtn.ForeColor = Color.Gainsboro;
-                    previousBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-                }
-            }
-        }
+
+
+        //private void DisableButton()
+        //{
+        //    foreach (Control previousBtn in panelMenu.Controls)
+        //    {
+        //        if (previousBtn.GetType() == typeof(Button))
+        //        {
+        //            previousBtn.BackColor = Color.FromArgb(51, 51, 76);
+        //            previousBtn.ForeColor = Color.Gainsboro;
+        //            previousBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+        //        }
+        //    }
+        //}
 
         //private void OpenChildForm(Form childForm, object btnSender)
         //{
@@ -175,7 +179,7 @@ namespace VeterinaryApp
 
         private void btnHasta_Click(object sender, EventArgs e)
         {
-            LoadUserControl("bilgiler", () => new BilgilerControl(), sender);
+            LoadUserControl("hasta", () => new BilgilerControl(), sender);
         }
 
         private void btnMuayene_Click(object sender, EventArgs e)
@@ -219,10 +223,8 @@ namespace VeterinaryApp
 
         private void Reset()
         {
-            DisableButton();
+            //DisableButton();
             lblTitle.Text = "ANA SAYFA";
-            panelTitleBar.BackColor = Color.FromArgb(51, 51, 76);
-            panelLogo.BackColor = Color.FromArgb(39, 39, 58);
             currentButton = null;
             btnCloseChildForm.Visible = false;
         }
@@ -241,17 +243,19 @@ namespace VeterinaryApp
         private void btnMaximize_Click(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Normal)
+            {
                 this.WindowState = FormWindowState.Maximized;
+            }
             else
+            {
                 this.WindowState = FormWindowState.Normal;
+            }
         }
 
         private void btnMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
-
-        
     }
 }
 

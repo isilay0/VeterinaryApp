@@ -9,5 +9,6 @@ namespace VeterinaryApp.WebApi.Repository.Abstractions
         Task Update(Appointment appointment);
         Task Delete(int id);
         Task<Appointment> GetById(int id);
+        
     }
 }

@@ -35,6 +35,12 @@ namespace VeterinaryApp.WebApi.Business
             return await repository.GetById(id);
         }
 
+        public async Task<List<Treatment>> GetTreatmentsByAnimalNameAsync(string name)
+        {
+            var treatments = await repository.GetTreatmentsByAnimalNameAsync(name);
+            return treatments;
+        }
+
         public async Task Update(Treatment treatment)
         {
             await repository.Update(treatment);

@@ -19,6 +19,7 @@ namespace VeterinaryApp.Model
 
         public string Email { get; set; }
         public string Tckn { get; set; }
+        public Animal[] Animals { get; set; }
 
 
     }

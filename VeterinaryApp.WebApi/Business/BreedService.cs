@@ -1,6 +1,7 @@
 ﻿using System.Runtime.InteropServices;
 using VeterinaryApp.WebApi.Business.Abstractions;
 using VeterinaryApp.WebApi.Model;
+using VeterinaryApp.WebApi.Repository;
 using VeterinaryApp.WebApi.Repository.Abstractions;
 
 namespace VeterinaryApp.WebApi.Business
@@ -29,6 +30,11 @@ namespace VeterinaryApp.WebApi.Business
         public async Task<IEnumerable<Breed>> GetAll()
         {
             return await repository.GetAll();
+        }
+
+        public List<Breed> GetBreedBySpecies(int SpeciesId)
+        {
+            return repository.GetBreedBySpeciesId(SpeciesId);
         }
 
         public async Task<Breed> GetById(int id)

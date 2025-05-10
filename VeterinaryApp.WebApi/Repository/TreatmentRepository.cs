@@ -18,6 +18,7 @@ namespace VeterinaryApp.WebApi.Repository
 
         public async Task Add(Treatment treatment)
         {
+            treatment.Date = DateTimeOffset.Now.ToUnixTimeMilliseconds();
             context.Treatments.Add(treatment);
             await context.SaveChangesAsync();
         }
@@ -39,6 +40,15 @@ namespace VeterinaryApp.WebApi.Repository
             return await context.Treatments.FindAsync(id) ?? throw new EntityNotFoundException("Aranan Tedavi Bulunamadı.");
         }
 
+        public async Task<List<Treatment>> GetTreatmentsByAnimalNameAsync(string name)
+        {
+            return await context.Treatments.Include(t => t.Animal)
+                .Include(d => d.Doctor)
+                .Where(t => t.Animal!.Name!.StartsWith(name))
+                //EF.Functions.Like(t.Animal!.Name, $"%{name}%"))
+                .ToListAsync() ?? throw new EntityNotFoundException("Aranılan Hayvan Bulunamadı");
+        }
+
         public async Task Update(Treatment treatment)
         {
             bool exists = await context.Treatments.AnyAsync(x => x.Id == treatment.Id);
@@ -46,8 +56,8 @@ namespace VeterinaryApp.WebApi.Repository
             {
                 throw new EntityNotFoundException("Aranan Tedavi Bulunamadı.");
             }
-                context.Treatments.Update(treatment);
-                await context.SaveChangesAsync();
+            context.Treatments.Update(treatment);
+            await context.SaveChangesAsync();
         }
     }
 }

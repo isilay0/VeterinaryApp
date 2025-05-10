@@ -108,6 +108,22 @@ namespace VeterinaryApp.WebApi.Controllers
                 return BadRequest(new ResponseModel(false, ex.Message, "Ürün Silinemedi."));
             }
         }
-
+        [HttpGet("search/name/{name}")]
+        [ActionName("SearchName")]
+        public async Task<IActionResult> SearchName(string name)
+        {
+            try
+            {
+                return Ok(new ResponseModel(true, await service.SearchName(name)));
+            }
+            catch (EntityNotFoundException ex)
+            {
+                return NotFound(new ResponseModel(false, message: ex.Message));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new ResponseModel(false, message: ex.Message));
+            }
+        }
     }
 }
